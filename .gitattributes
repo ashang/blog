@@ -1,0 +1,10 @@
+// general
+* text auto
+*.sh text eol=lf
+*.txt eol=lf
+*.md eol=lf
+*.xml text
+*.yml text
+*.json text
+*.rst text
+*.png binary

@@ -1,0 +1,107 @@
+## Traditional gitlab project Wiki home is home.md
+## MkDocs home default is index.md
+## `README` works for git hosting project root, serves as `About`
+
+# If you add a page, you must add it to the index here
+pages:
+  - Home: readme.md
+  - News: no_news_is_good_news.md
+
+#  - Style Guide:
+#    - Home: dev/styleguide.md
+#    - Style Guide C++: dev/styleguide-c++.md
+#    - Style Guide Shell: dev/styleguide-shell.md
+#
+#  - Getting Started:
+#    - Home: gettingstarted/index.md
+#    - Structuring Your Mod: gettingstarted/structuring.md
+#    - Forge Update Checker: gettingstarted/autoupdate.md
+#
+#  - Blocks:
+#    - Home: blocks/blocks.md
+#    - Interaction: blocks/interaction.md
+#  - Blockstates:
+#    - Intro to Blockstates: blockstates/states.md 
+#    - Intro to Blockstate JSONs: blockstates/introduction.md
+#    - Forge Blockstate JSON: blockstates/forgeBlockstates.md
+#  - Console Server:
+#    - Basic Usage: dev/intro.md
+#  - Networking:
+#    - Home: networking/index.md
+#    - Overview: networking/overview.md
+#    - SimpleImpl: networking/simpleimpl.md
+#References
+#  - Conventions:
+#    - Versioning: dev/versioning.md
+#    - Locations: dev/locations.md
+#    - Loading Stages: dev/loadstages.md
+#- Projects:
+    #- 'Projects': 'projects/projects.md'
+    #- 'Models': 'projects/models.md'
+#  - HR:
+#  - Company:
+#  - How Tos:
+#    - LDAP Integration: how-tos/ldap.md
+#    - Deploying to Heroku: how-tos/deploy-to-heroku.md
+#    - Releasing a Starter Project: how-tos/release-starter-project.md
+#  - Development:
+#    - How to Contribute: how_to_contribute.md
+#    - Ways to Contribute: ways_to_contribute.md
+#    - Release Process: release_process.md
+#    - Code of Conduct: code_of_conduct.md
+#  - Tutorials:
+#    - Tutorials: tutorials.md
+
+#- User Guide:
+#    - Writing Your Docs: user-guide/writing-your-docs.md
+#    - Styling Your Docs: user-guide/styling-your-docs.md
+#    - Configuration: user-guide/configuration.md
+#    - Deploying Your Docs: user-guide/deploying-your-docs.md
+#    - Custom Themes: user-guide/custom-themes.md
+#- About:
+#    - Release Notes: about/release-notes.md
+#    - Contributing: about/contributing.md
+
+
+
+#theme: bootswatch
+#theme: bootstrap
+theme: readthedocs
+#https://github.com/chrissimpkins/cinder
+#https://github.com/mkdocs/mkdocs/wiki/MkDocs-Users
+#http://mkdocs.github.io/mkdocs-bootswatch/
+
+
+# Do not edit in PRs below here
+site_name: Weblog
+site_description: Weblog
+
+site_author: Aaron
+copyright: Copyright &copy; 
+strict: true
+docs_dir: docs
+site_dir: site
+#mkdocs serve --dev-addr=0.0.0.0:80  # accessible over the local network.
+#dev-addr: 0.0.0.0:80  # accessible over the local network.
+
+#include_search: true
+#use_absolute_urls: true
+#use_directory_urls: false
+
+markdown_extensions:
+    - toc:
+        permalink: 
+    #    permalink: True
+        separator: "_"
+    - admonition:
+    - smarty
+  #- meta
+  #- tables
+  #- fenced_code
+  #- extra
+    - sane_lists
+
+
+#extra_css:
+  #- css/style_fixes.css
+
