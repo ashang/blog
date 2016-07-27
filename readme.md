@@ -1,3 +1,1 @@
-# weblog
-
-web log.
+docs/readme.md

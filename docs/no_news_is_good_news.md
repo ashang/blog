@@ -1,5 +1,5 @@
 
-From baibanbao
+From [baibanbao](http://www.baibanbao.net/2016/i-hate-the-news-cn-translation.html)
 
 ## 我恨新闻
 
@@ -38,7 +38,6 @@ From baibanbao
 2006年10月20日
 
 ----
-Thanks, via 
-http://www.baibanbao.net/2016/i-hate-the-news-cn-translation.html
+Thanks, via [baibanbao](http://www.baibanbao.net/2016/i-hate-the-news-cn-translation.html)
 
 
