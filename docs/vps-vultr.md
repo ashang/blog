@@ -7,6 +7,17 @@
 
 个人感觉比较超值. 可以选欧美日澳新家坡多个机房.
 
+
+This is one of mine for $5/month
+- IP Address: 45.32.51.xx
+- OS: Debian 8 x64 (jessie)
+- RAM: 768 MB
+- Storage: 15 GB SSD
+- Location: Tokyo
+
+
+
+
 ## 也想注册吗? 这里有优惠链接
 
 也想注册账户吗?
