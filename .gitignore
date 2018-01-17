@@ -1,9 +1,17 @@
 site/
+docs/
+build/
 env/
 dist/
 htmlcov/
 .tox/
-mkdocs.egg-info/
-*.pyc
 .coverage
-build
+.DS_Store
+Thumbs.db
+
+# Hexo
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
