@@ -100,26 +100,22 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta name="description" content="To let wildcard expansion case insensitive, enable this in bashrc shopt -s nocaseglob To let tab-completion case insensitive, you can bind the completion-ignore-case option for bash: bind `echo set co">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Case Insensitive Tab-Completion or Wild Expansion">
-<meta property="og:url" content="http://ashang.org/jot/2012-09-09-case-insensitive-tab-completion-or-wild-expansion/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Things Bright And Beautiful">
+<meta property="og:url" content="http://ashang.org/jot/tags/cli/index.html">
 <meta property="og:site_name" content="All Things Bright And Beautiful">
-<meta property="og:description" content="To let wildcard expansion case insensitive, enable this in bashrc shopt -s nocaseglob To let tab-completion case insensitive, you can bind the completion-ignore-case option for bash: bind `echo set co">
-<meta property="og:updated_time" content="2018-01-18T06:08:04.177Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Case Insensitive Tab-Completion or Wild Expansion">
-<meta name="twitter:description" content="To let wildcard expansion case insensitive, enable this in bashrc shopt -s nocaseglob To let tab-completion case insensitive, you can bind the completion-ignore-case option for bash: bind `echo set co">
+<meta name="twitter:title" content="All Things Bright And Beautiful">
 
 
 
 
 
 
-  <link rel="canonical" href="http://ashang.org/jot/2012-09-09-case-insensitive-tab-completion-or-wild-expansion/"/>
+  <link rel="canonical" href="http://ashang.org/jot/tags/cli/"/>
 
 
-  <title>Case Insensitive Tab-Completion or Wild Expansion | All Things Bright And Beautiful</title>
+  <title>Tag: cli | All Things Bright And Beautiful</title>
   
 
 
@@ -166,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,169 +231,58 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>cli<small>Tag</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-09-09-case-insensitive-tab-completion-or-wild-expansion/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">Case Insensitive Tab-Completion or Wild Expansion</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/jot/case-insensitive-completion/" itemprop="url">
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span itemprop="name">Case Insensitive Tab-Completion or Glob Expansion</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-09-09T02:15:00+08:00">2012-09-09</time>
-            
+            </a>
+        
+      </h2>
 
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2012-09-09T02:15:00+08:00"
+              content="2012-09-09" >
+          09-09
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>To let wildcard expansion case insensitive, enable this in bashrc</p>
-<div style="margin-left:40px;">shopt -s nocaseglob</div>
-<p>To let tab-completion case insensitive, you can bind the completion-ignore-case option for bash:</p>
-<div style="margin-left:40px;">bind `echo set completion-ignore-case on`</div>
-<p>This will be effective immediately.</p>
-<p>Or add this in inputrc for readline;</p>
-<div style="margin-left:40px;">$ echo &#039;set completion-ignore-case On&#039; &gt;&gt; ~/.inputrc   </div>
-<p>Include the system inputrc file:
-<div style="margin-left:40px;">include /etc/inputrc</div>
-</p><p>To show all binds:
-<div style="margin-left:40px;">bind -p</div>
-</p><p>To let bash recognizes spelling mistakes, add this  in ~/.bashrc:</p>
-<div style="margin-left:40px;">shopt -s cdspell</div>
-<p>For tcsh / zsh users:</p>
-<div style="margin-left:40px;">set complete enhance</div>
-<p>Reference:<br><a href="http://www.caliban.org/bash/index.shtml#completion" target="_blank" rel="noopener">http://www.caliban.org/bash/index.shtml#completion</a><br>  <a href="https://wiki.ubuntu.com/Spec/EnhancedBash" target="_blank" rel="noopener">https://wiki.ubuntu.com/Spec/EnhancedBash</a></p>
-<p></p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/jot/2012-09-04-ubuntu-precise-sources-list-beijing/" rel="next" title="Ubuntu Precise sources.list Beijing">
-                <i class="fa fa-chevron-left"></i> Ubuntu Precise sources.list Beijing
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/jot/2012-09-14-linux-proxy/" rel="prev" title="Linux Proxy">
-                Linux Proxy <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
-
-
-          </div>
-          
+  
+  
+  
 
   
 
 
+          </div>
+          
 
         </div>
         
@@ -445,7 +330,7 @@
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Kategorien</span>
                   
                 </div>
@@ -456,7 +341,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">Tags</span>
                   
                 </div>
@@ -505,7 +390,11 @@
 </div>
 
 
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
+
+
+  <span class="post-meta-divider">|</span>
 
 
 
@@ -599,10 +488,6 @@
   
 
   
-  <script type="text/javascript" src="/jot/js/src/scrollspy.js?v=6.0.1"></script>
-<script type="text/javascript" src="/jot/js/src/post-details.js?v=6.0.1"></script>
-
-
 
   
 

@@ -373,144 +373,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2009-03-02-udevadm-provides-udevinfo-3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2009-03-02-udevadm-provides-udevinfo-3/" itemprop="url">Udevadm Provides Udevinfo</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2009-03-02T07:49:00+08:00">2009-03-02</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>$ sudo apt-get install --reinstall initramfs-tools  bootcd-mkinitramfs <br>E: dpkg was interrupted, you must manually run &#039;sudo dpkg --configure -a&#039; to correct the problem. </p>
-<p>$ sudo dpkg --configure -a<br>Setting up initramfs-tools (XXX) ...<br> update-initramfs: deferring update (trigger activated)</p>
-<p>Processing triggers for initramfs-tools ...<br>update-initramfs: Generating /boot/initrd.img-XXX<br>cpio: ./bin/udevinfo: Cannot stat: No such file or directory<br> update-initramfs: failed for /boot/initrd.img-XXX<br>dpkg: subprocess post-installation script returned error exit status 1</p>
-<p>googled udevinfo man page:
-<div> udevinfo - query device information from the udev database <br> udevinfo [-q query-type] [-a ] [-p device-path] [-n node-name] [-r] [-e] [-V] [-h] </div></p>
-<p>udevinfo queries the udev database for device information stored in the udev database. It can also query the properties of a device from its sysfs representation to help creating udev rules that match this device. </p>
-<div> </div>
-<div>$ apt-cache search udevinfo </div>
-<div>Oops, no results,<p></p>
-<p>$ dpkg -L udev | \grep bin<br>/sbin<br>/sbin/udevadm<br>/sbin/udevd<br> /sbin/vol_id</p>
-<p>$ man udevadm</p>
-</div>
-<div>udevadm info [options]</div>
-<div>
-<div>
-<p>dirty for dirty&#039;s sake</p>
-<p>$ sudo cp /sbin/udevadm /bin/udevinfo</p></div>
-<div>done.  </div>
-</div>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2009-03-02-udevadm-provides-udevinfo-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -600,6 +462,144 @@
 <div>done.  </div>
 </div>
 <div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2009-03-02-udevadm-provides-udevinfo-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2009-03-02-udevadm-provides-udevinfo-3/" itemprop="url">Udevadm Provides Udevinfo</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2009-03-02T07:49:00+08:00">2009-03-02</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>$ sudo apt-get install --reinstall initramfs-tools  bootcd-mkinitramfs <br>E: dpkg was interrupted, you must manually run &#039;sudo dpkg --configure -a&#039; to correct the problem. </p>
+<p>$ sudo dpkg --configure -a<br>Setting up initramfs-tools (XXX) ...<br> update-initramfs: deferring update (trigger activated)</p>
+<p>Processing triggers for initramfs-tools ...<br>update-initramfs: Generating /boot/initrd.img-XXX<br>cpio: ./bin/udevinfo: Cannot stat: No such file or directory<br> update-initramfs: failed for /boot/initrd.img-XXX<br>dpkg: subprocess post-installation script returned error exit status 1</p>
+<p>googled udevinfo man page:
+<div> udevinfo - query device information from the udev database <br> udevinfo [-q query-type] [-a ] [-p device-path] [-n node-name] [-r] [-e] [-V] [-h] </div></p>
+<p>udevinfo queries the udev database for device information stored in the udev database. It can also query the properties of a device from its sysfs representation to help creating udev rules that match this device. </p>
+<div> </div>
+<div>$ apt-cache search udevinfo </div>
+<div>Oops, no results,<p></p>
+<p>$ dpkg -L udev | \grep bin<br>/sbin<br>/sbin/udevadm<br>/sbin/udevd<br> /sbin/vol_id</p>
+<p>$ man udevadm</p>
+</div>
+<div>udevadm info [options]</div>
+<div>
+<div>
+<p>dirty for dirty&#039;s sake</p>
+<p>$ sudo cp /sbin/udevadm /bin/udevinfo</p></div>
+<div>done.  </div>
+</div>
 
           
         
@@ -1554,7 +1554,7 @@
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Kategorien</span>
                   
                 </div>
@@ -1565,7 +1565,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">Tags</span>
                   
                 </div>
@@ -1614,7 +1614,11 @@
 </div>
 
 
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
+
+
+  <span class="post-meta-divider">|</span>
 
 
 

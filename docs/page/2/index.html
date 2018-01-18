@@ -377,7 +377,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-09-09-case-insensitive-tab-completion-or-wild-expansion/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/case-insensitive-completion/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -396,7 +396,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2012-09-09-case-insensitive-tab-completion-or-wild-expansion/" itemprop="url">Case Insensitive Tab-Completion or Wild Expansion</a></h1>
+                <a class="post-title-link" href="/jot/case-insensitive-completion/" itemprop="url">Case Insensitive Tab-Completion or Glob Expansion</a></h1>
         
 
         <div class="post-meta">
@@ -416,6 +416,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jot/categories/shell/" itemprop="url" rel="index"><span itemprop="name">shell</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -446,23 +464,26 @@
       
         
           
-            <p>To let wildcard expansion case insensitive, enable this in bashrc</p>
-<div style="margin-left:40px;">shopt -s nocaseglob</div>
-<p>To let tab-completion case insensitive, you can bind the completion-ignore-case option for bash:</p>
-<div style="margin-left:40px;">bind `echo set completion-ignore-case on`</div>
-<p>This will be effective immediately.</p>
-<p>Or add this in inputrc for readline;</p>
-<div style="margin-left:40px;">$ echo &#039;set completion-ignore-case On&#039; &gt;&gt; ~/.inputrc   </div>
-<p>Include the system inputrc file:
-<div style="margin-left:40px;">include /etc/inputrc</div>
-</p><p>To show all binds:
-<div style="margin-left:40px;">bind -p</div>
-</p><p>To let bash recognizes spelling mistakes, add this  in ~/.bashrc:</p>
-<div style="margin-left:40px;">shopt -s cdspell</div>
-<p>For tcsh / zsh users:</p>
-<div style="margin-left:40px;">set complete enhance</div>
-<p>Reference:<br><a href="http://www.caliban.org/bash/index.shtml#completion" target="_blank" rel="noopener">http://www.caliban.org/bash/index.shtml#completion</a><br>  <a href="https://wiki.ubuntu.com/Spec/EnhancedBash" target="_blank" rel="noopener">https://wiki.ubuntu.com/Spec/EnhancedBash</a></p>
-<p></p>
+            <p>To let wildcard expansion case insensitive, enable this in <code>bashrc</code>:</p>
+<pre><code>shopt -s nocaseglob
+</code></pre><p>To let tab-completion case insensitive, bind <code>completion-ignore-case</code> for bash:</p>
+<pre><code>bind `echo set completion-ignore-case on`
+</code></pre><p>This will be effective immediately.</p>
+<p>Or add this in <code>inputrc</code> for readline:</p>
+<pre><code>set completion-ignore-case On
+</code></pre><p>Include the system inputrc file:</p>
+<pre><code>include /etc/inputrc
+</code></pre><p>To show all binds:</p>
+<pre><code>bind -p
+</code></pre><p>To let bash recognizes spelling mistakes, add in ~/.bashrc:</p>
+<pre><code>shopt -s cdspell
+</code></pre><p>For tcsh / zsh users:</p>
+<pre><code>set complete enhance
+</code></pre><p>Reference:</p>
+<ul>
+<li><a href="http://www.caliban.org/bash/index.shtml#completion" target="_blank" rel="noopener">http://www.caliban.org/bash/index.shtml#completion</a></li>
+<li><a href="https://wiki.ubuntu.com/Spec/EnhancedBash" target="_blank" rel="noopener">https://wiki.ubuntu.com/Spec/EnhancedBash</a></li>
+</ul>
 
           
         
@@ -1708,7 +1729,7 @@
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Kategorien</span>
                   
                 </div>
@@ -1719,7 +1740,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">Tags</span>
                   
                 </div>
@@ -1768,7 +1789,11 @@
 </div>
 
 
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
+
+
+  <span class="post-meta-divider">|</span>
 
 
 
