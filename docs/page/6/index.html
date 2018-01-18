@@ -101,11 +101,11 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="All Things Bright And Beautiful">
 <meta property="og:url" content="http://ashang.org/jot/page/6/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="All Things Bright And Beautiful">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="All Things Bright And Beautiful">
 
 
 
@@ -115,7 +115,7 @@
   <link rel="canonical" href="http://ashang.org/jot/page/6/"/>
 
 
-  <title>Hexo</title>
+  <title>All Things Bright And Beautiful</title>
   
 
 
@@ -174,7 +174,7 @@
     <div class="custom-logo-site-title">
       <a href="/jot/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">All Things Bright And Beautiful</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -248,135 +248,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-15-unable-to-connect-to-upstart/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-10-15-unable-to-connect-to-upstart/" itemprop="url">Unable to Connect to Upstart</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-15T12:32:00+08:00">2010-10-15</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Upstart jobs cannot be run in a chroot">Upstart jobs cannot be run in a chroot</h2>
-<p>  <span class="anchor" id="line-206"></span><span class="anchor" id="line-207"></span>Upstart  jobs cannot be started in a chroot because upstart acts as a service  supervisor, and processes within the chroot are unable to communicate  with the upstart running outside of the chroot (<a class="interwiki" href="https://bugs.launchpad.net/bugs/430224" title="Bug" target="_blank" rel="noopener">430224</a>).   This will cause some packages that have been converted to use upstart  jobs instead of init scripts to fail to upgrade within a chroot.  Users  are advised to configure their chroots with /sbin/initctl pointing to  /bin/true</p>
-<p><a href="https://bugs.launchpad.net/ubuntu/+source/upstart/+bug/430224" target="_blank" rel="noopener">https://bugs.launchpad.net/ubuntu/+source/upstart/+bug/430224</a></p>
-<p>Replacing /sbin/initctl with a symlink to /bin/true is a fairly standard<br>  way to disable services in a chroot</p>
-<p>100 root@odysseus ~ # apt-get install procps<br>Reading package lists... Done<br>Building dependency tree       <br>Reading state information... Done<br>procps is already the newest version.<br> 0 upgraded, 0 newly installed, 0 to remove and 157 not upgraded.<br>1 not fully installed or removed.<br>After this operation, 0 B of additional disk space will be used.<br>Do you want to continue [Y/n]? <br>Setting up procps (1:3.2.8-9ubuntu3) ...<br> start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br>dpkg: error processing procps (--configure):<br> subprocess installed post-installation script returned error exit status 1<br> configured to not write apport reports<br>                                      Errors were encountered while processing:<br> procps<br>E: Sub-process /usr/bin/dpkg returned an error code (1)</p>
-<p>100 root@odysseus ~ # dpkg-divert --local --rename --add /sbin/initctl<br> Adding &#039;local diversion of /sbin/initctl to /sbin/initctl.distrib&#039;</p>
-<p>root@odysseus ~ # ln -s /bin/true /sbin/initctl</p>
-<p>root@odysseus ~ # apt-get install procps<br>Reading package lists... Done<br> Building dependency tree       <br>Reading state information... Done<br>procps is already the newest version.<br>0 upgraded, 0 newly installed, 0 to remove and 157 not upgraded.<br>1 not fully installed or removed.<br>After this operation, 0 B of additional disk space will be used.<br> Do you want to continue [Y/n]? <br>Setting up procps (1:3.2.8-9ubuntu3) ...<br>Processing triggers for menu ...<br>Processing triggers for libc-bin ...<br>ldconfig deferred processing now taking place<br>apt-get install procps  5.42s user 0.62s system 57% cpu 10.574 total</p>
-<p> 
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/4041220-7767561988834387070?l=ashang.blogspot.com" alt=""></div>
-</p>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-15-unable-to-connect-to-upstart-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -386,7 +257,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -514,7 +385,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -634,7 +505,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-11-hide-gmail-spam-counter-2/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-15-unable-to-connect-to-upstart/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -643,7 +514,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -653,7 +524,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-11-hide-gmail-spam-counter-2/" itemprop="url">Hide Gmail Spam Counter</a></h1>
+                <a class="post-title-link" href="/jot/2010-10-15-unable-to-connect-to-upstart/" itemprop="url">Unable to Connect to Upstart</a></h1>
         
 
         <div class="post-meta">
@@ -665,7 +536,7 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-11T10:15:00+08:00">2010-10-11</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-15T12:32:00+08:00">2010-10-15</time>
             
 
             
@@ -703,14 +574,16 @@
       
         
           
-            <p>Create a Filter  </p>
-<p>Has word:<br>is:spam</p>
-<p>You will get:</p>
-<p>Warning: Filter searches containing "label:",  "in:", or "is:" criteria are not recommended, as these criteria will never match incoming mail.  Do you still wish to continue to the next step? </p>
-<p>Yes</p>
-<p>Then<br>Mark as read</p>
-<p>done.<br> 
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+            <h2 id="Upstart jobs cannot be run in a chroot">Upstart jobs cannot be run in a chroot</h2>
+<p>  <span class="anchor" id="line-206"></span><span class="anchor" id="line-207"></span>Upstart  jobs cannot be started in a chroot because upstart acts as a service  supervisor, and processes within the chroot are unable to communicate  with the upstart running outside of the chroot (<a class="interwiki" href="https://bugs.launchpad.net/bugs/430224" title="Bug" target="_blank" rel="noopener">430224</a>).   This will cause some packages that have been converted to use upstart  jobs instead of init scripts to fail to upgrade within a chroot.  Users  are advised to configure their chroots with /sbin/initctl pointing to  /bin/true</p>
+<p><a href="https://bugs.launchpad.net/ubuntu/+source/upstart/+bug/430224" target="_blank" rel="noopener">https://bugs.launchpad.net/ubuntu/+source/upstart/+bug/430224</a></p>
+<p>Replacing /sbin/initctl with a symlink to /bin/true is a fairly standard<br>  way to disable services in a chroot</p>
+<p>100 root@odysseus ~ # apt-get install procps<br>Reading package lists... Done<br>Building dependency tree       <br>Reading state information... Done<br>procps is already the newest version.<br> 0 upgraded, 0 newly installed, 0 to remove and 157 not upgraded.<br>1 not fully installed or removed.<br>After this operation, 0 B of additional disk space will be used.<br>Do you want to continue [Y/n]? <br>Setting up procps (1:3.2.8-9ubuntu3) ...<br> start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br>dpkg: error processing procps (--configure):<br> subprocess installed post-installation script returned error exit status 1<br> configured to not write apport reports<br>                                      Errors were encountered while processing:<br> procps<br>E: Sub-process /usr/bin/dpkg returned an error code (1)</p>
+<p>100 root@odysseus ~ # dpkg-divert --local --rename --add /sbin/initctl<br> Adding &#039;local diversion of /sbin/initctl to /sbin/initctl.distrib&#039;</p>
+<p>root@odysseus ~ # ln -s /bin/true /sbin/initctl</p>
+<p>root@odysseus ~ # apt-get install procps<br>Reading package lists... Done<br> Building dependency tree       <br>Reading state information... Done<br>procps is already the newest version.<br>0 upgraded, 0 newly installed, 0 to remove and 157 not upgraded.<br>1 not fully installed or removed.<br>After this operation, 0 B of additional disk space will be used.<br> Do you want to continue [Y/n]? <br>Setting up procps (1:3.2.8-9ubuntu3) ...<br>Processing triggers for menu ...<br>Processing triggers for libc-bin ...<br>ldconfig deferred processing now taking place<br>apt-get install procps  5.42s user 0.62s system 57% cpu 10.574 total</p>
+<p> 
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/4041220-7767561988834387070?l=ashang.blogspot.com" alt=""></div>
 </p>
           
         
@@ -770,7 +643,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -896,7 +769,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -1014,7 +887,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-11-mkfs-on-block-0-bad-2/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-11-hide-gmail-spam-counter-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1023,7 +896,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -1033,7 +906,134 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-11-mkfs-on-block-0-bad-2/" itemprop="url">Mkfs on Block 0 Bad</a></h1>
+                <a class="post-title-link" href="/jot/2010-10-11-hide-gmail-spam-counter-2/" itemprop="url">Hide Gmail Spam Counter</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-11T10:15:00+08:00">2010-10-11</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Create a Filter  </p>
+<p>Has word:<br>is:spam</p>
+<p>You will get:</p>
+<p>Warning: Filter searches containing "label:",  "in:", or "is:" criteria are not recommended, as these criteria will never match incoming mail.  Do you still wish to continue to the next step? </p>
+<p>Yes</p>
+<p>Then<br>Mark as read</p>
+<p>done.<br> 
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+</p>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-11-mkfs-on-block-0-bad-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2010-10-11-mkfs-on-block-0-bad-4/" itemprop="url">Mkfs on Block 0 Bad</a></h1>
         
 
         <div class="post-meta">
@@ -1084,7 +1084,6 @@
         
           
             <p>...<br>done<br>Block 0 in primary superblock/group descriptor area bad.<br>Blocks 0 through 4 must be good in order to build a filesystem.<br>Aborting....</p>
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
@@ -1144,7 +1143,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -1256,7 +1255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-11-mkfs-on-block-0-bad-4/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-11-mkfs-on-block-0-bad-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1265,7 +1264,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -1275,7 +1274,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-11-mkfs-on-block-0-bad-4/" itemprop="url">Mkfs on Block 0 Bad</a></h1>
+                <a class="post-title-link" href="/jot/2010-10-11-mkfs-on-block-0-bad-2/" itemprop="url">Mkfs on Block 0 Bad</a></h1>
         
 
         <div class="post-meta">
@@ -1326,6 +1325,7 @@
         
           
             <p>...<br>done<br>Block 0 in primary superblock/group descriptor area bad.<br>Blocks 0 through 4 must be good in order to build a filesystem.<br>Aborting....</p>
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
@@ -1385,7 +1385,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
     </span>
 
     
@@ -1673,11 +1673,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
