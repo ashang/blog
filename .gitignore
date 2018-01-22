@@ -8,6 +8,8 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
+*~
+
 # Hexo
 db.json
 *.log
