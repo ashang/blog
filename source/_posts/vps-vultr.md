@@ -1,3 +1,16 @@
+categories:
+- [Sports, Baseball]
+- [MLB, American League, Boston Red Sox]
+- [MLB, American League, New York Yankees]
+- Rivalries
+
+tags:
+- Injury
+- Fight
+- Shocking
+
+---
+
 ## 目前我使用vultr的VPS
 - 访问黑洞网站服务. 目前架设Shadowsocks,能解决很多问题，如日常搜索.
 - 各种科学实验
