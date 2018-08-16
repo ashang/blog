@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,7 +18,7 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
@@ -49,19 +58,19 @@
 
 <link href="/jot/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/jot/css/main.css?v=6.0.1" rel="stylesheet" type="text/css" />
+<link href="/jot/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.0.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.0.1" color="#222">
+  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -76,7 +85,7 @@
   var CONFIG = {
     root: '/jot/',
     scheme: 'Muse',
-    version: '6.0.1',
+    version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -94,16 +103,16 @@
 </script>
 
 
-
-
   
-  <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
+
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="All Things Bright And Beautiful">
-<meta property="og:url" content="http://ashang.org/jot/page/10/index.html">
+<meta property="og:url" content="http://ashang.github.io/jot/page/10/index.html">
 <meta property="og:site_name" content="All Things Bright And Beautiful">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All Things Bright And Beautiful">
 
@@ -112,8 +121,15 @@
 
 
 
-  <link rel="canonical" href="http://ashang.org/jot/page/10/"/>
+  <link rel="canonical" href="http://ashang.github.io/jot/page/10/"/>
 
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>All Things Bright And Beautiful</title>
   
@@ -155,7 +171,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -167,24 +183,22 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/jot/"  class="brand" rel="start">
+      <a href="/jot/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">All Things Bright And Beautiful</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -192,27 +206,37 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jot/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/jot/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/jot/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/jot/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -220,7 +244,11 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
 
     
@@ -229,6 +257,7 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -248,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-28-usb-speed-1-1-vs-2-0/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/11/2008-11-12-953/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -267,144 +296,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-09-28-usb-speed-1-1-vs-2-0/" itemprop="url">Usb Speed 1.1 vs 2.0</a></h1>
+                <a class="post-title-link" href="/jot/2008/11/2008-11-12-953/" itemprop="url">
+                  Untitled
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T22:43:00+08:00">2010-09-27</time>
-            
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>$ sudo dd if=FreeBSD-8.1-RELEASE-i386-memstick.img of=/dev/sdc<br>1852040+0 records in<br>1852040+0 records out<br>948244480 bytes (948 MB) copied, 1142.68 s, 830 kB/s</p>
-<p>$ sudo dd if=FreeBSD-8.1-RELEASE-i386-memstick.img of=/dev/sde<br> 1852040+0 records in<br>1852040+0 records out<br>948244480 bytes (948 MB) copied, 410.677 s, 2.3 MB/s</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-27-radius-vs-tacacs-3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+              
                 
-                <a class="post-title-link" href="/jot/2010-09-27-radius-vs-tacacs-3/" itemprop="url">Radius vs Tacacs+</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              <time title="Created: 2008-11-12 09:33:00" itemprop="dateCreated datePublished" datetime="2008-11-12T09:33:00+08:00">2008-11-12</time>
+            
+
+            
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T08:09:00+08:00">2010-09-27</time>
-            
 
-            
+              
+                
+                <span class="post-meta-divider">|</span>
+                
 
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -439,152 +376,35 @@
         
           
             
-<p>radius is UDP, so need re-transmit attempts, time-outs to compensate for best-effort transport, </p>
-<p>tacacs+ is TCP, </p>
-<p>- ACK within network round-trip time, i.e., RTT, regardless how loaded and slow the backend auth mechanism might be<br> - immediate indication of crashed, or not running, server by a reset RST;<br>    UDP cannot tell the diff between a server that is down, slow, or non-existent <br>- TCP keepalive, server crashes can be detected out-of-band with actual requests; can maintain multiple server connections simultaneously.</p>
-<p>Pakcet encryption</p>
-<p>radius only encrypts pass in the access-request packet, from client to server, </p>
-<p>tacacs+ has header field to indicate whether the body is encrypted or not</p>
-<p>radius combines authentication and authorization, </p>
-<p>tacacs+ separates AAA. can use kerberos to do authentication, </p>
-<p>permission granted upon particular com,and</p>
-<p>TODO: diameter <br> 
+Error occurred when running VirtualBox, some box popped out.
+<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-0-707608.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-0-707608.png?w=300" border="0" alt=""></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-1-710027.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-1-710027.png?w=286" border="0" alt=""></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-2-710687.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-2-710687.png?w=300" border="0" alt=""></a>
+
+$ VirtualBox <br>WARNING: The vboxdrv kernel module is not loaded. Either there is no module<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; available for the current kernel (2.6.24-21-386) or it failed to<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; load. Please recompile the kernel module and install it by
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sudo /etc/init.d/vboxdrv setup
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You will not be able to start VMs until this problem is fixed.<br>WARNING: The compilation of the vboxdrv.ko kernel module failed during the<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; installation for some reason. Starting a VM will not be possible.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please consult the User Manual for build instructions.
+
+$ sudo /etc/init.d/vboxdrv setup<br>&nbsp;* Stopping VirtualBox kernel module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; done.<br>  &nbsp;* Recompiling VirtualBox kernel module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;* Look at /var/log/vbox-install.log to find out what went wrong
+
+$ tail /var/log/vbox-install.log <br>Makefile:142: *** Error: unable to find the sources of your current Linux kernel. Specify KERN_DIR=&lt;directory&gt; and run Make again.&nbsp; Stop.
+
+$ sudo KERN_DIR=/usr/src/linux-source-2.6.24&nbsp;&nbsp; /etc/init.d/vboxdrv setup<br>  &nbsp;* Stopping VirtualBox kernel module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; done.<br>&nbsp;* Recompiling VirtualBox kernel module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; done.<br>  &nbsp;* Starting VirtualBox kernel module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; done.
+
+OK, it works.
+
+$ dpkg -s virtualbox-2.0 | tail<br>Conflicts: virtualbox<br>Conffiles:<br>&nbsp;/etc/init.d/vboxdrv 6e3cb8dd230d768740ce0c6e0ae6a86c<br>&nbsp;/etc/init.d/vboxnet a3828b76a2fdfc0fb6908f2a76c86550<br>Description: Sun xVM VirtualBox<br> &nbsp;VirtualBox is a powerful PC virtualization solution allowing you to run a<br>&nbsp;wide range of PC operating systems on your Linux system. This includes<br>&nbsp;Windows, Linux, FreeBSD, DOS, OpenBSD and others. VirtualBox comes with a broad<br> &nbsp;feature set and excellent performance, making it the premier virtualization<br>&nbsp;software solution on the market.
 <div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 </p>
           
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-27-radius-vs-tacacs-4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-09-27-radius-vs-tacacs-4/" itemprop="url">Radius vs Tacacs+</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T08:09:00+08:00">2010-09-27</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-<p>radius is UDP, so need re-transmit attempts, time-outs to compensate for best-effort transport, </p>
-<p>tacacs+ is TCP, </p>
-<p>- ACK within network round-trip time, i.e., RTT, regardless how loaded and slow the backend auth mechanism might be<br> - immediate indication of crashed, or not running, server by a reset RST;<br>    UDP cannot tell the diff between a server that is down, slow, or non-existent <br>- TCP keepalive, server crashes can be detected out-of-band with actual requests; can maintain multiple server connections simultaneously.</p>
-<p>Pakcet encryption</p>
-<p>radius only encrypts pass in the access-request packet, from client to server, </p>
-<p>tacacs+ has header field to indicate whether the body is encrypted or not</p>
-<p>radius combines authentication and authorization, </p>
-<p>tacacs+ separates AAA. can use kerberos to do authentication, </p>
-<p>permission granted upon particular com,and</p>
-<p>TODO: diameter </p>
-
-          
-        
-      
-    </div>
     
     
     
@@ -630,7 +450,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-27-radius-vs-tacacs-2/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/11/2008-11-12-1081/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -649,23 +469,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-09-27-radius-vs-tacacs-2/" itemprop="url">Radius vs Tacacs+</a></h1>
+                <a class="post-title-link" href="/jot/2008/11/2008-11-12-1081/" itemprop="url">
+                  Untitled
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T08:09:00+08:00">2010-09-27</time>
+
+              
+                
+              
+
+              <time title="Created: 2008-11-12 09:33:00" itemprop="dateCreated datePublished" datetime="2008-11-12T09:33:00+08:00">2008-11-12</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -700,22 +549,34 @@
         
           
             
-<p>radius is UDP, so need re-transmit attempts, time-outs to compensate for best-effort transport, </p>
-<p>tacacs+ is TCP, </p>
-<p>- ACK within network round-trip time, i.e., RTT, regardless how loaded and slow the backend auth mechanism might be<br> - immediate indication of crashed, or not running, server by a reset RST;<br>    UDP cannot tell the diff between a server that is down, slow, or non-existent <br>- TCP keepalive, server crashes can be detected out-of-band with actual requests; can maintain multiple server connections simultaneously.</p>
-<p>Pakcet encryption</p>
-<p>radius only encrypts pass in the access-request packet, from client to server, </p>
-<p>tacacs+ has header field to indicate whether the body is encrypted or not</p>
-<p>radius combines authentication and authorization, </p>
-<p>tacacs+ separates AAA. can use kerberos to do authentication, </p>
-<p>permission granted upon particular com,and</p>
-<p>TODO: diameter <br> 
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+Error occurred when running VirtualBox, some box popped out.
+<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-0-7076081.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-0-7076081.png?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5267701831712861554"></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-1-7100271.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-1-7100271.png?w=286" border="0" alt="" id="BLOGGER_PHOTO_ID_5267701841530305458"></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-2-7106871.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-2-7106871.png?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5267701840967684466"></a>
+
+$ VirtualBox <br>WARNING: The vboxdrv kernel module is not loaded. Either there is no module<br>         available for the current kernel (2.6.24-21-386) or it failed to<br>           load. Please recompile the kernel module and install it by
+
+           sudo /etc/init.d/vboxdrv setup
+
+         You will not be able to start VMs until this problem is fixed.<br>WARNING: The compilation of the vboxdrv.ko kernel module failed during the<br>           installation for some reason. Starting a VM will not be possible.<br>         Please consult the User Manual for build instructions.
+
+$ sudo /etc/init.d/vboxdrv setup<br> * Stopping VirtualBox kernel module                                                                                                                                                   *  done.<br>   * Recompiling VirtualBox kernel module                                                                                                                                               <br> * Look at /var/log/vbox-install.log to find out what went wrong
+
+$ tail /var/log/vbox-install.log <br>Makefile:142: *** Error: unable to find the sources of your current Linux kernel. Specify KERN_DIR= and run Make again.  Stop.
+
+$ sudo KERN_DIR=/usr/src/linux-source-2.6.24   /etc/init.d/vboxdrv setup<br>   * Stopping VirtualBox kernel module                                                                                                                                                   *  done.<br> * Recompiling VirtualBox kernel module                                                                                                                                                *  done.<br>   * Starting VirtualBox kernel module                                                                                                                                                   *  done.
+
+OK, it works.
+
+$ dpkg -s virtualbox-2.0 | tail<br>Conflicts: virtualbox<br>Conffiles:<br> /etc/init.d/vboxdrv 6e3cb8dd230d768740ce0c6e0ae6a86c<br> /etc/init.d/vboxnet a3828b76a2fdfc0fb6908f2a76c86550<br>Description: Sun xVM VirtualBox<br>  VirtualBox is a powerful PC virtualization solution allowing you to run a<br> wide range of PC operating systems on your Linux system. This includes<br> Windows, Linux, FreeBSD, DOS, OpenBSD and others. VirtualBox comes with a broad<br>  feature set and excellent performance, making it the premier virtualization<br> software solution on the market.
 </p>
           
         
       
     </div>
+
+    
+
     
     
     
@@ -761,7 +622,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-27-life-with-hope-for-future-2/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/11/2008-11-12-vboxdrv-kernel-module-re-build/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -780,23 +641,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-09-27-life-with-hope-for-future-2/" itemprop="url">Life With Hope for Future</a></h1>
+                <a class="post-title-link" href="/jot/2008/11/2008-11-12-vboxdrv-kernel-module-re-build/" itemprop="url">
+                  Vboxdrv Kernel Module Re-Build
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T06:06:00+08:00">2010-09-27</time>
+
+              
+                
+              
+
+              <time title="Created: 2008-11-12 01:33:00" itemprop="dateCreated datePublished" datetime="2008-11-12T01:33:00+08:00">2008-11-12</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -830,137 +720,58 @@
       
         
           
-            <p><font size="2">系列</font>纪录片《同饮一江水 <font size="2">澜沧江-湄公河</font>》记录了大湄公河次区域人民的生活的各个方面。</p>
-<p>其中提到，生活在继续，一切将更美好，人民对国家的未来充满希望。</p>
-<p>这些语句，印象中在记录50年代初和80年代初的中国人民生活的地方见到过熟悉的描述。</p>
+            
+Error occurred when running VirtualBox, some box popped out.
+<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-0-707608.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-0-707608.png?w=300" alt="" border="0"></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-1-710027.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-1-710027.png?w=286" alt="" border="0"></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2008/11/virtualbox-wrong-2-710687.png" target="_blank" rel="noopener"><img src="/assets/virtualbox-wrong-2-710687.png?w=300" alt="" border="0"></a>
 
+$ VirtualBox<br>
+WARNING: The vboxdrv kernel module is not loaded. Either there is no module<br>
+available for the current kernel (2.6.24-21-386) or it failed to<br>
+load. Please recompile the kernel module and install it by
+
+sudo /etc/init.d/vboxdrv setup
+
+You will not be able to start VMs until this problem is fixed.<br>
+WARNING: The compilation of the vboxdrv.ko kernel module failed during the<br>
+installation for some reason. Starting a VM will not be possible.<br>
+Please consult the User Manual for build instructions.
+
+$ sudo /etc/init.d/vboxdrv setup<br>
+* Stopping VirtualBox kernel module                                                                                                                                                   *  done.<br>
+* Recompiling VirtualBox kernel module<br>
+* Look at /var/log/vbox-install.log to find out what went wrong
+
+$ tail /var/log/vbox-install.log<br>
+Makefile:142: *** Error: unable to find the sources of your current Linux kernel. Specify KERN_DIR= and run Make again.  Stop.
+
+$ sudo KERN_DIR=/usr/src/linux-source-2.6.24   /etc/init.d/vboxdrv setup<br>
+* Stopping VirtualBox kernel module                                                                                                                                                   *  done.<br>
+* Recompiling VirtualBox kernel module                                                                                                                                                *  done.<br>
+* Starting VirtualBox kernel module                                                                                                                                                   *  done.
+
+OK, it works.
+
+$ dpkg -s virtualbox-2.0 | tail<br>
+Conflicts: virtualbox<br>
+Conffiles:<br>
+/etc/init.d/vboxdrv 6e3cb8dd230d768740ce0c6e0ae6a86c<br>
+/etc/init.d/vboxnet a3828b76a2fdfc0fb6908f2a76c86550<br>
+Description: Sun xVM VirtualBox<br>
+VirtualBox is a powerful PC virtualization solution allowing you to run a<br>
+wide range of PC operating systems on your Linux system. This includes<br>
+Windows, Linux, FreeBSD, DOS, OpenBSD and others. VirtualBox comes with a broad<br>
+feature set and excellent performance, making it the premier virtualization<br>
+software solution on the market.
+</p>
           
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-27-life-with-hope-for-future/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-09-27-life-with-hope-for-future/" itemprop="url">Life With Hope for Future</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T06:06:00+08:00">2010-09-27</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><font size="2">系列</font>纪录片《同饮一江水 <font size="2">澜沧江-湄公河</font>》记录了大湄公河次区域人民的生活的各个方面。</p>
-<p>其中提到，生活在继续，一切将更美好，人民对国家的未来充满希望。</p>
-<p>这些语句，印象中在记录50年代初和80年代初的中国人民生活的地方见到过熟悉的描述。</p>
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
-
-          
-        
-      
-    </div>
     
     
     
@@ -1006,7 +817,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-27-radius-vs-tacacs/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/11/2008-11-06-xfp-vs-sfp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1025,23 +836,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-09-27-radius-vs-tacacs/" itemprop="url">Radius vs Tacacs+</a></h1>
+                <a class="post-title-link" href="/jot/2008/11/2008-11-06-xfp-vs-sfp/" itemprop="url">
+                  XFP vs SFP+
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-27T00:09:00+08:00">2010-09-27</time>
+
+              
+                
+              
+
+              <time title="Created: 2008-11-06 10:54:00" itemprop="dateCreated datePublished" datetime="2008-11-06T10:54:00+08:00">2008-11-06</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1075,363 +915,122 @@
       
         
           
-            
-<p>radius is UDP, so need re-transmit attempts, time-outs to compensate for best-effort transport, </p>
-<p>tacacs+ is TCP, </p>
-<p>- ACK within network round-trip time, i.e., RTT, regardless how loaded and slow the backend auth mechanism might be<br> - immediate indication of crashed, or not running, server by a reset RST;<br>    UDP cannot tell the diff between a server that is down, slow, or non-existent <br>- TCP keepalive, server crashes can be detected out-of-band with actual requests; can maintain multiple server connections simultaneously.</p>
-<p>Pakcet encryption</p>
-<p>radius only encrypts pass in the access-request packet, from client to server, </p>
-<p>tacacs+ has header field to indicate whether the body is encrypted or not</p>
-<p>radius combines authentication and authorization, </p>
-<p>tacacs+ separates AAA. can use kerberos to do authentication, </p>
-<p>permission granted upon particular com,and</p>
-<p>TODO: diameter </p>
+            <div style="text-align:center;">
+<div style="text-align:left;"><font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;">XFP vs SFP+</span></font></font></font><br><font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;"></span></font></font></font><br>  <font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;"></span></font></font></font><font face="Verdana">SFP+得名于采用与SFP（Small-Form Pluggable，小封装可插拔）模块同样的物理尺寸.
 
-          
-        
-      
-    </div>
-    
-    
-    
+</font><font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;">SDP+</span></font></font></font><font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;">模块</span></font></font></font><font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;">(驱动程序一般命名为sfpp, last p for plus)的设计目的是通过更小的体积和更低的成本，提供更高的接入密度，最终提高用户接入容量。</span></font></font></font><font face="Verdana">
 
-    
+SFP+用于8Gb/s Fibre Channel（8GFC）和10Gb/s以太网（10GbE），目标是代替XFP模块。</font><br><font><font face="宋体, MS Song"><font size="2"><span style="color:windowtext;"></span></font></font></font><br>SFP+有潜力成就一个极大的市场，因为这种封装很小，却可以实现很高的端口密度，T11标准工作组也在积极推动SFP+。
 
-    
+<font face="Verdana">SFP+模块比XFP更小，它把用于时钟和数据恢复的电路从芯片中转移到线卡（linecard）上。这让其模块减小到用于2.5Gb/s端口的SFP（small-form pluggable，SFP）的尺寸.
 
-    
+</font><font face="Verdana">SFP+也带来了一个问题，因为现在线卡已经承载了一个以上的芯片，除以太网物理层芯片之外，还有MAC和其他的。</font>
 
-    <footer class="post-footer">
-      
+<font face="Verdana">SFP+较小的尺寸也把线卡的密度从XFP的每块卡16个提高到至少24个。同时，把电路放在模块之外也使得每个模块服务于多条线路，类似千兆以太网的做法。</font>
 
-      
+--
 
-      
+<font face="Verdana">加入SFP+被用于10Gb/s以太网，它将成为一连串的模块瘦身的最新成员。这个工业开始于300针MSA（multisource agreement，多源协议），然后被较小的Xenpak和X2模块类型取代，接着又被更小的XFP取代。</font>
 
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
+<font face="Verdana">如果SFP+真是这么好，为什么以前没有出现？问题是10Gb/s信号在通过一个普通的线卡时会被扭 曲。Xenpak、X2和300针MSA通过把分设信号到多个并行线路来修正，XFP保留了串行10Gb/s流但通常接着就用线卡上的 SerDes（serializer/deserializer，串行器/串行分离器）来分割成并行流。</font>
 
+ <font face="Verdana">在过去的几年里，Broadcom、Marvell技术集团公司和Rambus公司等厂商的信号处理技术克服了上述问题.</font><br>--<br>现在的问题不是端口的最终成本，而是10Gb以太网芯片以及光学器件的成本。增加10Gb连接是一个网络增值的好办法，而SFP+则为提高整个系统的价值提供了途径。
+<div style="text-align:left;"></div>
 
-    
-      
+XFP模块曾被认为是理想的10Gb光纤收发模块. 思科放弃XFP，因Catalyst企业交换机部门确定该模块无法满足其要求，尤其是在多模情况下获得300米传输距离方面。
 
-  
+Xenpak有4条速率为3Gbps的信道, 采用LX-4标准
 
-  
-  
-  
+LRM（长距离多模）采用4激光器和粗波分复用(CWDM)实现10Gb连接，它需要像Xenpak这样较大的模块，而单激光器LRM则可采用类似XFP这样较小一点的模块。尽管LRM本身的每端口成本比LX-4低，但LRM必须采用高性能的激光器和专用的电色散补偿芯片
 
-  
+10GBase-T的适用范围还相当有限，因为DSP解决方案的成本过高、功耗过大，而且需要新的连线类型(例如6a类线缆)才能在铜缆上实现10Gb。
 
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-02-05-nil/">
+更好的方法是结合多模和单模光纤
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
+单模光纤的带宽几乎没有限制，并且可以使用多个波长。而在多模光纤下，可用波长数目有限，传输速度也有明确限制
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
+--<br>backgrounds
 
-    
-      <header class="post-header">
+光纤采用串行还是并行接口？<br>最早定义的是Xaui(X-Gb附加单元接口），这是一种连接到主系统的4位接口。该接口定义之后，将所有IC放置到一个并未全集成的封装中去，Xenpak是那时人们能想到的最好办法。
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-02-05-nil/" itemprop="url">Nil</a></h1>
-        
+随着芯片集成度日益增高，封装尺寸日益减小，电路日益复杂化，这使得模块外形可以向更小的方向发展。
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-02-04T17:07:40+08:00">2010-02-04</time>
-            
+XFP一直都是4位并行接口的替代选择。理论上，它成本更低且更容易实现。但XFP的缺点是在多模光纤上传输距离无法达到300M
 
-            
+FDDI技术<br>Fiber Distributed Data Interface，
 
-            
-          </span>
+FDDI是光纤数据在200公里内局域网内传输的标准。FDDI协议基于令牌环协议。它不但可以支持长距离传输，而且还支持多用户。FDDI用于环型网，以光缆作为传输介质，数据传输速率可达到100Mbit/s。FDDI的技术规格有FDDI-I和FDDI-II。通常FDDI指的就是前者。采用五类双绞线作为传输介质的FDDI，称为CDDI。FDDI使用双环令牌传递网络拓扑结构，兩環方向相反（正常情況下僅用主環，某一節點故障時則兩環連接形成迴路，如此才能達到每一節點。），可以在100公里以上的距离支持500台计算机。FDDI通常用作骨干网，用得最多的是用作<br>   LAN<br>或校园环境大樓之間的主干网（連接橋接器）。这种环境的特点是站点分布在多个建筑物中。连接具有许多局域网段和大图形传输、语音和视频会议以及其他带宽要求大的应用产生的繁重流量的大型网络。
 
-          
+技术优点
 
-          
-            
-          
+1. 较长的传输距离，相邻站间的最大站间距离为200公里。<br>2. 具有较大的带宽，FDDI的设计带宽为100Mbit/s。<br>3. 具有对电磁和射频干扰抑制能力，在传输过程中不受电磁和射频噪声的影响，也不影响其设备。<br>   4. 光纤可防止传输过程中被分接偷听，也杜绝了辐射波的窃听，因而是最安全的传输媒体。
 
-          
-          
+技术缺点
 
-          
+硬件价格昂贵，联网费用大。
 
-          
+目前多采用千兆快速以太网技术实现高速网络互连，成本与实际应用都较FDDI更加成熟和具有优势。
 
-          
+--<br>10G以太网(IEEE 802.3ae) 在2002年完成了标准化的初始阶段。10G以太网标准化第一阶段规定了10GBASE-LR/ER/SR和LX4光学端口，当初要求采用这些端口以满足 10G以太网早期市场采用者的需求。但是，为面向更广阔的市场，10G以太网开始了标准化的第二阶段和第三阶段。第二阶段面向的是基于铜缆的低成本10G 以太网。这一阶段始于2002年，开发10GBASE-CX4(针对机房中的设备间互连)和10GBASE-T(交换机到桌面互连)标准。现在 10GBASE-CX4已经完成，预计10GBASE-T将在2006年完成。第三阶段需要开发新型的低成本(大批量)、低功率、小型化、通用的多模光纤端口类型，称为10GBASE-LRM。10GBASE-LRM支持传统类型和新型多模光纤。
 
-        </div>
-      </header>
-    
+已有两种10GE端口支持多模光纤，即10GBASE-SR和10GBASE-LX4。为什么IEEE 802.3创建另一种多模光纤端口类型10GBASE-LRM？
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+1. 只有安装新型高带宽OM3(50um纤芯)多模光纤，10GBASE-SR才能支持300米的距离。在通常安装的带宽较低的多模光纤OM1(62μm纤芯)和OM2(50μm纤芯)上，10GBASE-SR只能用于机房中的设备间互连。
 
-      
-      
+2. 10GBASE-LX4是一种昂贵的波分复用解决方案。对于早期市场，它是一种具有鲁棒性的解决方案。但是，从根本上讲，它不能满足成熟市场的要求，即低成本、大批量、低功率和小型化。
 
-      
-        
-          
-            <div id="msgcns!57E18F13AA36F356!136" class="bvMsg">
-<p>null</p>
+3. OM1和OM2光纤的安装数量庞大，而且正在不断增长，其要求真正经济的10G以太网解决方案
+
+802.3授权开发了10GBASE-LRM，此单波长的串行传输规范兼容低成本、低功率和小型化光端口，支持超过220米链路长度的已安装多模光纤。
+
+10GBASE-LRM委员会的目标如下：
+
+1. 利用现有的10G以太网串行LAN PHY编码子层；
+
+2. 支持好于或等于10-12的误码率；
+
+3. 支持62.5μm纤芯的多模光纤：160/500MHz-km和200/500MHz-km(OM1)；
+
+4. 支持50μm纤芯的多模光纤：400/400MHz-km, 500/500MHz-km(OM2)和1,500/500MHz-km(OM3)。
+
+5. 提供一个物理层规范，支持下述链路长度：在已安装的500MHz.km多模光纤上最低支持220米的链路，在选定的多模光纤上最低支持300米的链路。
+
+10GBASE-LRM委员会预计将在已安装的OM1和OM2多模光纤上实现300米的链路距离。
+
+在已有的低带宽光纤上实现10GBASE-LRM的挑战
+
+在已安装的多模光纤上，实现10GBASE-LRM，必须克服某些特定的技术挑战。这些挑战包括：
+
+1.非常低的光纤带宽规范 - 在此规范极限上，没有为10Gbps串行NRZ传输提供足够的带宽；
+
+2.带宽和脉冲响应的光纤到光纤统计分布是非常宽的对数正态分布：低带宽的光纤占了很大比重，但同时高带宽的光纤也占了很大比重；
+
+3.对特定光纤链路，静态脉冲响应与激光的发射、连接器以及链路长度相关；
+
+4.对特定光纤链路，脉冲响应随着光纤的机械扰动而变化；
+
+5.常见的噪声可能引起传输问题；
+
+10GBASE-LRM委员会中，许多光纤领域、电均衡领域和光收发一体模块设计领域的专家研究了这些问题。委员会现在已经从实践和理论上全面了解这些问题，并开发出解决这些问题的模型或工程设计规则。下面是部分研究结果：
+
+1. 委员会已经为多模光纤开发了两种统计模型：由5000个用例组成的Monte-Carlo集合及108光纤集合，其中后者把重点放在大约最坏的5%范围内的光纤上。这些模型扩展了千兆位以太网和OM3光纤规范制订过程中开发的模型。
+
+2. 所有非均衡的IEEE 802和光纤通道激光器标准一直采用模式噪声模型，这一模型已经被更新，使其更加准确，并包括了均衡效应。
+
+3. 委员会已经掌握了光纤由机械扰动而导致的脉冲响应变化，并制订了简单的设计程序，以实现规范开发。
+
+为实现功率预算规范，已经协商确定了理想均衡器使用的一个品质因子，称为PIE_D3。PIE_D是为了保证均衡器正常的性能而必须分配的最小光功率。</div>
+<pre><br>  </pre>
 </div>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2009-10-09-lola-rennt-movie/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2009-10-09-lola-rennt-movie/" itemprop="url">Lola Rennt Movie</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2009-10-09T07:48:00+08:00">2009-10-09</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-003-7613621.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-003-7613621.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-005-7632081.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-005-7632081.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-009-7647101.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-009-7647101.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-012-7663861.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-012-7663861.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-013-7678231.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-013-7678231.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-014-7692601.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-014-7692601.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-017-7712151.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-017-7712151.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-018-7726101.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-018-7726101.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-020-7743781.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-020-7743781.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-021-7756711.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-021-7756711.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-026-7772841.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-026-7772841.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-027-7786681.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-027-7786681.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-030-7800721.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-030-7800721.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-037-7814471.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-037-7814471.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-039-7832941.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-039-7832941.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-040-7849571.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-040-7849571.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-043-7868291.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-043-7868291.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-047-7885161.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-047-7885161.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-051-7899591.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-051-7899591.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-052-7911731.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-052-7911731.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-053-7930751.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-053-7930751.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-068-7949281.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-068-7949281.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-075-7963431.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-075-7963431.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-121-7984801.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-121-7984801.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-122-7998761.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-122-7998761.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-126-7013441.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-126-7013441.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-129-7028631.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-129-7028631.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-130-7047151.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-130-7047151.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-147-7064321.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-147-7064321.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-148-7081601.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-148-7081601.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-153-7096251.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-153-7096251.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-155-7120841.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-155-7120841.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-156-7148601.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-156-7148601.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-159-7162321.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-159-7162321.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-160-7175621.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-160-7175621.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-164-7192171.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-164-7192171.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-166-7204681.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-166-7204681.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-170-7220661.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-170-7220661.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-172-7253081.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-172-7253081.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-174-7271961.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-174-7271961.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-175-7289341.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-175-7289341.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-176-7310241.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-176-7310241.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-179-7328031.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-179-7328031.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-180-7340641.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-180-7340641.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-182-7359721.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-182-7359721.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-185-7380271.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-185-7380271.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-187-7397471.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-187-7397471.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-189-7417641.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-189-7417641.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-193-7438791.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-193-7438791.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-195-7452471.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-195-7452471.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-196-7472181.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-196-7472181.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-198-7486171.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-198-7486171.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-202-7500511.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-202-7500511.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-210-7515291.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-210-7515291.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-212-7531741.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-212-7531741.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-215-7564061.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-215-7564061.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-217-7580651.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-217-7580651.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-218-7593811.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-218-7593811.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-219-7610531.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-219-7610531.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-221-7630121.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-221-7630121.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-223-7644351.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-223-7644351.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-224-7658961.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-224-7658961.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-226-7677081.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-226-7677081.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-228-7695461.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-228-7695461.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-230-7715481.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-230-7715481.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-231-7734011.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-231-7734011.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-234-7754281.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-234-7754281.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-235-7768421.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-235-7768421.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-236-7786501.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-236-7786501.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-239-7799331.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-239-7799331.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-240-7812791.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-240-7812791.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-241-7829541.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-241-7829541.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-242-7844241.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-242-7844241.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-243-7860051.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-243-7860051.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-244-7873701.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-244-7873701.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-245-7887671.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-245-7887671.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-246-7904061.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-246-7904061.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-247-7919711.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-247-7919711.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-248-7933701.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-248-7933701.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-250-7951011.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-250-7951011.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-252-7968531.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-252-7968531.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-253-7981571.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-253-7981571.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-256-7994431.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-256-7994431.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-257-7010431.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-257-7010431.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-259-7026831.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-259-7026831.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-263-7041741.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-263-7041741.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-265-7055061.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-265-7055061.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-270-7068351.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-270-7068351.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-272-7082681.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-272-7082681.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-273-7097491.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-273-7097491.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-275-7114021.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-275-7114021.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-277-7127111.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-277-7127111.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-278-7140801.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-278-7140801.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-279-7154521.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-279-7154521.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-281-7168771.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-281-7168771.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-283-7183371.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-283-7183371.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-284-7199801.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-284-7199801.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-285-7216121.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-285-7216121.jpg?w=300" border="0" alt=""></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-286-7240471.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-286-7240471.jpg?w=300" border="0" alt=""></a></p>
 <div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -1477,7 +1076,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2009-10-09-lola-rennt-movie-2/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/10/2008-10-29-time-on-unix-system/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1496,23 +1095,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2009-10-09-lola-rennt-movie-2/" itemprop="url">Lola Rennt Movie</a></h1>
+                <a class="post-title-link" href="/jot/2008/10/2008-10-29-time-on-unix-system/" itemprop="url">
+                  Time on UNIX System
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2009-10-09T07:48:00+08:00">2009-10-09</time>
+
+              
+                
+              
+
+              <time title="Created: 2008-10-29 01:43:00" itemprop="dateCreated datePublished" datetime="2008-10-29T01:43:00+08:00">2008-10-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1546,110 +1174,843 @@
       
         
           
-            <p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-003-7613622.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-003-7613622.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504624335182066"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-005-7632082.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-005-7632082.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504634939875826"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-009-7647102.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-009-7647102.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504637654437122"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-012-7663862.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-012-7663862.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504646656089138"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-013-7678232.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-013-7678232.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504657066957746"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-014-7692602.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-014-7692602.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504659914474226"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-017-7712152.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-017-7712152.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504668908998866"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-018-7726102.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-018-7726102.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504674430842994"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-020-7743782.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-020-7743782.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504678910319586"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-021-7756712.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-021-7756712.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504683926273794"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-026-7772842.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-026-7772842.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504694149977314"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-027-7786682.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-027-7786682.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504698011152578"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-030-7800722.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-030-7800722.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504708165081778"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-037-7814472.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-037-7814472.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504709727834178"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-039-7832942.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-039-7832942.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504719214911122"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-040-7849572.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-040-7849572.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504728696369122"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-043-7868292.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-043-7868292.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504732682667442"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-047-7885162.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-047-7885162.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504743236913330"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-051-7899592.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-051-7899592.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504747435519506"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-052-7911732.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-052-7911732.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504755610247058"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-053-7930752.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-053-7930752.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504761927084738"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-068-7949282.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-068-7949282.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504765666870434"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-075-7963432.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-075-7963432.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504776363791666"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-121-7984802.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-121-7984802.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504786117626418"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-122-7998762.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-122-7998762.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504791978967346"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-126-7013442.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-126-7013442.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504796887543122"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-129-7028632.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-129-7028632.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504807477566354"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-130-7047152.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-130-7047152.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504808964169778"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-147-7064322.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-147-7064322.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504817435735746"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-148-7081602.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-148-7081602.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504825296491858"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-153-7096252.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-153-7096252.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504831675084002"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-155-7120842.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-155-7120842.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504845688244930"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-156-7148602.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-156-7148602.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504852891650786"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-159-7162322.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-159-7162322.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504861253513602"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-160-7175622.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-160-7175622.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504864247595906"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-164-7192172.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-164-7192172.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504876108457826"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-166-7204682.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-166-7204682.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504880321226818"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-170-7220662.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-170-7220662.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504888387356402"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-172-7253082.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-172-7253082.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504901800290418"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-174-7271962.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-174-7271962.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504908619654066"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-175-7289342.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-175-7289342.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504913652040402"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-176-7310242.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-176-7310242.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504927102845058"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-179-7328032.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-179-7328032.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504931558151234"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-180-7340642.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-180-7340642.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504939926541394"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-182-7359722.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-182-7359722.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504949336990274"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-185-7380272.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-185-7380272.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504956101777138"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-187-7397472.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-187-7397472.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504960991160914"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-189-7417642.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-189-7417642.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504968514415938"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-193-7438792.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-193-7438792.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504983467116114"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-195-7452472.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-195-7452472.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504987007437010"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-196-7472182.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-196-7472182.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504994531592914"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-198-7486172.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-198-7486172.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390504998390893666"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-202-7500512.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-202-7500512.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505005676393730"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-210-7515292.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-210-7515292.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505012038014530"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-212-7531742.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-212-7531742.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505020324339890"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-215-7564062.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-215-7564062.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505034786653266"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-217-7580652.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-217-7580652.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505042845852722"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-218-7593812.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-218-7593812.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505044696853058"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-219-7610532.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-219-7610532.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505053834135922"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-221-7630122.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-221-7630122.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505062344712306"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-223-7644352.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-223-7644352.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505065946253186"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-224-7658962.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-224-7658962.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505073803761794"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-226-7677082.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-226-7677082.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505080229685554"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-228-7695462.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-228-7695462.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505090984256738"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-230-7715482.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-230-7715482.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505096170914770"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-231-7734012.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-231-7734012.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505105772516306"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-234-7754282.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-234-7754282.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505116914045426"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-235-7768422.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-235-7768422.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505120176596978"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-236-7786502.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-236-7786502.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505128934433938"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-239-7799332.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-239-7799332.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505133437785954"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-240-7812792.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-240-7812792.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505139522819922"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-241-7829542.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-241-7829542.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505146198446434"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-242-7844242.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-242-7844242.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505154153236994"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-243-7860052.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-243-7860052.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505160297720418"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-244-7873702.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-244-7873702.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505167507260482"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-245-7887672.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-245-7887672.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505168534799010"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-246-7904062.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-246-7904062.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505179894457634"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-247-7919712.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-247-7919712.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505189562388050"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-248-7933702.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-248-7933702.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505192842652770"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-250-7951012.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-250-7951012.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505200543243362"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-252-7968532.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-252-7968532.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505207037241874"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-253-7981572.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-253-7981572.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505211962832226"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-256-7994432.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-256-7994432.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505218148136834"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-257-7010432.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-257-7010432.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505228166059810"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-259-7026832.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-259-7026832.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505232182658642"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-263-7041742.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-263-7041742.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505237276601426"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-265-7055062.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-265-7055062.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505243696954738"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-270-7068352.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-270-7068352.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505248868469106"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-272-7082682.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-272-7082682.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505258140629490"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-273-7097492.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-273-7097492.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505260889980178"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-275-7114022.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-275-7114022.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505269733760690"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-277-7127112.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-277-7127112.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505274008650658"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-278-7140802.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-278-7140802.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505280786929506"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-279-7154522.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-279-7154522.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505287546397042"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-281-7168772.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-281-7168772.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505291019304114"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-283-7183372.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-283-7183372.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505300513242050"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-284-7199802.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-284-7199802.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505310168187938"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-285-7216122.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-285-7216122.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505312094704082"></a></p>
-<p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/10/lola-rennt-1998-286-7240472.jpg" target="_blank" rel="noopener"><img src="/assets/lola-rennt-1998-286-7240472.jpg?w=300" border="0" alt="" id="BLOGGER_PHOTO_ID_5390505326967443282"></a></p>
+            
+Draft
+
+   Internally, computer times are represented as a count of seconds<br>since an epoch--a well-defined point of time.  On GNU and POSIX<br>systems, the epoch is 1970-01-01 00:00:00 UTC, so `@0&#039; represents this<br>time, `@1&#039; represents 1970-01-01 00:00:01 UTC, and so forth.  GNU and<br>most other POSIX-compliant systems support such times as an extension<br>to POSIX, using negative counts, so that `@-1&#039; represents 1969-12-31<br>23:59:59 UTC.
+
+   Traditional Unix systems count seconds with 32-bit two&#039;s-complement<br>integers and can represent times from 1901-12-13 20:45:52 through<br>2038-01-19 03:14:07 UTC.  More modern systems use 64-bit counts of<br>seconds with nanosecond subcounts, and can represent all the times in<br>the known lifetime of the universe to a resolution of 1 nanosecond.
+
+1972-09-24     # ISO 8601.
+
+       -R, --rfc-2822<br>              output date and time in RFC 2822 format.  Example: Mon,<br>07 Aug 2006 12:34:56 -0600
+
+       -u, --utc, --universal<br>              print or set Coordinated Universal Time
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
       
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/10/2008-10-28-an-online-chat-experience-about-dell-products/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2008/10/2008-10-28-an-online-chat-experience-about-dell-products/" itemprop="url">
+                  An Online Chat Experience About Dell Products
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2008-10-27 18:13:00" itemprop="dateCreated datePublished" datetime="2008-10-27T18:13:00+08:00">2008-10-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+an online chat experience about dell products
+
+experience to inquire the RTC chip info about the mainboard.
+
+Dell Chat<br>Thank you for choosing Dell Chat!
+
+A representative will be with you shortly. Wait times can vary so stay tuned.....<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>Offers subject to change, not combinable with all other offers. Taxes, shipping, handling and other fees apply. U.S. Dell Small Business new purchases only. LIMIT 5 SYSTEMS ON DISCOUNTED OR PROMOTIONAL ITEMS PER CUSTOMER. Dell reserves right to cancel orders arising from pricing or other errors.
+
+08:04:23 PM Customer<br>Initial Question/Comment: Can I know the RTC chip info for this PC?<br>08:04:28 PM System System<br>You are now being connected to an agent. Thank you for using Dell Chat<br>08:04:28 PM System System<br> Connected with SMB_AXXXXX_CXXXXX<br>08:04:43 PM Agent SMB_AXXXXX_CXXXXX<br>Hello my name is Axxxxx and I&#039;ll be your personal sales consultant. If<br>you have any additional questions and/or would like assistance with<br> placing an order outside of the chat session, you can contact me by<br>email at <a href="mailto:Axxxxx_Cxxxxx@dell.com" target="_blank" rel="noopener">Axxxxx_Cxxxxx@dell.com</a> or by phone at 1-800-695-8133 ext. xxxxxxx.<br>08:04:49 PM Agent SMB_AXXXXX_CXXXXX<br> What system are you inquiring about today?<br>08:05:05 PM Customer<br>i want to know detail info of the RTC chip on board<br>08:05:41 PM Agent SMB_AXXXXX_CXXXXX<br>For what system?<br>08:06:05 PM Customer<br>i am a software engineer, and i want to read rtc time in boot time for<br> a self tuned boot loader, a small piece of code<br>so i want to know the rtc chip model<br>could you please help me to check that<br>if you have some data sheet , or something else like this,<br>08:06:46 PM Agent SMB_AXXXXX_CXXXXX<br> Wonderful. However in order to address your ssystem I have know what<br>system or processor you are looking at.<br>Are you referring to a system that you already have in house?<br>08:07:33 PM Customer<br>yes, just this PC! on my desk with the cover open :)<br> 08:07:52 PM Agent SMB_AXXXXX_CXXXXX<br>What is the service tag from the unit?<br>08:08:00 PM Customer<br>let me see<br>08:08:07 PM Agent SMB_AXXXXX_CXXXXX<br>It should be on a white tag on the bottom of the unit.<br>08:08:20 PM Customer<br> is that one below the back power fan?<br>CRJ8F2X<br>is this?<br>08:08:52 PM Agent SMB_AXXXXX_CXXXXX<br>Yes sir. Thank you.<br>08:09:38 PM Agent SMB_AXXXXX_CXXXXX<br>Was the system purchased in the US?<br>08:10:22 PM Customer<br> in China<br>08:10:53 PM Agent SMB_AXXXXX_CXXXXX<br>Since this is a US sales queue we can only access information on US systems.<br>08:10:59 PM Customer<br>oh, i see<br>08:11:02 PM Agent SMB_AXXXXX_CXXXXX<br>That is items purchases in the US.<br> 08:11:14 PM Customer<br>can you transfer this session to some body who can help?<br>say, support for those products, or some body who can have the data sheet?<br>08:12:52 PM Agent SMB_AXXXXX_CXXXXX<br>You will need to contact a representative in your region which you may<br> do so by using the page above.<br>08:13:02 PM Agent SMB_AXXXXX_CXXXXX<br>SMB_AXXXXX_CXXXXX pushes page,<br><a href="http://www1.ap.dell.com/content/default.aspx?c=cn&amp;l=zh&amp;s=gen&amp;~ck=cr" target="_blank" rel="noopener">http://www1.ap.dell.com/content/default.aspx?c=cn&amp;l=zh&amp;s=gen&amp;~ck=cr</a><br> 08:14:44 PM Customer<br>i am on that page now, and exploring ...<br>08:15:24 PM Agent SMB_AXXXXX_CXXXXX<br>The phone number on is on the top far right side of the page.<br>08:16:46 PM Agent SMB_AXXXXX_CXXXXX<br>800-858-0888 is the number.<br> 08:16:59 PM Customer<br>ok, i see,<br>08:17:08 PM Customer<br>thank you a lot, anyway<br>08:17:25 PM Agent SMB_AXXXXX_CXXXXX<br>You&#039;re welcome. Have a good afternoon!<br>08:17:25 PM System System<br>SMB_AXXXXX_CXXXXX has left this session!<br> 08:17:26 PM System System<br>Thank you. Your Dell Chat session has ended.
+
+--
+
+08:45:10 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>Initial Question/Comment: Please help to check the RTC chip model on 330 mainboard?<br>08:45:16 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br> You are now being connected to an agent. Thank you for using Dell Chat<br>08:45:16 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br>Connected with SMB_XXXXXXX_XXXXXX<br>08:45:21 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>Welcome to Dell USA Small Business Sales Chat!<br> 08:45:21 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>My name is Bobbie and I'll be your personal point of contact.<br>08:45:25 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>If we get disconnected, you can reach me at <a href="mailto:roberta_xxxxxx@dell.com" target="_blank" rel="noopener">roberta_xxxxxx@dell.com</a> or 512.946.xxxx.<br> 08:45:25 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>May I please have your e-mail &amp; phone number?<br>08:45:37 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>ok<br>08:45:46 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>xxxxxx@Gmail.com<br>08:46:00 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br> Are you looking for technical advise, or sales advise?<br>08:46:07 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>technical<br>08:46:22 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>because i wanna programming that chip<br>08:46:27 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br> This is sales, would you please allow me to connect you to technical support?<br>08:46:36 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>yes<br>08:46:46 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>thank you for that connect!<br>08:46:47 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br> You are being transferred to another queue. Please stand by...<br>08:46:47 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br>SMB_XXXXXXX_XXXXXX has left this session!
+
+--<br>08:54:35 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>Initial Question/Comment: Can you help to check the RTC chip model on 330 mainboard?<br> 08:54:50 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br>You are now being connected to an agent. Thank you for using Dell Chat<br>08:54:50 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br>Connected with SMB_XXXXXX_XXXXXX<br>08:55:15 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br> Welcome to Dell's Small Business Sales Chat! My name is XXXXXX and I'll be your personal point of contact. If we do get disconnected, please do not log back into chat, I can be reached at <a href="mailto:XXXXXX_XXXXXX@dell.com" target="_blank" rel="noopener">XXXXXX_XXXXXX@dell.com</a> or you could call me at 1 800 901 xxxx ext xxxxxxx Is this for business or personal use within the United States?<br> 08:55:38 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>business use<br>08:56:29 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>one moment<br>08:56:40 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>ok<br>09:03:54 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>i cannot find the information that you are wanting<br> 09:04:04 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>oh, i see<br>09:04:24 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>is the RTC read through PCI bus?<br>09:07:35 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>After reviewing chats that you have had this morning i see that you are in China you need to call them<br> 09:08:02 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>i know<br>09:08:15 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>just now another agent told me to call<br>09:08:24 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>but that number doesn&#039;t work now<br>09:08:30 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> because it is night here<br>09:08:38 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>so you will need to call them or use the website<br>09:08:52 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>there are no online support, seems so<br>09:09:01 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> and i think you can search the data sheet<br>09:11:15 PM&nbsp;&nbsp;&nbsp;&nbsp; Agent&nbsp;&nbsp; SMB_XXXXXX_XXXXXX&nbsp;&nbsp;&nbsp; &nbsp;<br>No i cannot help you, this is a US based Chat i do not have a &quot;data sheet&quot; that tells me the information you want, you can try calling tech support please do not log into the chat again thank you for choosing dell and have a great morning<br> 09:11:31 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>the other agent transfer me to another tech queue, but seems the queue is had been hanged :)<br>09:11:42 PM&nbsp;&nbsp;&nbsp;&nbsp; Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>ok, thank you anyway<br>09:11:50 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br> SMB_XXXXXX_XXXXXX has left this session!<br>09:11:50 PM&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System&nbsp;&nbsp;&nbsp; &nbsp;<br>Thank you. Your Dell Chat session has ended.
+
+--
+
+Please help us improve the Dell online chat experience by answering<br> the following questions.<br>1. How satisfied were you with the chat agent who assisted you today?<br>Very Satisfied
+
+Satisfied
+
+Neutral
+
+Dissatisfied
+
+Very Dissatisfied
+
+2. Based on your chat experiences today, would you recommend Dell<br> Chat to a friend?<br>Yes
+
+No
+
+3.Were you satisfied with your chat agent&#039;s knowledge of Dell&#039;s<br>products and services?<br>Yes
+
+No
+
+4. Which of the following best describes your level of experience<br> using technology?<br>Beginner – I am new to computers or a basic user (i.e. Word<br>Processing, email, Internet).
+
+Intermediate – I am an everyday user, comfortable with using standard<br>applications (i.e. Spreadsheets, Downloading Applications, Creating<br> business presentations).
+
+Expert – I know a lot about computers (Advanced Applications,<br>Computer Programming, etc). and/or can fix hardware/software issues.
+
+5. What was your main purpose for visiting Dell Chat today?<br> To make a purchase
+
+Ask a question to research and compare products/prices
+
+Search for help with setting up/using a product
+
+Technical support with one or more Dell products you already own
+
+Ask a question on a purchase I&#039;ve already made
+
+6. If the chat option was not available, would you have purchased today?<br>Yes
+
+No
+
+7. If secure payment over chat was available, would you have<br>completed your purchase with your chat agent?<br>Yes
+
+No
+
+8. What additional comments or feedback do you have about your live<br>chat experience?
+
+Once you click the &quot;Submit&quot; button, you will be taken back to the<br>Dell Small &amp; Medium Business homepage.
+
+Submit<br>--
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/10/2008-10-14-tel-toll-rate/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2008/10/2008-10-14-tel-toll-rate/" itemprop="url">
+                  Tel Toll Rate
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2008-10-14 13:35:00" itemprop="dateCreated datePublished" datetime="2008-10-14T13:35:00+08:00">2008-10-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div dir="ltr">家里网通的电话和使用的神州行的话费总是弄不明白，最近消耗得很快，于是晚饭后就咨询了一下。
+
+网通10060的呼叫中心声音很朴实，告诉我市话前3分钟RMB 0.22，以后每分钟0.11，月租RMB 21.6，因为月租费，所以优惠25次市话，其实就是0.11*=2.75，即每月从通话费中减去RMB 2.75.
+
+滞纳金按3 <em></em>‰ 计算。
+
+上网我们使用的是月租RMB 24.5 包20小时的，超出后每分钟RMB 0.05，速率是500K bps.<br> 还有一种业务，无月租，每分钟RMB 0.05，速率是 1M bps.
+
+长话是 每6秒 RMB 0.07，0点到7点 RMB 0.04.
+
+开通17909 IP 业务后，话费是RMB 0.03 + 市话费用，晚9点到次日早9点是 RMB 0.01 + 市话费用.
+
+拨打10086，两次，呼叫中心的声音都很温柔。神州行拨打和接听都是RMB 0.06，前加12593 市话RMB 0.02，长途 RMB 0.03，<br> 漫游时候，拨打漫游费用为RMB 0.06，接听漫游费用为RMB 0.04。
+
+开通RMB 10 CNY的畅听业务后，接听免费。开通RMB 1 CNY的漫游业务后，拨打和接听都是RMB 0.39.
+</div>
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/10/2008-10-09-a-piracy-case-of-os-textbook/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2008/10/2008-10-09-a-piracy-case-of-os-textbook/" itemprop="url">
+                  A Piracy Case of Os Textbook
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2008-10-09 05:14:00" itemprop="dateCreated datePublished" datetime="2008-10-09T05:14:00+08:00">2008-10-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div dir="ltr">终于出事了，没想到这么快。看到了依稀的光明。
+
+<a href="http://news.youth.cn/yw/200810/t20081006_800765.htm" target="_blank" rel="noopener">http://news.youth.cn/yw/200810/t20081006_800765.htm</a>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody>
+<tr>
+<td class="org2" align="center" height="45"><b>北大教授出版十一五教材涉抄袭 撰稿人状告胜诉         </b></td>
+</tr>
+<tr>
+<td>
+<hr size="1">         </td>
+</tr>
+<tr>
+<td class="td" align="center" bgcolor="#e7f6fd" height="20">欢迎订阅手机青年报，移动用户发送qnb到10658000，每天资费不到一角钱。</td>
+</tr>
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td class="td" align="center"><font color="#336699"><a href="http://www.youth.cn" target="_blank" rel="noopener">http://www.youth.cn</a>                   2008-10-06 09:25:00           中青网 </font> </td>
+</tr>
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td class="td1" align="left"> .h1 { 	FONT-WEIGHT: bold; TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 22pt; MARGIN: 17pt 0cm 16.5pt; LINE-HEIGHT: 240%; TEXT-ALIGN: justify } .h2 { 	FONT-WEIGHT: bold; TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 16pt; MARGIN: 13pt 0cm; LINE-HEIGHT: 173%; TEXT-ALIGN: justify } .h3 { 	FONT-WEIGHT: bold; TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 16pt; MARGIN: 13pt 0cm; LINE-HEIGHT: 173%; TEXT-ALIGN: justify } DIV.union { 	FONT-SIZE: 14px; LINE-HEIGHT: 18px } DIV.union TD { 	FONT-SIZE: 14px; LINE-HEIGHT: 18px }
+
+　　"国家十一五规划教材都这么抄，这是一个国家的悲哀！"面对桌上一摞厚厚的操作系统教材，自由撰稿人孟女士抑制不住愤怒。 
+
+　　孟女士口中所说的国家十一五规划教材是由北京大学出版社于2006年出版的《操作系统教程》第二版，该书封面上印着陈向群、杨芙清编著。 
+
+　　两位作者，一位是北京大学信息科学技术学院教授，一位是中国科学院院士，从职位和身份来看，人们似乎很难相信。那么，孟女士所言是否属实？这一事件的结局又会怎样呢？ 
+
+　　<strong>让人震惊的发现</strong> 
+
+　　孟女士原是一名大学教师，现在以自由撰稿人身份从事计算机教材写作。1997年11月，她根据自己的备课笔记，编著完成《计算机操作系统》一书(以下简称"孟书")，由中国人民大学出版社出版发行。 
+
+　　2007年9月26日，孟女士在兰兴达公司购买了由陈向群、杨芙清编著的《操作系统教程》第一版和第二版，孟女士查阅后发现，这两本教材有多处内容和孟书相同或相似。 
+
+　　"这不是我第一次看到陈向群的教材抄我的了！"孟女士说，由于长期从事操作系统教材的编写，她对国内外相关的操作系统教材非常熟悉。经过仔细对 比，她发现由陈杨二人编著的《操作系统教程》第一版和第二版除了部分复制她所著教材的内容，还有更多的内容是来自国内外的同类教材。 
+
+　　在陈向群、杨芙清编著的《操作系统教程》北京大学出版社第一版教材中，第十一到十四章(第407页—467页)中的内容，基本上都能在机械工业 出版社出版的《现代操作系统》第一版(荷兰Tanenbaum著，陈向群、马洪兵译)第九到十三章(第255页—396页)找到对应的章节段落，只在个别 字词和图表制作上有细微的调整。如果按16开本每页1599字左右计算，就有近十万字涉嫌侵权。 
+
+　　在陈向群、杨芙清《操作系统教程》第二版(以下简称"陈书")一书中，第131页—132页4.5.2小节"进程调度的时机"、第351页— 352页7.4章节"I/O设备分配"以及第359页—360页7.5.4"缓冲技术"等多处章节的内容，与张尧学、史美林编著的《计算机操作系统教 程》(清华大学出版社1993年版)相应章节内容有着惊人的相似；陈书第134页—135页4.7章"线程的基本概念"，与汤子瀛等编写的《计算机操作系 统》(西安电子科技大学出版社1996年第一版)第52页—53页内容看不出多少差别。其中，不少段落的表述一字不差。 
+
+　　类似涉嫌被抄袭的教材还有WilliamStalling的《操作系统内核与设计原理》(清华大社学出版1998年版)、Peterson的 《操作系统概念》(高等教育出版社2003年版)、Solomon的《Windows2000技术内幕》(北京大学出版社2000年版)、屠立德等编写的 《操作系统基础》(清华大学出版社2000年版)、王素华《操作系统教程》(人民邮电出版社1995年版)、谭耀铭《操作系统》(中国人民大学出版社 1999年版)、冯耀霖《操作系统》(西安电子科技大学出版社1989年版)等。 
+
+　　孟女士表示，由于时间和精力有限，她并不能完全列举出陈书所有涉嫌抄袭的内容。"一本国家级的教材竟然如此拼凑而成，太让人震惊了！" 
+
+　　<strong>让人沮丧的回应</strong> 
+
+　　2007年的一次学术会议上，孟女士见到陈向群本人，并向她当面挑明了对其教材内容的质疑，谁知对方并不承认所著教材有抄袭行为，更谈不上认错和道歉了。 
+
+　　"我当时就有点控制不了了！"孟女士表示，自己花费心血写成的劳动成果，在未征得自己同意，没有署名，也没有支付任何报酬的情况下，被对方照抄，难道就没有人来管？ 
+
+　　普通高等教育"十一五"国家级规划教材由教育部相关部门审批，孟女士将查实的资料复印后寄往教育部纪委。随后，她致电教育部纪委询问处理情况时，对方回答说已经将举报材料转给北京大学了。 
+
+　　由于陈书的作者之一杨芙清是中科院院士，孟女士又向中科院学部科学道德建设委员会进行举报。谁知对方不久后回复孟女士，说陈向群和杨芙清在写书 时有分工协议，所有涉嫌剽窃的内容都非杨芙清所写，与杨芙清无关。孟女士对此认为，陈书中并未标明分工，此分工协议的真伪尚须司法鉴定。 
+
+　　在向中国计算机学会举报后，学会办公室给孟女士的答复是，如事实认定侵权者系本学会会员，学会将按照《会员条例》和《学术道德规范》给予相应处 罚，但调查取证不属于学会受理的业务范围，建议到涉嫌侵权作者的所在单位北京大学和该书的出版社投诉，或到法院直接起诉涉嫌侵权人。 
+
+　　随后，孟女士向北京大学纪委反映情况，纪委称已将此事转交北大学术道德委员会处理。2008年3月底，北大学术道德委员会收到孟女士提交的大量 图文证据后，称正在调查，会尽快答复，可一直等到5月底，孟女士仍未等到北大方面的调查结果和明确回复。一再催促下，北大学术道德委员会表示将开会讨论决 定，是否受理该举报和是否正式开始调查。但不久后，北大学术道德委员会回复孟女士，他们不受理教材抄袭，因为教材不是论文，是给学生看的，如有抄袭，只属 于版权问题，属法院受理范围。 
+
+　　孟女士原以为手握大量证据便能讨个公道，结果却事与愿违。在向相关部门追讨说法的同时，她走上了法律维权之路。 
+
+　　<strong>科技教材难免雷同？</strong> 
+
+　　2007年10月，孟女士向北京市朝阳区人民法院递交诉状，将北京大学出版社、陈向群等告上法庭。 
+
+　　在庭审中，陈向群并未否认其教材多处内容与孟书相同或相似的事实，争议的焦点主要集中在陈书涉嫌侵权文字的数量上以及这些相同的文字是否对孟女士的著作权构成侵害这两个问题上。 
+
+　　在北京市朝阳区人民法院(2007)朝民初字第29461号民事判决书上，记者看到法院认定陈书第一版有13处总计12341字与孟书相同或相似，陈书第二版有13处总计11808字与孟书相同或相似。 
+
+　　陈向群和北大出版社等被告方辩称，陈书所引用孟书的内容，都属于知识体系中的专业基础知识、概念、基本事实、基本原理，有的是人们的常识范围， 其他的同类书籍上有类似的表述，某些段落均翻译、借鉴自国外同一部经典教材。但法院经审理查明，在陈向群提交的一些其他同类书籍上，法院基本找不到与其引 用部分相同或类似的表述。 
+
+　　被告方还辩称，科技作品不同于文学作品，表达的有限性决定了作者在创作时必须遵守客观直接、简明扼要的写作要求，不能任意发挥；大学教材不同于 学者专著，首要目的在于向学生讲授学界公认的最基本的概念、理论、知识、技能，大学法律教材都大同小异，作为科技作品的大学计算机教材更不可能相差很大。 
+
+　　最终，法院认为，由于科技知识本身的客观性以及表达方式的有限性，陈书与孟书相同和相似的内容，不能视为抄袭和侵权。陈书中确有使用了孟书中的 内容，这种使用确有不妥，但考虑到孟书全书39.7万字，陈书第一版75.5万字，陈书第二版78.6万字，而相同或相似的文字，比例都很小，所引用的部 分，散见于陈书的各个章节，不构成陈书的主要部分，属于对他人作品的合理借鉴，尚不能认定为抄袭。因此驳回了孟女士的诉讼请求。 
+
+　　一审败诉后，2007年底，孟女士又上诉至北京市第二中级人民法院。 
+
+　　二审中，法院的观点与一审基本相同，法院还表示，被上诉人陈向群、杨芙清编著的《操作系统教程》的第一版和第二版，均在书尾参考文献中标注了孟 女士的相关教材，虽然标注存在错误之处，但该标注能够表明引用材料的主要来源和明确的原作者信息，不会影响读者对相关资料的查阅。因此，陈书对孟书的使用 属于对他人作品的合理借鉴，属于正常的引用的范围，不应认定为侵权。 
+
+　　两场官司都打输了，但孟女士并不认同法院的判决。她认为，教材讲的虽然都是公认的基本原理和知识，但教材作者要想负责地讲清讲透每一个知识，需 要把作者自己的技术实践经验、理解深度和角度、对相关文献的阅读理解，尤其是对各厂商产品源码的深入剖析等结合在一起，经过长时间的分析和提炼，才能得出 一个清晰透彻而又详略得当的答案。这种答案里，一定会包含有作者独特的理解、独特的教学思路等，这都是独创的。 
+
+　　孟女士列举了国外最畅销的三本计算机操作系统原理教材：Tanenbaum的《现代操作系统》、Peterson的《操作系统概念》、 WilliamStalling的《操作系统——精髓与设计原理》。可以看到，这三本教材在论述任何同一问题时，表述都有较大差异。"不光是文字上的差 异，更在于思路上的差异和理解角度上的差异。"孟女士说，"如果有人确实很负责地付出劳动，但成果却被他人轻易地"合理借鉴"去，谁还敢、谁还肯花那么大 力气去写教材呢？" 
+
+　　<strong>迟来的胜利和昂贵的维权</strong> 
+
+　　两场官司碰了一鼻子灰，但孟女士并非一无所获。她在另一场状告陈向群等编写的《Windows操作系统原理》第一版和第二版教材，侵犯其著作权案中获得了胜利。 
+
+　　《Windows操作系统原理》第一版和第二版教材由机械出版社出版，多名作者合著。在陈向群编写的第6章I/O系统中，有多处文字与孟女士所著《计算机操作系统》中的内容相同或相似。 
+
+　　陈向群在法庭上辩称自己的作品确实使用了孟女士的相关作品，但属于合理使用。而且引用仅6258字，比例不到孟书的1.5763%，只占《Windows操作系统原理(第2版)》的0.98%，不构成实质性内容，不会对孟女士利益造成实质性损害。 
+
+　　北京市海淀区人民法院判决认为，陈书与孟书相同或相似的内容，有一些计算机领域的基础概念、基本原理等，由于科技知识本身的客观性和表达方式的 有限性，使用这些名词或原理本身不能视为是抄袭和侵权。但是具体看这些相同、相似的内容，大部分可以以其他方式表达，其中有些内容的个性化色彩较浓，就这 些内容的整体而言，不能以表达有限为由否认侵权。 
+
+　　在引用比例的问题上，法院没有支持陈向群的观点，而是认为，不应将相同或相似部分的字数与全书的字数进行对比，而应将相应章节的字数作为分母来 统计。这样计算，相同或相似部分占到《Windows操作系统原理》第一版相应章节的12%多、占该书第二版相应章节的18%多，超出"适当引用"的范 围，且没有注明引用内容的作者姓名、作品名称，参考文献中也没有列入孟女士及其教材的名称，超出了合理使用范围，构成侵权。法院判定，陈向群应承担相应侵 权责任。 
+
+　　2008年7月18日，孟女士收到了海淀区人民法院的这份民事判决书。从2007年开始维权，前后经过了近一年时间，孟女士才迎来了这场迟来的胜利。 
+
+　　记者在这份判决书上看到，被告陈向群、机械出版社在对重写、修改或删除前，不得重印、再版侵权教材，同时还须向孟女士出具书面赔礼道歉信并赔偿经济损失4000元。 
+
+　　3场官司的诉讼费9900元、律师费4.5万元，还有调查取证、误工费和搭进去的时间精力，孟女士坦言高昂的维权成本是自己当初不曾想到的，"也就碰上我这么一个人，特认真，跟秋菊打官司似的，非要讨个说法，不然真的受不了。如果抄袭者最后能认错，也算值了！"
+</td>
+</tr>
+<tr>
+<td class="td" align="right"> </td>
+</tr>
+<tr>
+<td class="td" align="right">责任编辑：王兴芳　 编辑：           陈林           来源：           中国青年报
+</td>
+</tr>
+</tbody>
+</table>
+
+--
+
+[令人惊奇的是，下面的道歉，我只能想到的是刊登的文章的标题不太符合事实。]
+
+<a href="http://comment.news.163.com/news_gundong_bbs/4NI2JIOC000120GU.html" target="_blank" rel="noopener">http://comment.news.163.com/news_gundong_bbs/4NI2JIOC000120GU.html</a>
+
+ 中国青年报2008年10月9日的道歉<br>  本报10月6日6版刊登的《一位教材作者的艰难维权路》一文，涉及到两本教材的两个著作权诉讼案件：第一个案件是孟女士起诉由陈向群和杨芙清编著的北京大 学出版社出版的"十一五"国家级规划教材《操作系统教程》侵犯了孟女士的有关著作权，北京市朝阳区人民法院一审和北京市第二中级人民法院终审依法判决孟女 士败诉。因此，不存在北大教授抄袭的问题；第二个案件是孟女士起诉由陈向群等人编著的《Windows操作系统原理》一书，该教材与杨芙清院士和国家"十 一五"规划教材没有任何关系。由此而使读者对杨芙清院士及有关人士产生误解，我们表示歉意。
+</div>
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/4041220-1198328604110421463?l=ashang.blogspot.com" alt=""></div>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/10/2008-10-08-a-script-to-alias-rm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2008/10/2008-10-08-a-script-to-alias-rm/" itemprop="url">
+                  A Script to Alias Rm
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2008-10-08 05:57:00" itemprop="dateCreated datePublished" datetime="2008-10-08T05:57:00+08:00">2008-10-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div dir="ltr">
+<pre># This is used as a shell script for alias as &#039;rm&#039;, say, <br># name it del.sh, then alias rm=&#039;del.sh&#039;<br># Aaron is gradually improving it, in the process of learning bash.<br># suggestions welcomed to aaronshang@gmail<br> #<br># usage: <br># create a dir for backup: MYSAV=/$HOME/.local/share/Trash/<br># remove: $ rm files<br># restore: $ rm -r files<br># use \rm to call original rm.<br>#<br># I had tried to use (dirname $myfile) to replace (pwd) to save two cd,<br> # but dirname is relative to current working dir, not absolute dir.<br><br># mv -f $(basename $myfile) ${MYSAV}/$(find $(pwd) -maxdepth 1 -name $(basename $myfile)  |tr &quot;/&quot; &quot;=&quot;)==`date +%Y-%m-%d-% H-%M-%S`<br> <br>## then must be on next line of if<br><br>MYSAV=/$HOME/.local/share/Trash/<br><br>##(($#==0)) &amp;&amp; { echo &quot;No parameters!&quot;;exit 1; }<br>## ??<br>##  1==0: not found<br><br>case &quot;$1&quot; in<br>-r)<br> <br>cd $MYSAV<br>for i in $(echo $*|awk &#039;{$1=&quot;&quot;;print}&#039;)<br>do<br>	myfile=$(\ls |grep &quot;<pre wp-pre-tag-0=""></pre>lt;&quot;$i&quot;<pre wp-pre-tag-0=""></pre>gt;&quot;|tail -1)<br>	file=$(echo ${myfile%%==*}|tr &quot;=&quot; &quot;/&quot; |tr &quot;^&quot; &quot; &quot;)<br> 	mv $myfile &quot;${file%/*}/${file##*/}&quot;<br>done <br>;;<br><br>*)<br>#for myfile in &quot;$*&quot;<br>for myfile in $*<br>do<br>	if test -e &quot;$myfile&quot;<br>		then<br>			cd $(dirname &quot;$myfile&quot;)<br>			mv -f &quot;$(basename &quot;$myfile&quot;)&quot; ${MYSAV}/$(echo $(pwd)/$(basename &quot;$myfile&quot;) \<br> 				|tr &quot;/&quot; &quot;=&quot; |tr &quot; &quot; &quot;^&quot;)==$(date +%Y-%m-%d-%H-%M-%S)<br>			cd -<br>    else<br>		echo &quot;$myfile:No such file or directory!&quot;<br>    fi<br>done <br><br>;;<br>esac<br>#exit 0<br> <br><br># ==== Bug records <br>#Bug: Failed if files not exist<br><br>#Bug: Failed if filename contains space <br>#Fixed: for myfile in &quot;$*&quot;, and add &quot;&quot; for all myfile instances and change spaces to ^ <br> <br>#Bug: Failed for multi files if add &quot;$*&quot;, <br>#Fix: just because &quot;&quot; in for myfile in &quot;$*&quot; above, get rid of <br><br>#Fix: I have to remove spaces before using this script:<br># alias rmspace=&#039;rename  &#039;<pre wp-pre-tag-0=""></pre>#039;&#039;y/\ /_/&#039;<pre wp-pre-tag-0=""></pre>#039;&#039; &#039;<br> # script rename is from perl <br><br># Bug: error if the restored is a dir<br># rm -r xxx<br>#2==0: not found<br>#mv: rename =home=xxx-...11-04-17 to /home/xxx/intro_files: No such file or directory<br></pre>
+</div>
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+
+          
+        
+      
+    </div>
+
+    
+
     
     
     
@@ -1684,7 +2045,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/jot/page/9/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/jot/">1</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/jot/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/18/">18</a><a class="extend next" rel="next" href="/jot/page/11/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/jot/page/9/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/jot/">1</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/9/">9</a><span class="page-number current">10</span>
   </nav>
 
 
@@ -1727,8 +2088,8 @@
                 
                   <a href="/jot/archives/">
                 
-                    <span class="site-state-item-count">179</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -1738,8 +2099,26 @@
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">categories</span>
                   
                 </div>
               
@@ -1749,8 +2128,76 @@
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">30</span>
-                    <span class="site-state-item-name">Tags</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -1767,6 +2214,9 @@
           
           
 
+          
+            
+          
           
 
         </div>
@@ -1787,7 +2237,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Aaron Shang</span>
@@ -1798,7 +2248,9 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -1806,12 +2258,13 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.1</div>
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.0</div>
 
 
 
 
         
+
 
 
 
@@ -1831,7 +2284,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -1886,37 +2342,25 @@
   
 
 
-  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.0.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.4.0"></script>
 
 
 
   
+  
 
-
-
-	
-
-
-
-
+  
 
   
 
 
+  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
 
 
 
@@ -1944,6 +2388,12 @@
   
 
   
+
+  
+  
+
+  
+
   
 
   

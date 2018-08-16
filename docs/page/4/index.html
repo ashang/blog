@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,7 +18,7 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
@@ -49,19 +58,19 @@
 
 <link href="/jot/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/jot/css/main.css?v=6.0.1" rel="stylesheet" type="text/css" />
+<link href="/jot/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.0.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.0.1" color="#222">
+  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -76,7 +85,7 @@
   var CONFIG = {
     root: '/jot/',
     scheme: 'Muse',
-    version: '6.0.1',
+    version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -94,16 +103,16 @@
 </script>
 
 
-
-
   
-  <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
+
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="All Things Bright And Beautiful">
-<meta property="og:url" content="http://ashang.org/jot/page/4/index.html">
+<meta property="og:url" content="http://ashang.github.io/jot/page/4/index.html">
 <meta property="og:site_name" content="All Things Bright And Beautiful">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All Things Bright And Beautiful">
 
@@ -112,8 +121,15 @@
 
 
 
-  <link rel="canonical" href="http://ashang.org/jot/page/4/"/>
+  <link rel="canonical" href="http://ashang.github.io/jot/page/4/"/>
 
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>All Things Bright And Beautiful</title>
   
@@ -155,7 +171,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -167,24 +183,22 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/jot/"  class="brand" rel="start">
+      <a href="/jot/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">All Things Bright And Beautiful</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -192,27 +206,37 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jot/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/jot/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/jot/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/jot/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -220,7 +244,11 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
 
     
@@ -229,6 +257,7 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -248,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2011/03/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -267,23 +296,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2/" itemprop="url">Compress Utilities, Xz, 7zip, Gzip, Zip, Bzip2</a></h1>
+                <a class="post-title-link" href="/jot/2011/03/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2/" itemprop="url">
+                  Compress Utilities, Xz, 7zip, Gzip, Zip, Bzip2
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-03-21T09:21:00+08:00">2011-03-21</time>
+
+              
+                
+              
+
+              <time title="Created: 2011-03-21 09:21:00" itemprop="dateCreated datePublished" datetime="2011-03-21T09:21:00+08:00">2011-03-21</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -317,188 +375,71 @@
       
         
           
-            <p>on same PC, using &quot;best&quot; compression.</p>
-<p>Result<br>======================</p>
-<p>- speed: zip is best, near gzip, then bzip2, then 7z, then xz<br>- compression: 7z, near xz, &gt; bzip2 &gt; gzip, near zip</p>
-<p>notes<br>======================<br>- you should give archive name for zip, and 7z; zip and 7z can add prefix, .zip, .7z, respectively.<br>- if you issue &quot;7z a archive&quot;, 7z will compress all files under current directory and generate an archive.7z.<br>  - gzip, bzip2, doesn&#039;t package files, you should archive first if working for more than one files.<br>- and &#039;-r&#039; for zip for recursive files.</p>
-<p>test output<br>======================</p>
-<p>  $ cp mbox 01<br>$ cp mbox 02<br>$ cp mbox 03<br>$ cp mbox 04<br>$ cp mbox 05</p>
-<p>$ time xz -v -9 01<br>01 (1/1)<br> 100.0 %           2,086.5 KiB / 3,529.3 KiB = 0.591                     0:02</p>
-<p>real    0m2.926s<br>  user    0m2.720s<br>sys 0m0.120s</p>
-<p>$ time gzip -v -9 02<br>02:  36.6% -- replaced with 02.gz</p>
-<p>real    0m0.509s<br>user    0m0.470s<br>sys 0m0.000s</p>
-<p>$ time bzip2 -v -9 03<br> 03:       1.620:1,  4.938 bits/byte, 38.28% saved, 3613967 in, 2230651 out.</p>
-<p>real    0m1.580s<br>user    0m1.540s<br>sys 0m0.030s</p>
-<p>$ time zip -v -9 04.zip 04<br> adding: 04    (in=3613967) (out=2292926) (deflated 37%)<br>total bytes=3613967, compressed=2292926 -&gt; 37% savings</p>
-<p>  real    0m0.429s<br>user    0m0.400s<br>sys 0m0.020s</p>
-<p>$ time 7z -mx=9 a 05.7z 05</p>
-<p>7-Zip 9.13 beta  Copyright (c) 1999-2010 Igor Pavlov  2010-04-15<br>p7zip Version 9.13 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)<br>  Scanning</p>
-<p>Creating archive 05.7z</p>
-<p>Compressing  05</p>
-<p>Everything is Ok</p>
-<p>real    0m1.987s<br>user    0m2.870s<br>sys 0m0.050s</p>
-<p>-rw------- 1 aaron aaron 2136600 Dec 14  2009 01.xz<br>  -rw------- 1 aaron aaron 2292947 Dec 14  2009 02.gz<br>-rw------- 1 aaron aaron 2230651 Dec 14  2009 03.bz2<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 04<br>-rw-rw-r-- 1 aaron aaron 2293080 Sep  9 20:09 04.zip<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 05<br>  -rw-rw-r-- 1 aaron aaron 2136083 Sep  9 20:07 05.7z<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 mbox </p>
-<p> </p>
-<p>======================<br>uncompromising</p>
-<p>$ bunzip2 XXX</p>
-<p>$ gunzip XXX</p>
-<p> $ unzip XXX</p>
-<p>$ 7z x XXX</p>
-<p>$ unxz FreeBSD-8.2-RELEASE-i386-dvd1.iso.xz</p>
+            
+on same PC, using &quot;best&quot; compression.
+
+Result<br>======================
+
+- speed: zip is best, near gzip, then bzip2, then 7z, then xz<br>- compression: 7z, near xz, &gt; bzip2 &gt; gzip, near zip
+
+notes<br>======================<br>- you should give archive name for zip, and 7z; zip and 7z can add prefix, .zip, .7z, respectively.<br>- if you issue &quot;7z a archive&quot;, 7z will compress all files under current directory and generate an archive.7z.<br>  - gzip, bzip2, doesn&#039;t package files, you should archive first if working for more than one files.<br>- and &#039;-r&#039; for zip for recursive files.
+
+test output<br>======================
+
+  $ cp mbox 01<br>$ cp mbox 02<br>$ cp mbox 03<br>$ cp mbox 04<br>$ cp mbox 05
+
+$ time xz -v -9 01<br>01 (1/1)<br> 100.0 %           2,086.5 KiB / 3,529.3 KiB = 0.591                     0:02
+
+real    0m2.926s<br>  user    0m2.720s<br>sys 0m0.120s
+
+$ time gzip -v -9 02<br>02:  36.6% -- replaced with 02.gz
+
+real    0m0.509s<br>user    0m0.470s<br>sys 0m0.000s
+
+$ time bzip2 -v -9 03<br> 03:       1.620:1,  4.938 bits/byte, 38.28% saved, 3613967 in, 2230651 out.
+
+real    0m1.580s<br>user    0m1.540s<br>sys 0m0.030s
+
+$ time zip -v -9 04.zip 04<br> adding: 04    (in=3613967) (out=2292926) (deflated 37%)<br>total bytes=3613967, compressed=2292926 -&gt; 37% savings
+
+  real    0m0.429s<br>user    0m0.400s<br>sys 0m0.020s
+
+$ time 7z -mx=9 a 05.7z 05
+
+7-Zip 9.13 beta  Copyright (c) 1999-2010 Igor Pavlov  2010-04-15<br>p7zip Version 9.13 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)<br>  Scanning
+
+Creating archive 05.7z
+
+Compressing  05
+
+Everything is Ok
+
+real    0m1.987s<br>user    0m2.870s<br>sys 0m0.050s
+
+-rw------- 1 aaron aaron 2136600 Dec 14  2009 01.xz<br>  -rw------- 1 aaron aaron 2292947 Dec 14  2009 02.gz<br>-rw------- 1 aaron aaron 2230651 Dec 14  2009 03.bz2<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 04<br>-rw-rw-r-- 1 aaron aaron 2293080 Sep  9 20:09 04.zip<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 05<br>  -rw-rw-r-- 1 aaron aaron 2136083 Sep  9 20:07 05.7z<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 mbox 
+
+ 
+
+======================<br>uncompromising
+
+$ bunzip2 XXX
+
+$ gunzip XXX
+
+ $ unzip XXX
+
+$ 7z x XXX
+
+$ unxz FreeBSD-8.2-RELEASE-i386-dvd1.iso.xz
 <div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2-2/" itemprop="url">Compress Utilities, Xz, 7zip, Gzip, Zip, Bzip2</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-03-21T09:21:00+08:00">2011-03-21</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>on same PC, using "best" compression.</p>
-<p>Result<br>======================</p>
-<p>- speed: zip is best, near gzip, then bzip2, then 7z, then xz<br>- compression: 7z, near xz, &gt; bzip2 &gt; gzip, near zip</p>
-<p>notes<br>======================<br>- you should give archive name for zip, and 7z; zip and 7z can add prefix, .zip, .7z, respectively.<br>- if you issue "7z a archive", 7z will compress all files under current directory and generate an archive.7z.<br>  - gzip, bzip2, doesn&#039;t package files, you should archive first if working for more than one files.<br>- and &#039;-r&#039; for zip for recursive files.</p>
-<p>test output<br>======================</p>
-<p>  $ cp mbox 01<br>$ cp mbox 02<br>$ cp mbox 03<br>$ cp mbox 04<br>$ cp mbox 05</p>
-<p>$ time xz -v -9 01<br>01 (1/1)<br> 100.0 %           2,086.5 KiB / 3,529.3 KiB = 0.591                     0:02</p>
-<p>real    0m2.926s<br>  user    0m2.720s<br>sys 0m0.120s</p>
-<p>$ time gzip -v -9 02<br>02:  36.6% -- replaced with 02.gz</p>
-<p>real    0m0.509s<br>user    0m0.470s<br>sys 0m0.000s</p>
-<p>$ time bzip2 -v -9 03<br> 03:       1.620:1,  4.938 bits/byte, 38.28% saved, 3613967 in, 2230651 out.</p>
-<p>real    0m1.580s<br>user    0m1.540s<br>sys 0m0.030s</p>
-<p>$ time zip -v -9 04.zip 04<br> adding: 04    (in=3613967) (out=2292926) (deflated 37%)<br>total bytes=3613967, compressed=2292926 -&gt; 37% savings</p>
-<p>  real    0m0.429s<br>user    0m0.400s<br>sys 0m0.020s</p>
-<p>$ time 7z -mx=9 a 05.7z 05</p>
-<p>7-Zip 9.13 beta  Copyright (c) 1999-2010 Igor Pavlov  2010-04-15<br>p7zip Version 9.13 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)<br>  Scanning</p>
-<p>Creating archive 05.7z</p>
-<p>Compressing  05</p>
-<p>Everything is Ok</p>
-<p>real    0m1.987s<br>user    0m2.870s<br>sys 0m0.050s</p>
-<p>-rw------- 1 aaron aaron 2136600 Dec 14  2009 01.xz<br>  -rw------- 1 aaron aaron 2292947 Dec 14  2009 02.gz<br>-rw------- 1 aaron aaron 2230651 Dec 14  2009 03.bz2<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 04<br>-rw-rw-r-- 1 aaron aaron 2293080 Sep  9 20:09 04.zip<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 05<br>  -rw-rw-r-- 1 aaron aaron 2136083 Sep  9 20:07 05.7z<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 mbox </p>
-<p> </p>
-<p>======================<br>uncompromising</p>
-<p>$ bunzip2 XXX</p>
-<p>$ gunzip XXX</p>
-<p> $ unzip XXX</p>
-<p>$ 7z x XXX</p>
-<p>$ unxz FreeBSD-8.2-RELEASE-i386-dvd1.iso.xz</p>
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
-
-          
-        
-      
-    </div>
     
     
     
@@ -544,7 +485,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2-3/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/11/2010-11-06-pam-authentication-failed/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -563,173 +504,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2011-03-21-compress-utilities-xz-7zip-gzip-zip-bzip2-3/" itemprop="url">Compress Utilities, Xz, 7zip, Gzip, Zip, Bzip2</a></h1>
+                <a class="post-title-link" href="/jot/2010/11/2010-11-06-pam-authentication-failed/" itemprop="url">
+                  PAM Authentication Failed
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-03-21T09:21:00+08:00">2011-03-21</time>
-            
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>on same PC, using "best" compression.</p>
-<p>Result<br>======================</p>
-<p>- speed: zip is best, near gzip, then bzip2, then 7z, then xz<br>- compression: 7z, near xz, &gt; bzip2 &gt; gzip, near zip</p>
-<p>notes<br>======================<br>- you should give archive name for zip, and 7z; zip and 7z can add prefix, .zip, .7z, respectively.<br>- if you issue "7z a archive", 7z will compress all files under current directory and generate an archive.7z.<br>- gzip, bzip2, doesn't package files, you should archive first if working for more than one files.<br>- and '-r' for zip for recursive files.</p>
-<p>test output<br>======================</p>
-<p>$ cp mbox 01<br>$ cp mbox 02<br>$ cp mbox 03<br>$ cp mbox 04<br>$ cp mbox 05</p>
-<p>$ time xz -v -9 01<br>01 (1/1)<br> 100.0 %           2,086.5 KiB / 3,529.3 KiB = 0.591                     0:02</p>
-<p>real    0m2.926s<br>user    0m2.720s<br>sys 0m0.120s</p>
-<p>$ time gzip -v -9 02<br>02:  36.6% -- replaced with 02.gz</p>
-<p>real    0m0.509s<br>user    0m0.470s<br>sys 0m0.000s</p>
-<p>$ time bzip2 -v -9 03<br> 03:       1.620:1,  4.938 bits/byte, 38.28% saved, 3613967 in, 2230651 out.</p>
-<p>real    0m1.580s<br>user    0m1.540s<br>sys 0m0.030s</p>
-<p>$ time zip -v -9 04.zip 04<br> adding: 04    (in=3613967) (out=2292926) (deflated 37%)<br>total bytes=3613967, compressed=2292926 -&gt; 37% savings</p>
-<p>real    0m0.429s<br>user    0m0.400s<br>sys 0m0.020s</p>
-<p>$ time 7z -mx=9 a 05.7z 05</p>
-<p>7-Zip 9.13 beta  Copyright (c) 1999-2010 Igor Pavlov  2010-04-15<br>p7zip Version 9.13 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)<br>Scanning</p>
-<p>Creating archive 05.7z</p>
-<p>Compressing  05</p>
-<p>Everything is Ok</p>
-<p>real    0m1.987s<br>user    0m2.870s<br>sys 0m0.050s</p>
-<p>-rw------- 1 aaron aaron 2136600 Dec 14  2009 01.xz<br>-rw------- 1 aaron aaron 2292947 Dec 14  2009 02.gz<br>-rw------- 1 aaron aaron 2230651 Dec 14  2009 03.bz2<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 04<br>-rw-rw-r-- 1 aaron aaron 2293080 Sep  9 20:09 04.zip<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 05<br>-rw-rw-r-- 1 aaron aaron 2136083 Sep  9 20:07 05.7z<br>-rw------- 1 aaron aaron 3613967 Dec 14  2009 mbox</p>
-<p>======================<br>uncompromising</p>
-<p>$ bunzip2 XXX</p>
-<p>$ gunzip XXX</p>
-<p>$ unzip XXX</p>
-<p>$ 7z x XXX</p>
-<p>$ unxz FreeBSD-8.2-RELEASE-i386-dvd1.iso.xz</p>
-<p>//<br>update</p>
-<p>Version 1.22 of GNU tar supports using this software to handle xz files transparently (as it normally does with gzip and bzip2)</p>
-<p>http://en.wikipedia.org/wiki/Xz<br>http://en.wikipedia.org/wiki/XZ_Utils</p>
-<p>use "tar -J" or "tar --xz"</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-11-06-pam-authentication-failed/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+              
                 
-                <a class="post-title-link" href="/jot/2010-11-06-pam-authentication-failed/" itemprop="url">PAM Authentication Failed</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              <time title="Created: 2010-11-06 09:13:18" itemprop="dateCreated datePublished" datetime="2010-11-06T09:13:18+08:00">2010-11-06</time>
+            
+
+            
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-06T09:13:18+08:00">2010-11-06</time>
-            
 
-            
+              
+                
+                <span class="post-meta-divider">|</span>
+                
 
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -772,16 +592,23 @@ e.g. for userdel:
 add a file /etc/pam.d/userdel
 
 </pre>
-<p>auth	sufficient	pam_rootok.so<br>
-auth	required	pam_unix.so</p>
-<p>account	required	pam_unix.so</p>
-<p>session	required	pam_unix.so</p>
-<p>password required	pam_permit.so</p>
+
+auth	sufficient	pam_rootok.so<br>
+auth	required	pam_unix.so
+
+account	required	pam_unix.so
+
+session	required	pam_unix.so
+
+password required	pam_permit.so
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -827,7 +654,7 @@ auth	required	pam_unix.so</p>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-11-01-wordpress-init/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/11/2010-11-01-wordpress-init/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -846,23 +673,52 @@ auth	required	pam_unix.so</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-11-01-wordpress-init/" itemprop="url">WordPress Init</a></h1>
+                <a class="post-title-link" href="/jot/2010/11/2010-11-01-wordpress-init/" itemprop="url">
+                  WordPress Init
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-11-01T02:47:17+08:00">2010-11-01</time>
+
+              
+                
+              
+
+              <time title="Created: 2010-11-01 02:47:17" itemprop="dateCreated datePublished" datetime="2010-11-01T02:47:17+08:00">2010-11-01</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -896,7 +752,8 @@ auth	required	pam_unix.so</p>
       
         
           
-            <p>Notes on starting WordPress</p>
+            
+Notes on starting WordPress
 <ul>
 <li>Get WordPress from: <a title="http://wordpress.org/latest.tar.gz" href="http://wordpress.org/latest.tar.gz" target="_blank">http://wordpress.org/latest.tar.gz</a> and explode it to<strong> your_target_install_path</strong></li>
 </ul>
@@ -916,11 +773,13 @@ auth	required	pam_unix.so</p>
 </ul>
 <ul>
 <li>Add to apache conf</li>
-<blockquote><p>Alias /weblog/ "/<strong>your_target_install_path</strong>/"</p>
+<blockquote>
+Alias /weblog/ "/<strong>your_target_install_path</strong>/"
 <address> &lt;Directory /your_target_install_path/&gt;<br>
 </address>
-<blockquote><p>DirectoryIndex index.php<br>
-AllowOverride FileInfo Options</p></blockquote>
+<blockquote>
+DirectoryIndex index.php<br>
+AllowOverride FileInfo Options</blockquote>
 <address>&lt;/Directory&gt;</address>
 </blockquote>
 </ul>
@@ -932,6 +791,9 @@ AllowOverride FileInfo Options</p></blockquote>
         
       
     </div>
+
+    
+
     
     
     
@@ -977,7 +839,7 @@ AllowOverride FileInfo Options</p></blockquote>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-31-script-returned-error-exit/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-31-script-returned-error-exit/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -996,23 +858,52 @@ AllowOverride FileInfo Options</p></blockquote>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-31-script-returned-error-exit/" itemprop="url">Script Returned Error Exit</a></h1>
+                <a class="post-title-link" href="/jot/2010/10/2010-10-31-script-returned-error-exit/" itemprop="url">
+                  Script Returned Error Exit
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-31T08:43:31+08:00">2010-10-31</time>
+
+              
+                
+              
+
+              <time title="Created: 2010-10-31 08:43:31" itemprop="dateCreated datePublished" datetime="2010-10-31T08:43:31+08:00">2010-10-31</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1046,8 +937,10 @@ AllowOverride FileInfo Options</p></blockquote>
       
         
           
-            <p>dpkg error:</p>
-<p>/var/lib/dpkg/info/XXX.postrm: 24: update-inetd: not found<br>
+            
+dpkg error:
+
+/var/lib/dpkg/info/XXX.postrm: 24: update-inetd: not found<br>
 dpkg: warning - old post-removal script returned error exit status 127<br>
 dpkg - trying script from the new package instead ...<br>
 /var/lib/dpkg/<a href="http://tmp.ci/postrm" target="_blank" rel="noopener">tmp.ci/postrm</a>: /var/lib/dpkg/<a href="http://tmp.ci/postrm" target="_blank" rel="noopener">tmp.ci/postrm</a>: 24: update-inetd: not found<br>
@@ -1058,16 +951,21 @@ dpkg: error while cleaning up:<br>
 subprocess post-removal script returned error exit status 127<br>
 Errors were encountered while processing:<br>
 /var/cache/apt/archives/XXX.deb<br>
-E: Sub-process /usr/bin/dpkg returned an error code (1)</p>
-<p>A dirty workaround for such cases to let return true:</p>
-<p>cd /usr/sbin<br>
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+A dirty workaround for such cases to let return true:
+
+cd /usr/sbin<br>
 mv update-inetd update-inetd.save<br>
-ln -s /bin/true update-inetd</p>
+ln -s /bin/true update-inetd
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -1113,7 +1011,7 @@ ln -s /bin/true update-inetd</p>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-29-in-permission/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-29-in-permission/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1132,23 +1030,52 @@ ln -s /bin/true update-inetd</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-29-in-permission/" itemprop="url">At Sign in Permission</a></h1>
+                <a class="post-title-link" href="/jot/2010/10/2010-10-29-in-permission/" itemprop="url">
+                  At Sign in Permission
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-29T03:01:52+08:00">2010-10-29</time>
+
+              
+                
+              
+
+              <time title="Created: 2010-10-29 03:01:52" itemprop="dateCreated datePublished" datetime="2010-10-29T03:01:52+08:00">2010-10-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1182,16 +1109,23 @@ ln -s /bin/true update-inetd</p>
       
         
           
-            <p>what does '@' means in permission bit?</p>
-<p>drwxr-xr-x@ 3 root wheel  102 Aug  1  2009  Kext</p>
-<p>EA<br>
-filesystem extended attributes</p>
-<p>To see what EA's are used in detail, use 'ls -l@ ....'</p>
+            
+what does '@' means in permission bit?
+
+drwxr-xr-x@ 3 root wheel  102 Aug  1  2009  Kext
+
+EA<br>
+filesystem extended attributes
+
+To see what EA's are used in detail, use 'ls -l@ ....'
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -1237,7 +1171,7 @@ filesystem extended attributes</p>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-29-judge-if-listening-socket/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-29-judge-if-listening-socket/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1256,23 +1190,52 @@ filesystem extended attributes</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-29-judge-if-listening-socket/" itemprop="url">Judge if Listening Socket</a></h1>
+                <a class="post-title-link" href="/jot/2010/10/2010-10-29-judge-if-listening-socket/" itemprop="url">
+                  Judge if Listening Socket
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-29T02:58:05+08:00">2010-10-29</time>
+
+              
+                
+              
+
+              <time title="Created: 2010-10-29 02:58:05" itemprop="dateCreated datePublished" datetime="2010-10-29T02:58:05+08:00">2010-10-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1306,19 +1269,27 @@ filesystem extended attributes</p>
       
         
           
-            <p>judge if listening socket</p>
-<p>try:<br>
-getsockopt</p>
-<p>man 7 socket<br>
+            
+judge if listening socket
+
+try:<br>
+getsockopt
+
+man 7 socket<br>
 #then search SO_<br>
-SO_ACCEPTCONN</p>
-<p>See also:</p>
-<p>net-tools-1.60/netstat.c</p>
+SO_ACCEPTCONN
+
+See also:
+
+net-tools-1.60/netstat.c
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -1364,7 +1335,7 @@ SO_ACCEPTCONN</p>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-29-read-process-status/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-29-read-process-status/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1383,23 +1354,52 @@ SO_ACCEPTCONN</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-29-read-process-status/" itemprop="url">Read Process Status</a></h1>
+                <a class="post-title-link" href="/jot/2010/10/2010-10-29-read-process-status/" itemprop="url">
+                  Read Process Status
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-29T02:55:24+08:00">2010-10-29</time>
+
+              
+                
+              
+
+              <time title="Created: 2010-10-29 02:55:24" itemprop="dateCreated datePublished" datetime="2010-10-29T02:55:24+08:00">2010-10-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1433,12 +1433,16 @@ SO_ACCEPTCONN</p>
       
         
           
-            <p>read process status</p>
-<p>read:<br>
-/proc/pid/stat</p>
-<p>See:<br>
-psmisc/prtstat.c</p>
-<p>210 static void print_stat(const int pid, const opt_type options)<br>
+            
+read process status
+
+read:<br>
+/proc/pid/stat
+
+See:<br>
+psmisc/prtstat.c
+
+210 static void print_stat(const int pid, const opt_type options)<br>
 211 {<br>
 212   char *pathname;<br>
 213   char buf[BUFSIZ];<br>
@@ -1451,12 +1455,15 @@ psmisc/prtstat.c</p>
 220   if ( (asprintf(&amp;pathname, "/proc/%d/stat",(int)pid)) &lt; 0) {<br>
 221     perror(_(&quot;asprintf in print_stat failed.\n&quot;));<br>
 222     exit(1);<br>
-223   }</p>
+223   }
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -1502,7 +1509,7 @@ psmisc/prtstat.c</p>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-29-backquote-sign-as-single-quote/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-29-backquote-sign-as-single-quote/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1521,23 +1528,52 @@ psmisc/prtstat.c</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-29-backquote-sign-as-single-quote/" itemprop="url">Backquote Sign as Single Quote</a></h1>
+                <a class="post-title-link" href="/jot/2010/10/2010-10-29-backquote-sign-as-single-quote/" itemprop="url">
+                  Backquote Sign as Single Quote
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-29T02:48:24+08:00">2010-10-29</time>
+
+              
+                
+              
+
+              <time title="Created: 2010-10-29 02:48:24" itemprop="dateCreated datePublished" datetime="2010-10-29T02:48:24+08:00">2010-10-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1581,20 +1617,434 @@ Device driver support needs thus be built-in linux image!<br>
 FATAL: modules must be specified using absolute paths.<br>
 "uname" is a relative path<br>
 FATAL: Could not load /lib/modules/uname/modules.dep: No such file<br>
-or directory<p></p>
+or directory
 </blockquote>
-<p>It was a typo:<br>
-backquote (grave in diacritic) taken for apostrophe (single quote, or acute in diacritic)</p>
-<p>`uname -r` should be 'uname -r'</p>
-<p>See also:</p>
-<p>http://en.wikipedia.org/wiki/Apostrophe</p>
-<p>http://en.wikipedia.org/wiki/Diacritic</p>
-<p>http://en.wikipedia.org/wiki/Enhanced_keyboard</p>
+
+It was a typo:<br>
+backquote (grave in diacritic) taken for apostrophe (single quote, or acute in diacritic)
+
+`uname -r` should be 'uname -r'
+
+See also:
+
+http://en.wikipedia.org/wiki/Apostrophe
+
+http://en.wikipedia.org/wiki/Diacritic
+
+http://en.wikipedia.org/wiki/Enhanced_keyboard
 
           
         
       
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-29-target-directory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2010/10/2010-10-29-target-directory/" itemprop="url">
+                  Target-Directory
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2010-10-29 02:30:38" itemprop="dateCreated datePublished" datetime="2010-10-29T02:30:38+08:00">2010-10-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+man ln
+
+       -t, --target-directory=DIRECTORY<br>
+              specify the DIRECTORY in which to create the links
+
+e.g.:
+
+ln -s file1 file2 dirX
+
+ln -s file1 file2 dirX -t dirY
+
+$ info coreutils 'Target directory'
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2010/10/2010-10-29-ubuntu-sources-list/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2010/10/2010-10-29-ubuntu-sources-list/" itemprop="url">
+                  Ubuntu sources.list
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2010-10-29 02:28:29" itemprop="dateCreated datePublished" datetime="2010-10-29T02:28:29+08:00">2010-10-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+# /etc/apt/sources.list
+
+deb http://mirrors.163.com/ubuntu-cn/shutter/ppa/ubuntu/ maverick main
+
+deb http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
+
+deb-src http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
+
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick main restricted universe multiverse<br>
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick-updates main restricted universe multiverse<br>
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick-proposed main restricted universe multiverse<br>
+deb http://mirror.bjtu.edu.cn/ubuntu/ maverick-security main restricted universe multiverse
+
+#deb http://ftp.sjtu.edu.cn/ubuntu maverick main universe multiverse restricted<br>
+#deb http://ftp.sjtu.edu.cn/ubuntu/ maverick-proposed main multiverse restricted universe<br>
+#deb http://ftp.sjtu.edu.cn/ubuntu/ maverick-security main multiverse restricted universe<br>
+#deb http://ftp.sjtu.edu.cn/ubuntu/ maverick-updates main multiverse restricted universe
+
+# wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -<br>
+#deb http://archive.getdeb.net/ubuntu maverick-getdeb apps<br>
+#deb http://archive.getdeb.net/ubuntu maverick-getdeb games
+
+deb http://archive.canonical.com/ maverick partner<br>
+deb http://archive.canonical.com/ubuntu/ maverick partner<br>
+deb http://archive.canonical.com/ maverick-updates partner<br>
+deb http://archive.canonical.com/ maverick-proposed partner<br>
+deb http://archive.canonical.com/ maverick-security partner
+
+#deb http://archive.ubuntu.com/ubuntu/ maverick main restricted universe multiverse<br>
+#deb http://archive.ubuntu.com/ubuntu/ maverick-updates main restricted universe multiverse<br>
+#deb http://archive.ubuntu.com/ubuntu/ maverick-proposed main restricted universe multiverse<br>
+#deb http://security.ubuntu.com/ubuntu/ maverick-security main restricted universe multiverse
+
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick-updates main universe multiverse restricted<br>
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick main universe multiverse restricted<br>
+#deb-src http://security.ubuntu.com/ubuntu maverick-security main universe multiverse restricted<br>
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick-proposed main universe multiverse restricted<br>
+#deb-src http://archive.ubuntu.com/ubuntu/ maverick-backports main restricted universe multiverse
+
+# Google software repository http://www.google.com/linuxrepositories/apt.html<br>
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -<br>
+# or (gpg --keyserver subkeys.pgp.net --recv A040830F7FAC5991 &amp;&amp; gpg --export --armor A040830F7FAC5991 | sudo apt-key add - )
+
+# Google software repository<br>
+#deb http://dl.google.com/linux/deb/ testing non-free
+
+#$ gpg --keyserver keyserver.ubuntu.com --recv-key 428D7C01<br>
+#gpg: requesting key 428D7C01 from hkp server keyserver.ubuntu.com<br>
+#gpg: key 428D7C01: public key "Ubuntu Debug Symbol Archive Automatic Signing Key " imported<br>
+#gpg: no ultimately trusted keys found<br>
+#gpg: Total number processed: 1<br>
+#gpg:               imported: 1<br>
+#$ gpg --check-sigs 428D7C01<br>
+#pub 1024D/428D7C01 2008-09-02<br>
+#uid Ubuntu Debug Symbol Archive Automatic Signing Key<br>
+#sig!3        428D7C01 2008-09-02  Ubuntu Debug Symbol Archive Automatic Signing Key<br>
+#sub   2048g/A2C2A7A5 2008-09-02<br>
+#sig!         428D7C01 2008-09-02  Ubuntu Debug Symbol Archive Automatic Signing Key<br>
+#<br>
+#1 signature not checked due to a missing key<br>
+#<br>
+#$ gpg -o - --export 428D7C01 | sudo apt-key add -
+
+# sudo apt-key add key.gpg
+
+# wget -q http://packages.medibuntu.org/medibuntu-key.gpg -O- | sudo apt-key add -<br>
+#deb http://packages.medibuntu.org/ maverick free non-free<br>
+#deb http://packages.medibuntu.org/ maverick-staging non-free free
+
+#deb http://mirrors.sohu.com/ubuntu/ maverick main restricted universe multiverse<br>
+#deb http://mirrors.sohu.com/ubuntu/ maverick-security main restricted universe multiverse<br>
+#deb http://mirrors.sohu.com/ubuntu/ maverick-updates main restricted universe multiverse<br>
+#deb http://mirrors.sohu.com/ubuntu/ maverick-proposed main restricted universe multiverse<br>
+#deb http://mirrors.sohu.com/ubuntu/ maverick-backports main restricted universe multiverse<br>
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick main restricted universe multiverse<br>
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-security main restricted universe multiverse<br>
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-updates main restricted universe multiverse<br>
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-proposed main restricted universe multiverse<br>
+#deb-src http://mirrors.sohu.com/ubuntu/ maverick-backports main restricted universe multiverse
+
+deb http://ppa.launchpad.net/puredyne-team/ppa/ubuntu maverick main<br>
+deb http://packages.medibuntu.org/ maverick free non-free<br>
+deb http://akirad.cinelerra.org akirad-maverick main
+
+          
+        
+      
+    </div>
+
+    
+
     
     
     
@@ -1629,7 +2079,7 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/jot/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/jot/">1</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/jot/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/18/">18</a><a class="extend next" rel="next" href="/jot/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/jot/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/jot/">1</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/jot/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/10/">10</a><a class="extend next" rel="next" href="/jot/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1672,8 +2122,8 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
                 
                   <a href="/jot/archives/">
                 
-                    <span class="site-state-item-count">179</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -1683,8 +2133,26 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">categories</span>
                   
                 </div>
               
@@ -1694,8 +2162,76 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">30</span>
-                    <span class="site-state-item-name">Tags</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -1712,6 +2248,9 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
           
           
 
+          
+            
+          
           
 
         </div>
@@ -1732,7 +2271,7 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Aaron Shang</span>
@@ -1743,7 +2282,9 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -1751,12 +2292,13 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.1</div>
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.0</div>
 
 
 
 
         
+
 
 
 
@@ -1776,7 +2318,10 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -1831,37 +2376,25 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
   
 
 
-  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.0.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.4.0"></script>
 
 
 
   
+  
 
-
-
-	
-
-
-
-
+  
 
   
 
 
+  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
 
 
 
@@ -1889,6 +2422,12 @@ backquote (grave in diacritic) taken for apostrophe (single quote, or acute in d
   
 
   
+
+  
+  
+
+  
+
   
 
   

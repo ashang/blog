@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,7 +18,7 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
@@ -49,19 +58,19 @@
 
 <link href="/jot/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/jot/css/main.css?v=6.0.1" rel="stylesheet" type="text/css" />
+<link href="/jot/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.0.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.0.1" color="#222">
+  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -76,7 +85,7 @@
   var CONFIG = {
     root: '/jot/',
     scheme: 'Muse',
-    version: '6.0.1',
+    version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -94,16 +103,16 @@
 </script>
 
 
-
-
   
-  <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
+
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="All Things Bright And Beautiful">
-<meta property="og:url" content="http://ashang.org/jot/page/2/index.html">
+<meta property="og:url" content="http://ashang.github.io/jot/page/2/index.html">
 <meta property="og:site_name" content="All Things Bright And Beautiful">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All Things Bright And Beautiful">
 
@@ -112,8 +121,15 @@
 
 
 
-  <link rel="canonical" href="http://ashang.org/jot/page/2/"/>
+  <link rel="canonical" href="http://ashang.github.io/jot/page/2/"/>
 
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>All Things Bright And Beautiful</title>
   
@@ -155,7 +171,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -167,24 +183,22 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/jot/"  class="brand" rel="start">
+      <a href="/jot/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">All Things Bright And Beautiful</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -192,27 +206,37 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jot/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/jot/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/jot/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/jot/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -220,7 +244,11 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
 
     
@@ -229,6 +257,7 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -248,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-09-14-linux-proxy/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/11/2012-11-16-packages-cannot-be-authenticated/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -267,23 +296,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2012-09-14-linux-proxy/" itemprop="url">Linux Proxy</a></h1>
+                <a class="post-title-link" href="/jot/2012/11/2012-11-16-packages-cannot-be-authenticated/" itemprop="url">
+                  Packages Cannot Be Authenticated
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-09-14T09:29:00+08:00">2012-09-14</time>
+
+              
+                
+              
+
+              <time title="Created: 2012-11-16 01:49:00" itemprop="dateCreated datePublished" datetime="2012-11-16T01:49:00+08:00">2012-11-16</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -318,20 +376,26 @@
         
           
             
-<p><b><span style="font-size:medium;">== proxy for apt ==</span></b></p>
-<p>edit<br><span style="font-family:courier new, monospace;">/etc/apt/apt.conf</span></p>
-<p>or<br><span style="font-family:courier new, monospace;">$ sudo vi /etc/apt/apt.conf.d/60proxy</span><br><span style="font-family:courier new, monospace;">Acquire::http::Proxy "http://x.x.x.x:port";</span></p>
-<p><span style="font-family:courier new, monospace;">Don't miss the trailing ";". </span></p>
-<p>The proxy can be in pac form:<br>"http://x.x.x.x:port/accelerated.pac"</p>
-<p>URL:<br><a href="http://en.wikipedia.org/wiki/Proxy_auto-config" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Proxy_auto-config</a></p>
-<p><b><span style="font-size:medium;">== proxy for wget ==</span></b>
-<pre>wget -e http_proxy=http://x.x.x.x:port -c -m -np -k URL </pre>
-<pre> </pre>
-</p>
+
+WARNING: The following packages cannot be authenticated!
+
+$ sudo apt-get install  gstreamer1.0-pulseaudio <br>Reading package lists... Done<br>Building dependency tree       <br>Reading state information... Done<br>  The following packages were automatically installed and are no longer required:<br>  libdirac-encoder0 libopencore-amrnb0 libopencore-amrwb0 libsvga1 libvo-aacenc0 libvo-amrwbenc0<br>Use &#039;apt-get autoremove&#039; to remove them.<br>  The following NEW packages will be installed:<br>  gstreamer1.0-pulseaudio<br>0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.<br>Need to get 57.6 kB of archives.<br>After this operation, 220 kB of additional disk space will be used.<br>  WARNING: The following packages cannot be authenticated!<br>  gstreamer1.0-pulseaudio<br>Install these packages without verification [y/N]? 
+
+To solve that:
+<pre style="margin-left:40px;"><code>$ sudo apt-key update  $ sudo apt-get update  </code></pre>
+
+Related:
+<div style="margin-left:40px;">$ sudo apt-key list<br>$ sudo apt-key remove FBB75451<br>$ sudo apt-key list</div>
+
+
+
           
         
       
     </div>
+
+    
+
     
     
     
@@ -377,7 +441,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/case-insensitive-completion/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/11/2012-11-14-apple-slows-done/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -396,23 +460,786 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/case-insensitive-completion/" itemprop="url">Case Insensitive Tab-Completion or Glob Expansion</a></h1>
+                <a class="post-title-link" href="/jot/2012/11/2012-11-14-apple-slows-done/" itemprop="url">
+                  Apple Slows Done?
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-09-09T02:15:00+08:00">2012-09-09</time>
+
+              
+                
+              
+
+              <time title="Created: 2012-11-14 08:15:00" itemprop="dateCreated datePublished" datetime="2012-11-14T08:15:00+08:00">2012-11-14</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="gmail_quote">
+<div lang="EN-US">
+<div style="border-left:solid blue 1.5pt;border:none;padding:0 0 0 4pt;">有朋友分享网上一篇热文。这篇文章提供了很好的思考的引子，但通篇硬伤挺多。
+
+此文主题似乎是利用关键热词，吸引眼球，特别结语成为好多re tweet的标题"诺基亚的今天，或许就是苹果的明天"，其中有些论据却缺乏论证力度。
+
+现在不能和五年前的日子相比了，当时的水果机横空出世，确实是颠覆性的，但那时候基于Linux系统的移动终端和嵌入式系统无法很好的解决电源管理、性能不好等问题，小型的系统库也不完善，也没有一个很好的像Android中的Dalvik虚拟机这样的概念层来促进安全和应用生态，包管理和窗口管理器等都有待改进，但是已经日趋完善，已经有3个移动设备Linux联盟在运营商、终端厂商、应用软件提供者等周边合纵活动，Montavista等方案，Sharp，Motorola和Samsung等先行者都已试水。类似Android的东东的推出只是时日问题，恰好此时iPhone先行了一步。
+
+提到的几大原因分析并不很到位。
+
+目前说苹果的创新不足，比起之前的轰动效应确实明显，但是新发布产品上的功能都被各Android厂商的产品发布过了，各Android设备的创新实在太多而且领先，人们才有这样的感觉。依靠苹果积累的现金流和人才，加上iCloud，App Store，iTunes等完善的基础设施，统一的软硬件平台，已经庞大的开发者社群，应该还会有不断的创新推出。
+
+三星的上升导致的对苹果的配件供应变化是个重要的原因，三星自有的全产业链对于整个集团的整合供应很利好。
+
+苹果自有系统的封闭iOS虽然保证了不同设备的软件兼容性，也使得生态系统上有阻碍。
+
+Android虽然有众多非授权的定制，或者山寨，毕竟是开放的，所有厂商或多或少都会帮其做了非常重要的测试、验证问题甚至间接commit fix。日趋分化的Android系统在4.0后已经趋于一统，类Unix分化带来的负面趋势可以避免。
+
+这也给予了Android开发者足够信心。苹果生态中App数量和用户被Android迅速甩下，即使其不断标榜的App Store收费软件多、开发者赢利多的说法，也抵不过迅猛的Android App的增长，开发者难以抵挡的心动，或许思考卖软件赢利并非唯一的途径。
+
+说忽略中国市场的说法站不住脚，其零售店的数量，并不能代表真实的渠道，在别的地区零售店多，但是在天朝，数不清的授权店、分销渠道远远贡献了大头，否则也不会贡献1/5营收。而似乎很有力量的说忽视了全球移动用户数量最多的中国移动，是因为移动的3G是天朝特色的TD SCDMA，虽然新的Qualcomm芯片可以支持（iPhone4中的芯片即有Modem方面的支持），但是需要铺上特殊的努力，而这TD系统面临不确定性，移动正在猛力奔向LTE新世界。
+
+谈到Cook的眼光，现在很难定论，在Jobs的光环下很难得到高分。而且股东们的赢利压力也对决策施加很多影响。
+
+至于保密制度，实在难以拿来作为论据。盛名之下，自然关注度高，就像桌面系统上OS的漏洞威胁一样，市占率高的自然成为目标。
+
+不管是否金融形势如何走向，Apple的神话已经不再能继续，继续滑落的性价比，生态系统和用户印象，面临众多的终端创新来说，都回天乏力。
+
+再加上Windows8的强势推出，有着和iOS/MacOSX与Android类似的生态系统，而且有桌面OS与用户习惯的优势。所以近期股价大跌，都是必然的。
+
+很关键的一点，就是似乎点睛的"诺基亚的今天或许就是苹果的明天"，文章只字不提诺基亚如何变成现在的问题所在（除了这里面的创新不足外，其余问题对诺基亚并不算严重），已经如何这些问题会导致苹果类似的影响。
+<div class="MsoNormal"></div>
+<div style="border-left:solid blue 1.5pt;border:none;padding:0 0 0 4pt;">
+<div class="MsoNormal"></div>
+<div style="border-bottom:solid #b6c3aa 1pt;border:none;padding:0 0 5pt;">
+<div align="center" class="MsoNormal" style="line-height:14.95pt;margin-bottom:5.45pt;margin-left:5.45pt;margin-right:5.45pt;text-align:center;"><b><span style="color:black;font-family:宋体;font-size:medium;"><span lang="ZH-CN" style="font-family:宋体;font-size:14pt;font-weight:bold;">祸不单行：六大原因致苹果寒冬提前到来</span></span></b><b><span style="color:black;font-family:Verdana;font-size:medium;"><span><u></u><u></u></span></span></b></div>
+</div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">股价累计跌幅超</span></span><span style="color:#333333;font-family:Verdana;"><span>20%</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">、</span></span><span style="color:#333333;font-family:Verdana;"><span>iOS</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">被疯狂吐槽、</span></span><span style="color:#333333;font-family:Verdana;"><span>Galaxy S </span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">Ⅲ</span></span><span style="color:#333333;font-family:Verdana;"><span lang="ZH-CN"> </span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">超越</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/iPhone" target="_blank"><span style="color:#333333;"><span style="color:#333333;text-decoration:none;">iPhone</span></span></a> 4S</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">成为第三季度智能机畅销王、管理层大换血</span></span><span style="color:#333333;font-family:Verdana;"><span>……</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">没错，你看到的就是近两个月来苹果一系列的糟糕表现。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">五年前，苹果在英国推出了</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，开创了全新的</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%D6%C7%C4%DC%CA%D6%BB%FA" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">智能手机</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">时代；两年前，苹果在美国发布了</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，再一次改变了</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%D2%C6%B6%AF" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">移动</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">终端的格局。但随着移动终端领域的竞争趋于白热化，</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%C8%FD%D0%C7" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">三星</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">帝国的崛起，</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%CE%A2%C8%ED" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">微软</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">、谷歌的强势介入，曾经的科技巨头已经疲态尽显。虽然苹果的每一款新产品依然具有很强的号召力，但消费者的不满也与日俱增，苹果和竞争对手之间的差距正在慢慢缩小。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">为什么乔布斯离世仅仅</span></span><span style="color:#333333;font-family:Verdana;"><span>1</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">年，苹果就已经走在堕落的道路上？腾讯科技为您归纳了苹果业绩下滑的六大原因，看库克这一年是如何将苹果一步一步带下神坛。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><b><span style="color:#333333;font-family:Verdana;"><span>1</span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">、</span></span></b><b><span style="color:#333333;font-family:Verdana;"><span lang="ZH-CN"> </span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">创新不足：</span></span></b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">今年苹果推出的两款重磅产品：</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone 5</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">和</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad Mini</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，尽管近期销量不错，但在业界看来，基本都是在老产品基础上进行的微调整，从外观到功能都大同小异，并不具备带领苹果长远发展的能力。尤其是</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad mini</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，既不像谷歌</span></span><span style="color:#333333;font-family:Verdana;"><span>Nexus 7</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">那样拥有很高的性价比，也不像三星</span></span><span style="color:#333333;font-family:Verdana;"><span>GALAXY Tab </span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">系列具备打电话功能，除了尺寸缩小外，几乎没有创新可言。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">苹果认为</span></span><span style="color:#333333;font-family:Verdana;"><span>iOS</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">虽然是封闭的系统，但却是一个完善的体系，这个体系的任何环节都有他们的优势，所以它们这个体系是战无不胜的。但随着苹果创新能力的日渐低下，加之开放趋势已渐渐明朗，苹果的</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">闭关锁国</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">策略正在把自己一步步逼向绝路。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">《纽约时报》撰文指出，苹果的</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone 5</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">和</span></span><span style="color:#333333;font-family:Verdana;"><span>iOS 6</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">操作系统毫无创新可言，只是一味地扞卫自己的既得利益。《福布斯》杂志更是断言，苹果的光环正在逐渐褪去，变成了一家普通的科技公司。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><b><span style="color:#333333;font-family:Verdana;"><span>2</span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">、</span></span></b><b><span style="color:#333333;font-family:Verdana;"><span lang="ZH-CN"> </span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">供应链危机：</span></span></b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">日前，鸿海精密董事长郭台铭表示，受设计因素影响，苹果</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone 5</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">生产难度较大，鸿海目前仍然无法满足苹果的质量标准。郭台铭的这番话对苹果产生最明显的影响就是，苹果将无法拥有足够的</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%CA%D6%BB%FA" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">手机</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">来满足市场需求，苹果也就无法达到当前财季的</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">销售量预期。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">此外，还有分析称，苹果试图降低对三星的供应依赖，但却给自身带来不少麻烦。若三星、苹果的零组件供应关系破裂，那么苹果将面临严重的零件供应问题。相反，三星却在此过程中建立了自己的供应链结构，同时还降低了对苹果的重度依赖。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">今天有消息称，三星已经将向苹果供应的手机处理器价格上调了</span></span><span style="color:#333333;font-family:Verdana;"><span>20%</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">。这意味着，苹果的供应链危机仍未得到解决。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><b><span style="color:#333333;font-family:Verdana;"><span>3</span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">、中国市场的昏招：</span></span></b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">作为为苹果贡献了总营收五分之一的中国市场，苹果在中国的扩张速度显得有些缓慢。在中国市场，苹果的零售店只有</span></span><span style="color:#333333;font-family:Verdana;"><span>8</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">家（北京三家，上海三家，深圳一家，香港一家）。中国</span></span><span style="color:#333333;font-family:Verdana;"><span>13</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">亿人口，相当于每</span></span><span style="color:#333333;font-family:Verdana;"><span>1.625</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">亿人共用一家苹果零售店，而美国宾夕法尼亚州拥有</span></span><span style="color:#333333;font-family:Verdana;"><span>1270</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">万人口，却同样有</span></span><span style="color:#333333;font-family:Verdana;"><span>8</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">家零售店。零售店每天人满为患、消费者为修</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">排起的长龙</span></span><span style="color:#333333;font-family:Verdana;"><span>……</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">会进一步挑战中国消费者对苹果的忍耐力。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">此外，在中国市场，苹果选择</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%D6%D0%B9%FA%C1%AA%CD%A8" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">中国联通</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">和</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%D6%D0%B9%FA%B5%E7%D0%C5" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">中国电信</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">作为合作</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%D4%CB%D3%AA%C9%CC" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">运营商</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，却忽略了全球移动用户数量最多的</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%D6%D0%B9%FA%D2%C6%B6%AF" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">中国移动</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">。尽管存在</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%CD%F8%C2%E7" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">网络</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">制式等原因，但放弃中国移动，苹果失去的不仅是庞大的用户基础，而且丧失了更具消费能力的用户。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;"><br></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><b><span style="color:#333333;font-family:Verdana;"><span>4</span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">、保守的领导者：</span></span></b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">乔布斯生前曾经表示：</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">库克并不是一个会做产品的人。</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">苹果一年多的表现已经证明，库克除了</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">不会做产品</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，战略眼光也显得颇为短浅。毫无疑问，</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad mini</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">依旧将会成为今年圣诞节的热卖电子设备。对于实现公司营收和利润最大化来说，推出</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad mini</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">无疑是明智之举，而且由此带来的收益会相当可观。然而，苹果在这一过程中并没有展示出长远发展的战略眼光。走长远发展之路一直是苹果坚持不懈的追求，但库克这次却偏离了这一正确道路，而去追求更多的利润。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">苹果宣布，他们将再次实现</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">同类产品中更薄</span></span><span style="color:#333333;font-family:Verdana;"><span>"</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">的目标，但却忽视了</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad mini</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">应该经历的创新实验过程，而这些实验才是包括</span></span><span style="color:#333333;font-family:Verdana;"><span>iPad</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">和</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">在内的品牌产品成功的基石。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><b><span style="color:#333333;font-family:Verdana;"><span>5</span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">、保密制度：</span></span></b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">苹果的保密制度向来在业界享有盛名。苹果研发什么样的新产品，新产品什么时候发布，有什么特性都被列为最高机密，不仅外界无人得知，即使在苹果内部，甚至高管层也是秘密。这是因为苹果的产品本就不多，只有保密工作做得好了，才能吊足媒体胃口，吸引大家眼球，保持产品热度。但也正是期望越大，失望也就越大。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">事实上，苹果公司的保密制度在此次</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone 5</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">上市时已被破坏得一干二净，</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone 5</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">上市之前各种参数信息已泄露，几乎没有任何惊喜可言，各大科技</span></span><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%B2%A9%BF%CD" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">博客</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">早早就公布了外泄照片，主要参数也在外界猜测之间，苹果是否需要再实行这样的保密制度，已令人生疑。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;"><br></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><b><span style="color:#333333;font-family:Verdana;"><span>6</span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">、</span></span></b><b><span style="color:#333333;font-family:Verdana;"><span lang="ZH-CN"> </span></span></b><b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;font-weight:bold;">欧债危机：</span></span></b><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">当然，宏观经济不景气，也对苹果业绩下滑也有着直接影响。放眼整个欧洲，经济危机使用户更加理性消费，相比较苹果产品的高端价位而言，也许</span></span><span style="color:#333333;font-family:Verdana;"><span>Android</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">手机的性价比更能吸引用户。从数据反馈来看，</span></span><span style="color:#333333;font-family:Verdana;"><span>Android</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">手机不附带服务合同，售价不到</span></span><span style="color:#333333;font-family:Verdana;"><span>200</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">美元，相较价格昂贵的</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">，欧洲的普通大众都负担得起。即使三星的高端</span></span><span style="color:#333333;font-family:Verdana;"><span>Galaxy S II</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">售价也比最便宜的</span></span><span style="color:#333333;font-family:Verdana;"><span>iPhone</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">低。从不差钱到伤不起，欧洲用户对于</span></span><span style="color:#333333;font-family:Verdana;"><span>Android</span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">手机会更加青睐。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;margin-bottom:10.2pt;text-indent:16.3pt;"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">六大原因，也许并不全面，但却足以让苹果一步一步走下神坛，提前迎来冬季。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal" style="line-height:16.3pt;text-indent:16.3pt;"><span style="color:#333333;font-family:Verdana;"><span><a href="http://www.c114.net/keyword/%C5%B5%BB%F9%D1%C7" target="_blank"><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;text-decoration:none;">诺基亚</span></span></a></span></span><span style="color:#333333;font-family:宋体;"><span lang="ZH-CN" style="color:#333333;font-family:宋体;font-size:10pt;">的今天，或许就是苹果的明天。</span></span><span style="color:#333333;font-family:Verdana;"><span><u></u><u></u></span></span></div>
+<div class="MsoNormal"></div>
+</div>
+</div>
+</div>
+</div>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/11/2012-11-13-shut-up-hypocritical-education/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2012/11/2012-11-13-shut-up-hypocritical-education/" itemprop="url">
+                  Shut Up, Hypocritical Education
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2012-11-13 03:28:00" itemprop="dateCreated datePublished" datetime="2012-11-13T03:28:00+08:00">2012-11-13</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+<font size="4"><br>莫言：《虚伪的教育》 
+
+　　不久前，由北京的几家报刊牵头，发起了一场对现行语文教育的声讨。说"声讨"似乎激烈了点，那就改成"讨论"吧。这场讨论，激起了很大的反响。很多可以说是义愤填膺的文章纷纷见诸报端，而且，据说这些文章已经引起了有关部门的注意。
+
+　　我是一个没有受过完整的学校教育的人。"文化大革命"时，因为家庭出身中农，也由于我敢于跟那些当了红卫兵头子的老师对抗，所以，小学还没毕业就被赶出了校门。后来到了部队，发表了一些文学作品后，才考进一所部队艺术院校学习。我没有进过一天中学课堂，对现在的中学语文教育，基本上不了解。我有一个正在读中学的女儿，她经常来问我一些语文方面的问题。她可能以为当了作家的父亲解答几个中学语文方面的问题不成问题，但面对着她的问题，我从来没给过她一个肯定的回答。我总是含含糊糊地谈谈我的看法，然后要她去问老师并且一定要以老师的说法为准。我的不自信是因为我没按部就班地念中学，骨子里深藏着自卑。但读了那些受过完整教育、甚至正在教语文的人写的文章，才知道他们的境遇与我差不多，心里多多少少地得了一点安慰。
+
+　　认真地读了那些讨论文章，又粗粗地翻看了女儿的语文课本，我感到，我们现在的语文教育，从教材的选定到教学的目的，已经形成了一个相当完整、自满自足的体系，要彻底改变是不可能的。有的文章，对我们几十年基本不变的教材提出批评，其实，教材仅仅是教育目的的产物，也就是说<b>，有什么样的教育目的，就有什么样的教材。</b>"文化大革命"前，我们的教育目的是要培养"又红又专的无产阶级革命事业的接班人"， "文化大革命"后，随着政治形式的变化和发展，换了一些提法，但骨子里还是老一套。而教育目的，不是几个编审教材的书生能够决定的。我看到了那个编教材的人吞吞吐吐地发言，知道他们有难言之隐。正因为国家的教育目的带有如此强烈的政治够"红"，还不够"无产阶级"，那就只学《 毛主席语录 》。我在小学学习五年，有两年就是把一本大开本的《 毛主席语录》当了语文教材。"文化大革命"结束后，又把"文化大革命"前的教材当成了好东西，几乎全盘恢复。其实，"文化大革命色彩，所以也就只能编出这样的教材。就是这样的教材，在"文化大革命"期间还给彻底地否定了，因为它还不"并不是突然发生的，而是建国以来共产党所犯错误长期积累后的必然爆发。共产党"文革"前所犯的错误，在我们的语文教材中得到了充分的体现。"文革"后，共产党在不断地纠正"文革"前的错误，但我们的语文教材却没有跟着变化。于是也就出现了被许多人猛烈抨击的现象：在不提阶级斗争多少年后，我们的语文教材中还有那么多"革命"文章。<b>文学界早就对统治了中国散文界几十年的那种类型化散文提出了强烈的批评，这些虚假成性的文章早就没人要读，但我们的教材还把它们当成光辉的范文，硬逼着老师升虚火，强抒"无产阶级"之情，硬逼着90年代的学生，去摹仿他们那种假大空的文体。</b>也许，这些文章的作者，在写这些文章时，抒发的确是他们当时的真实感情，<b>但这些人现在活着的也不写这样的文章了，他们批评起共产党的错误来，比我们这些所谓的"有问题"的作家还要刻薄，他们自己也未必承认，那些被选进了教材，教育了几代中国人的文章，就是他们最好的文章。他们未必不对当年自己在"左"的思想指导下的创作进行反思</b>。他们现在的创作也是充满了"人情味"、充满了 "不健康的情调"的呀！这些最"革命"的作家早已变成了美丽的蝴蝶满世界飞翔着传播爱心，但我们还在强逼着孩子们学习他们那些咬牙切齿的文章。
+
+　　<b>长期以来，在我们国家里，"人道主义""人性"，都被打上了"资产阶级"或是"小资产阶级"的标签</b>，进一步发展就是谈情色变，经常被引用的就是鲁迅那句话，"贾府的焦大不会爱上林妹妹"，其实鲁迅也不是焦大，他也不敢肯定地说焦大不会爱上林妹妹。共产党进城以后，<b>多少"焦大"改造了家庭，娶了成千上万的"林妹妹"做老婆。但人们不敢面对现实，尤其不敢面对自己的内心。</b>鲁迅先生通过阿Q揭示了部分 "国民性"，鲁迅先生还用他那些匕首般的杂文，揭示了中国人的虚伪。这是更为普遍的"国民性"。<b>因为虚伪，我们口是心非；因为虚伪，我们亦人亦鬼；因为虚伪，我们明明爱美人，却把美人说成是洪水猛兽。更为可怕的是，长期的虚伪，形成了习惯，使我们把虚伪当成了诚实。我们明明满口谎言，却并不因为说谎而产生一点羞赧之心。</b>这就来了，明明我的儿女公费留学后全都不回来了，我还是理直气壮地批评那些不回来的留学生；明明我的儿女在国外过着好日子，我却义正辞严地批判资本主义社会的腐朽性。明明我们知道教材里许多文章是假话空话，连文章的作者自己也不相信，但我们还是逼着孩子们当成真理来学习。明明我们每个人都有那种"病态"的"资产阶级"感情，但我们却硬要消灭学生头脑中的这种感情。我们教材中的有些文章作者明明是表达了自己的"资产阶级"感情，我们却硬要给人家进行"无产阶级"的解释。
+
+　　问题还是回到我们的教育目的上来吧，我们的<b>语文教育最终要达到的目的，并不是要学生能够用独具特色的语言来抒发自己的思想感情（允许摹仿着教材上的光辉样板抒发"无产阶级"感情）</b>；我们要培养的是思想"健康"的接班人，并不需要感情细腻的"小资产阶级"；<b>我们恨不得让后代都像一个模子里做出来的乖孩子，决不希望培养出在思想上敢于标新立异的"异类"。国家鼓励人们在自然科学领域标新立异、发明创造，但似乎并不鼓励人们在意识形态领域里标新立异，更不希望你发明创造。</b>尽管国家有宗教政策，允许人们不相信马克思主义而相信基督教、伊斯兰教或是佛教，但在我们的学校里则决不允许有任何非马克思主义思想的存在<b>。由此决定了我们的教材必然具有强烈的政治色彩；由此决定了我们要通过语文教育达到政治教育的目的。于是，语文就变成了政治的工具；</b>于是，我们的孩子们的作文，也就必然地成为鹦鹉学舌，千篇一律，抒发着同样的"感情"，编造着同样的故事。我读过我女儿的从小学到高中的应试作文，几乎看不出什么变化。倒是她遵照她的中学老师的嘱咐写的那些对她的考试毫无用处的随笔和日记，才多少显示出了一些文学的才华与作为一个青春少女的真实感情。<b>可见孩子们也知道，写给党和国家看的文章，必须说假话，抒假情，否则你就别想上大学。</b>如果我们的这种教育方法真能把我们的后代培养成除了相信马克思主义之外什么都不相信的"红色接班人"，那就这样搞下去吧！但<b>事实恰恰相反，孩子们在上学期间就看出了教育的虚伪，就被训练出了不说"人话"的本领，更不必说离开学校进入复杂的社会之后。<br> </b><br>　　细一想，我们的孩子用两种笔调写文章的现象，在某种意义上是继承了传统。在漫长的封建社会里，那些学子们，用一种笔调写应试的八股文，用另一种笔调填词赋诗写小说。做八股文是正业，关系到个人前程；填词赋诗写小说是副业，是野狐禅。《儒林外史》中鲁编修家的小姐，发现自己的新婚夫婿只会写诗根本不会写八股文，气得当场昏厥，可见不会写八股文连漂亮的小姐也不爱。那时的文人，在文学方面有所成就的，大概有两种情况：一是屡试不第，绝了科举的望，于是就通过文学的方式来抒发心中的愤懑，譬如蒲松龄。二是科场得意后，但官场上不得意，被贬到天涯海角，但饭还能吃饱，闲来无事，就写诗填词，发泄感情，打发岁月，如苏轼等人。当然流芳百世的是他们的诗词小说，而不是让他们金榜题了名的八股文章。当然，考中了举人进士的人成千上万，但大都在历史的长河中湮灭了名字，蒲松龄的名字却永垂不朽。我们的孩子，一旦考上大学之后，大概再也不会用那种笔调写那种应试文章，就像用一块砖头敲门，门敲开了，砖头肯定要扔掉。90年代的语文教育，实在不应该为了帮学生雕琢一块砖头费这样大的力气。
+
+　　这就让人想起了高考。
+
+　　即便有朝一日高考与中考进行了革命性的改革，语文教材也编订得让人满意，我们的孩子是不是就必然地提高了文学素养、并由此进而提高了人的素质了呢？我想也未必。这未必的原因就是虽然我们有了好的教材、有了好的考试方法，但我们未必有那么多好的、起码是合格的语文老师。好的老师，能通过自己的言传身教，让学生学到许多课本上没有的东西。<b>好的老师哪里来？当然主要是通过师范学校的培养。城市的情况我不甚了解，仅就我所接触的农村而言，其实真正优秀的学生是不报师范的。即便是师范毕业的优秀学生，也并不一定去当老师。必须承认在我们的社会中，最上等的职业还是当官，当官的工资尽管不比教师高，但人们都知道，大多数当官的并不靠工资吃饭。他们合法地享受着最好的东西，他们即便不贪污不受贿也可以活得比老百姓好得多。无论什么人下了岗，当官的也不会下岗。常常听说某地拖欠教师的工资，可从来没听说过什么地方拖欠了书记或是县长的工资。一个中学教师被任命为哪怕是穷乡的乡长，都要摆酒宴庆贺；但如果让一个乡长去当中学教师，他很可能要上吊。当然，真正优秀的人也未必当得上官。</b>在这样的现实面前，就很难保证教师队伍的质量。有了好的教材，没有好的老师，恐怕也无济于事。所以，我想我们的语文教育改革，实际上牵扯到方方面面。<b>什么时候当官的都想当教师了，别说语文教育中存在的这点问题，再大的问题也会迎刃而解。</b>
+
+　　我认为，<b>语文水平的提高，大量阅读非常重要。</b>在目前教育经费普遍不足的情况下，让学校拿出大量的钱来购买图书很不现实，我们为什么不能像"文革"前那样，把语文教材分成《 汉语 》和《 文学 》两本教材呢？我幼时失学在家，反复阅读家兄用过的《 文学》课本，感到受益很大。我最初的文学兴趣和文学素养，就是那几本《文学》课本培养起来的。另外，我觉得，我们<b>没必要让中学生掌握那么多语法和逻辑之类的知识，这些知识完全可以放到大学中文系里学</b>。我感到<b>，一个人如果不能在青少年时期获得一种对语言的感觉，只怕一辈子都很难写出漂亮的文章。至于语法逻辑之类，八十岁也可以学得会，</b>而且很可能因为有了多年的使用语言的实践，学起来会事半功倍。让孩子们像拌黄瓜菜一样去学那些枯燥的逻辑、语法，毫无疑问是一桩苦差事，我们完全可以把语文课教学搞得妙趣盎然。实际上，<b>绝大多数的人，一辈子也用不到自己的母语的语法，一个基本上不懂语法的人，完全可以正确地使用母语说话和写作。既然我们提倡学以致用，何必花那么多的时间去学那些对大多数人无用的东西呢？如果我们的中学语文教育能进行这样的改革，我们的大学中文系就多了一条存在的理由。大学中文系培养的就是精通汉语语法和逻辑的专门家，他们研究汉语的发展与历史，他们毕业后可以教中国人学汉语，也可以教外国人学汉语</b>。那就不会像现在这样，一篇文章，小学生在学，中学生也学，大学生也在学。我想，如果把语文比喻成一台钢琴，那么，的确需要一些人学设计、学修理，而绝大多数的人，只要学会演奏就行了。<b>肖邦未必能修理钢琴，沈从文未必能写出一本语法方面的书，而写了很多语法书的吕叔湘，好像也没能写出一部很好的小说。</b>
+
+</font>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/09/2012-09-18-adb-no-such-file/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2012/09/2012-09-18-adb-no-such-file/" itemprop="url">
+                  Adb No Such File
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2012-09-18 06:21:00" itemprop="dateCreated datePublished" datetime="2012-09-18T06:21:00+08:00">2012-09-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2><b>Common adb errors and solutions</b> </h2>
+
+
+<h4><b>No such file or directory</b></h4>
+<div style="font-family:Verdana, sans-serif;">/path/to/android-sdk-linux/platform-tools/adb: No such file or directory</div>
+
+Solution:
+<div>$ sudo apt-get install ia32-libs</div>
+
+Links:<br><a href="https://bugs.launchpad.net/ubuntu/+source/ia32-libs/+bug/852101" target="_blank" rel="noopener">https://bugs.launchpad.net/ubuntu/+source/ia32-libs/+bug/852101</a><br><a href="http://askubuntu.com/questions/73491/no-such-file-or-directory-for-existing-executable" target="_blank" rel="noopener">http://askubuntu.com/questions/73491/no-such-file-or-directory-for-existing-executable</a><br><a href="http://kenno.wordpress.com/2011/10/27/ubuntu-11-10-32-bit-applications-do-not-run-64-bit/" target="_blank" rel="noopener">http://kenno.wordpress.com/2011/10/27/ubuntu-11-10-32-bit-applications-do-not-run-64-bit/</a>
+<h4>insufficient permissions for device</h4>
+
+$ adb shell df<br>error: insufficient permissions for device
+
+$ sudo adb kill-server<br>[sudo] password for aaron: 
+
+$ adb shell df<br>* daemon not running. starting it now on port 5037 *<br>* daemon started successfully *<br>Filesystem               Size     Used     Free   Blksize<br>/dev                   338.7M    64.0K   338.7M   4096<br>/mnt/asec              338.7M     0.0K   338.7M   4096<br>/mnt/obb               338.7M     0.0K   338.7M   4096<br>/system               1007.9M   550.9M   457.0M   4096<br>/data                    4.0G   172.8M     3.8G   4096<br>/cache                 246.1M     4.1M   241.9M   4096<br>/mnt/sdcard             21.2G   912.8M    20.3G   32768<br>/mnt/secure/asec: Permission denied
+
+"adb start-server " is automatically run.
+
+$ adb kill-server ;  sudo adb start-server ; adb devices<br>When to use "sudo" for adb? never needed?
+
+1<br>  adb kill-server ;  sudo adb start-server ; adb shell df
+
+2<br> adb kill-server ;  adb start-server ; adb shell df
+
+3<br> adb kill-server ;  sudo adb shell df
+
+Result 1 equals 3
+
+2 will give<br> error: insufficient permissions for device
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/09/2012-09-14-linux-proxy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2012/09/2012-09-14-linux-proxy/" itemprop="url">
+                  Linux Proxy
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2012-09-14 09:29:00" itemprop="dateCreated datePublished" datetime="2012-09-14T09:29:00+08:00">2012-09-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+
+<b><span style="font-size:medium;">== proxy for apt ==</span></b>
+
+edit<br><span style="font-family:courier new, monospace;">/etc/apt/apt.conf</span>
+
+or<br><span style="font-family:courier new, monospace;">$ sudo vi /etc/apt/apt.conf.d/60proxy</span><br><span style="font-family:courier new, monospace;">Acquire::http::Proxy "http://x.x.x.x:port";</span>
+
+<span style="font-family:courier new, monospace;">Don't miss the trailing ";". </span>
+
+The proxy can be in pac form:<br>"http://x.x.x.x:port/accelerated.pac"
+
+URL:<br><a href="http://en.wikipedia.org/wiki/Proxy_auto-config" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Proxy_auto-config</a>
+
+<b><span style="font-size:medium;">== proxy for wget ==</span></b>
+<pre>wget -e http_proxy=http://x.x.x.x:port -c -m -np -k URL </pre>
+<pre> </pre>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/09/case-insensitive-completion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2012/09/case-insensitive-completion/" itemprop="url">
+                  Case Insensitive Tab-Completion or Glob Expansion
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2012-09-09 02:15:00" itemprop="dateCreated datePublished" datetime="2012-09-09T02:15:00+08:00">2012-09-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-16 20:27:46" itemprop="dateModified" datetime="2018-08-16T20:27:46+08:00">2018-08-16</time>
+              
             
           </span>
 
@@ -425,7 +1252,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jot/categories/shell/" itemprop="url" rel="index"><span itemprop="name">shell</span></a></span>
@@ -489,6 +1316,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -534,7 +1364,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-09-04-ubuntu-precise-sources-list-beijing/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/09/2012-09-04-ubuntu-precise-sources-list-beijing/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -553,23 +1383,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2012-09-04-ubuntu-precise-sources-list-beijing/" itemprop="url">Ubuntu Precise sources.list Beijing</a></h1>
+                <a class="post-title-link" href="/jot/2012/09/2012-09-04-ubuntu-precise-sources-list-beijing/" itemprop="url">
+                  Ubuntu Precise sources.list Beijing
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-09-04T08:01:00+08:00">2012-09-04</time>
+
+              
+                
+              
+
+              <time title="Created: 2012-09-04 08:01:00" itemprop="dateCreated datePublished" datetime="2012-09-04T08:01:00+08:00">2012-09-04</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -604,67 +1463,70 @@
         
           
             <div class="WordSection1">
-<p class="MsoNormal"><span style="color:#1F497D;"> </span></p>
+<p class="MsoNormal"><span style="color:#1F497D;"> </span>
 <div style="border:none;border-left:solid blue 1.5pt;padding:0 0 0 4pt;">
-<p class="MsoNormal"> </p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> precise main restricted universe multiverse # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-security main restricted universe multiverse # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-updates main restricted universe multiverse # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-proposed main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-backports main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> precise main restricted universe multiverse # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-security main restricted universe multiverse # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-updates main restricted universe multiverse # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-proposed main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-backports main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> precise main non-free # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> precise main non-free # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> oneiric-updates main non-free # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> oneiric-updates main non-free # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> precise-security main restricted</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> precise-security universe</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> precise-security multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://extras.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://extras.ubuntu.com/ubuntu</a> precise main</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://extras.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://extras.ubuntu.com/ubuntu</a> precise main</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise-proposed partner</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise partner</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise-security partner</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise-updates partner</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/ubuntu" target="_blank" rel="noopener">http://archive.canonical.com/ubuntu</a> precise partner</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu</a> precise main universe multiverse restricted</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> precise-proposed main multiverse restricted universe</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> precise-security main multiverse restricted universe</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> precise-updates main multiverse restricted universe</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://mirror.bjtu.edu.cn/ubuntu/</a> precise main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://mirror.bjtu.edu.cn/ubuntu/</a> precise-updates main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://mirror.bjtu.edu.cn/ubuntu/</a> precise-security main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise-updates main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise-proposed main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise-security main restricted universe multiverse</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.medibuntu.org/" target="_blank" rel="noopener">http://packages.medibuntu.org/</a> oneiric non-free free</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.medibuntu.org/" target="_blank" rel="noopener">http://packages.medibuntu.org/</a> oneiric-staging non-free free</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://download.virtualbox.org/virtualbox/debian" target="_blank" rel="noopener">http://download.virtualbox.org/virtualbox/debian</a> precise non-free contrib # disabled on upgrade to precise</span></p>
-<p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span></p>
-<p class="MsoNormal"> </p>
-</div>
-</div>
+<p class="MsoNormal"> 
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> precise main restricted universe multiverse # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-security main restricted universe multiverse # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-updates main restricted universe multiverse # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-proposed main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-backports main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> precise main restricted universe multiverse # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-security main restricted universe multiverse # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-updates main restricted universe multiverse # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-proposed main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/ubuntu" target="_blank" rel="noopener">http://packages.linuxdeepin.com/ubuntu</a> oneiric-backports main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> precise main non-free # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> precise main non-free # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> oneiric-updates main non-free # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb-src <a href="http://packages.linuxdeepin.com/deepin" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin</a> oneiric-updates main non-free # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> precise-security main restricted</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> precise-security universe</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://security.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://security.ubuntu.com/ubuntu</a> precise-security multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://extras.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://extras.ubuntu.com/ubuntu</a> precise main</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://extras.ubuntu.com/ubuntu" target="_blank" rel="noopener">http://extras.ubuntu.com/ubuntu</a> precise main</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise-proposed partner</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise partner</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise-security partner</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> precise-updates partner</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://archive.canonical.com/ubuntu" target="_blank" rel="noopener">http://archive.canonical.com/ubuntu</a> precise partner</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu</a> precise main universe multiverse restricted</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> precise-proposed main multiverse restricted universe</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> precise-security main multiverse restricted universe</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> precise-updates main multiverse restricted universe</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://mirror.bjtu.edu.cn/ubuntu/</a> precise main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://mirror.bjtu.edu.cn/ubuntu/</a> precise-updates main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://mirror.bjtu.edu.cn/ubuntu/</a> precise-security main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise-updates main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise-proposed main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"="">deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> precise-security main restricted universe multiverse</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.medibuntu.org/" target="_blank" rel="noopener">http://packages.medibuntu.org/</a> oneiric non-free free</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://packages.medibuntu.org/" target="_blank" rel="noopener">http://packages.medibuntu.org/</a> oneiric-staging non-free free</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""># deb <a href="http://download.virtualbox.org/virtualbox/debian" target="_blank" rel="noopener">http://download.virtualbox.org/virtualbox/debian</a> precise non-free contrib # disabled on upgrade to precise</span>
+</p><p class="MsoNormal"><span style="font-size:10pt;font-family:\" courier="" new\";color:black;"=""> </span>
+</p><p class="MsoNormal"> 
+</p></div>
+</p></div>
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -710,7 +1572,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-08-28-flash-cyanogenmod-v10/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/08/2012-08-28-flash-cyanogenmod-v10/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -729,23 +1591,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2012-08-28-flash-cyanogenmod-v10/" itemprop="url">Flash CyanogenMod V10</a></h1>
+                <a class="post-title-link" href="/jot/2012/08/2012-08-28-flash-cyanogenmod-v10/" itemprop="url">
+                  Flash CyanogenMod V10
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-08-28T01:14:00+08:00">2012-08-28</time>
+
+              
+                
+              
+
+              <time title="Created: 2012-08-28 01:14:00" itemprop="dateCreated datePublished" datetime="2012-08-28T01:14:00+08:00">2012-08-28</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -823,15 +1714,19 @@
 <div style="background-color:white;color:#222222;font-family:arial, sans-serif;font-size:13px;"></div>
 <div style="background-color:white;color:#222222;font-family:arial, sans-serif;font-size:13px;"><u></u>Reboot your device, press volume done button many times during booting. (* indeed, once is OK just after the front keypad is lighten.)</div>
 <div style="background-color:white;color:#222222;font-family:arial, sans-serif;font-size:13px;"><u></u></div>
-<p>
+
+
 <div style="background-color:white;color:#222222;font-family:arial, sans-serif;font-size:13px;">Using the menu with volume up/down and back to navigate, and Home (on some devices it is Power) button to select, wipe your user data, wipe your cache, and then install update zip file. Wait for the update is finished, then back to upper menu and select to restart the device.<u></u><u></u></div>
 <div style="background-color:white;color:#222222;font-family:arial, sans-serif;font-size:13px;"></div>
 <div style="background-color:white;color:#222222;font-family:arial, sans-serif;font-size:13px;">Now you have <span class="il" style="background-color:#ffffcc;">Jelly</span> <span class="il" style="background-color:#ffffcc;">Bean</span>, which is now Android 4.1.1.</div>
-</p>
+
           
         
       
     </div>
+
+    
+
     
     
     
@@ -877,7 +1772,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-08-13-across-the-wall/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/08/2012-08-13-across-the-wall/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -896,23 +1791,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2012-08-13-across-the-wall/" itemprop="url">Across the Wall</a></h1>
+                <a class="post-title-link" href="/jot/2012/08/2012-08-13-across-the-wall/" itemprop="url">
+                  Across the Wall
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-08-13T01:42:00+08:00">2012-08-13</time>
+
+              
+                
+              
+
+              <time title="Created: 2012-08-13 01:42:00" itemprop="dateCreated datePublished" datetime="2012-08-13T01:42:00+08:00">2012-08-13</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -948,13 +1872,17 @@
           
             <div></div>
 <div></div>
-<p><img src="/assets/medium.jpg" alt=" 鲜花和墙" width="480"><br style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">  <span style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">摄影：方加玮</span><br style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">  <strong style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">鲜花总会长出来，不在墙这边相见，就在墙外面思念。</strong>
+
+<img src="/assets/medium.jpg" alt=" 鲜花和墙" width="480"><br style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">  <span style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">摄影：方加玮</span><br style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">  <strong style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">鲜花总会长出来，不在墙这边相见，就在墙外面思念。</strong>
 <div><strong style="color:rgb(51,51,51);font-family:Verdana, Arial, sans-serif;font-size:16px;line-height:27px;background-color:rgb(255,255,255);">来源：《槽边往事》</strong> </div>
-</p>
+
           
         
       
     </div>
+
+    
+
     
     
     
@@ -1000,7 +1928,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-08-09-you-are-my-eye/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2012/08/2012-08-09-you-are-my-eye/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1019,23 +1947,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2012-08-09-you-are-my-eye/" itemprop="url">You Are My Eye</a></h1>
+                <a class="post-title-link" href="/jot/2012/08/2012-08-09-you-are-my-eye/" itemprop="url">
+                  You Are My Eye
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-08-08T16:24:00+08:00">2012-08-08</time>
+
+              
+                
+              
+
+              <time title="Created: 2012-08-08 16:24:00" itemprop="dateCreated datePublished" datetime="2012-08-08T16:24:00+08:00">2012-08-08</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1069,578 +2026,16 @@
       
         
           
-            <p>[youtube http://www.youtube.com/watch?v=bDU6jebYHd0?fs=1]</p>
+            
+[youtube http://www.youtube.com/watch?v=bDU6jebYHd0?fs=1]
 
           
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-07-24-attitude-matters/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2012-07-24-attitude-matters/" itemprop="url">Attitude Matters</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-07-24T07:53:00+08:00">2012-07-24</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Here I would like to share some notes that I learned from a candidate several days before. </p>
-<p>She graduated from Beijing Institute of Clothing Technology with bachelor degree on automation. </p>
-<p>In less than 4 years of working on testing she had deep understanding about testing and about Android system in a short time. </p>
-<p>She had formed the habit of thinking about daily work, and accumulated many testing skills. She can also summarize and share them among team to help co-workers. </p>
-<p>She was keen in learning new things, in different functionality areas. She was really familiar with many features. </p>
-<p>She also mentioned deep knowledge with SW and HW watchdog, learned from notes by developers in issue system. <br>She can do basic analysis on force close, ANR, and can analyze logs. <br>She was used to track issue root cause, and can do many exploratory testing. </p>
-<p>On how to find more issues, she would test stability in the early stage, test basic functions when most features were delivered, and at the later stage, she would surf online user forums, fans website, to track what users kept complaining about. </p>
-<p>She commands the best English among candidates we ever met. </p>
-<p>Although lacking of experience on risk analysis, we think her as potential on that. </p>
-<p>Although it's hard to judge her future performance, she really impressed us all very much during an extra-long session of face to face interviewing. </p>
-<p>As for why she can be better than other candidates, we all agree that attitude matters.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-03-19-favorite-apps-on-android/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2012-03-19-favorite-apps-on-android/" itemprop="url">Favorite Apps on Android</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-03-19T07:55:00+08:00">2012-03-19</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><span style="font-family:arial, sans-serif;font-size:13px;line-height:18px;">What apps do you choose on Android?</span>
-<div><span style="font-family:arial, sans-serif;line-height:18px;">Here share some of mine.</span><br><span style="font-family:arial, sans-serif;"><span style="line-height:18px;"><br></span></span><span style="font-family:arial, sans-serif;font-size:x-large;line-height:18px;">== File Manager ==</span><br><span style="font-family:arial, sans-serif;line-height:18px;">Now my favorite is that from rhmsoft:</span><br><a href="https://play.google.com/store/apps/details?id=com.rhmsoft.fm" target="_blank">https://play.google.com/store/apps/details?id=com.rhmsoft.fm</a><br><a href="http://rhmsoft.com/?p=78" target="_blank" rel="noopener">http://rhmsoft.com/?p=78</a><span style="font-family:arial, sans-serif;font-size:x-large;"><span style="line-height:18px;"><br></span></span></div></p>
-<p>=== Other choices ===<br>Astro<br><a href="https://play.google.com/store/apps/details?id=com.metago.astro" target="_blank">https://play.google.com/store/apps/details?id=com.metago.astro</a></p>
-<p><span style="font-family:arial, sans-serif;font-size:x-large;line-height:18px;">== App Backup &amp; Restore ==</span><br><a href="https://play.google.com/store/apps/details?id=mobi.infolife.appbackup" target="_blank">https://play.google.com/store/apps/details?id=mobi.infolife.appbackup</a></p>
-<p>Astro can also do App backup.<br><a href="https://play.google.com/store/apps/details?id=com.metago.astro" style="background-color:white;color:#999999;font-family:Georgia, serif;font-size:14px;line-height:21px;text-align:left;text-decoration:none;" target="_blank">https://play.google.com/store/apps/details?id=com.metago.astro</a></p>
-<p><span style="font-size:x-large;"><span style="font-family:arial, sans-serif;line-height:18px;">== Media player ==</span></span>
-<div>
-<div><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;"><br></span></span><span style="font-size:large;"><span style="font-family:arial, sans-serif;line-height:18px;">=== Music player ===</span></span><br><span style="font-family:arial, sans-serif;font-size:x-large;line-height:18px;"><br></span><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">Evaluating items:</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Headset control</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Track shift</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Lyric support</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Tract removing</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- CJK file name and metadata recognization</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;"><br></span></span></div>
-<div><span style="font-family:arial, sans-serif;font-size:13px;line-height:18px;">Google Music doesn't support Chinese well; (Up to now, Mar 2012)</span><br><span style="font-family:arial, sans-serif;font-size:13px;line-height:18px;">TTPod and kugou </span><span style="font-family:arial, sans-serif;font-size:13px;line-height:18px;">had made many updates during the past months.</span></div></div></p>
-<p>The choice now is TTPod:<br><a href="https://play.google.com/store/apps/details?id=com.sds.android.ttpod" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.sds.android.ttpod</a></p>
-<p>Other choices<br>Kugou</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.kugou.android" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.kugou.android</a><br><br class="Apple-interchange-newline"></p>
-<p><span style="font-family:arial, sans-serif;font-size:large;line-height:18px;">=== Video player ===</span><br><span style="font-family:arial, sans-serif;font-size:x-small;line-height:18px;">evaluating these items:</span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Play resuming</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Thumb generation</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Subtitle support</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Versatile codec support</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;">- Other advanced features, such as audio/video sync, etc.</span></span><br><span style="font-family:arial, sans-serif;font-size:x-small;"><span style="line-height:18px;"><br></span></span>My favorite is mx player:<br><a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad</a></p>
-<p>
-<div>Other choices<span style="font-family:arial, sans-serif;font-size:x-large;line-height:18px;"><br></span><br><a href="https://play.google.com/store/apps/details?id=com.redirectin.rockplayer.android.unified.lite" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.redirectin.rockplayer.android.unified.lite</a></div>
-<div></div>
-<div>BSPlayer /lite</div>
-<div></div>
-</p><p><span style="font-size:large;">=== Picture viewer ===</span><br><a href="https://play.google.com/store/apps/details?id=com.alensw.PicFolder" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.alensw.PicFolder</a></p>
-<p>Audio recorder<br>https://play.google.com/store/apps/details?id=com.andrconstruction.andrecord<br>?? Not very sure.</p>
-<p>Video editor<br>https://play.google.com/store/apps/details?id=com.techcatmobile.andromedia
-<div>?? Only use it for several basic functions.</div></p>
-<p><span style="background-color:white;line-height:19.5px;"><span style="color:#666666;font-family:Droid Sans, Arial, sans-serif;font-size:x-small;"><b><br></b></span></span><span style="background-color:white;line-height:19.5px;"><span style="color:#666666;font-family:Droid Sans, Arial, sans-serif;font-size:x-small;"><b><br></b></span></span><br><span style="font-size:large;"><b>== Life convenience ==</b></span></p>
-<p>Dictionary<br><a href="https://play.google.com/store/apps/details?id=com.merriamwebster" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.merriamwebster</a></p>
-<p>English-Chinese dictionary<br><a href="https://play.google.com/store/apps/details?id=com.kingsoft" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.kingsoft</a></p>
-<p>Chinese Input Method<br><a href="https://play.google.com/store/apps/details?id=com.iflytek.inputmethod" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.iflytek.inputmethod</a><br>Google Pinyin Input is nice too.</p>
-<p>Flash light<br><a href="https://play.google.com/store/apps/details?id=com.devuni.flashlight" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.devuni.flashlight</a></p>
-<p>Sports tracker:<br><a href="https://play.google.com/store/apps/details?id=com.endomondo.android" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.endomondo.android</a></p>
-<ul>
-<li><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;">Track any outdoor (It uses GPS.) sport including duration, distance, speed and calories.</span></li>
-<li><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;">Get audio feedback for every mile or km while exercising</span></li>
-<li><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;">See your route on a map</span></li>
-<li><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;">View history of workouts and study split times per km or mile</span></li>
-<li><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;">Keep a log of your music playlist for each workout</span></li>
-</ul>
-<p><span style="background-color:white;line-height:19.5px;"><span style="color:#666666;font-family:Droid Sans, Arial, sans-serif;font-size:x-small;"><b><br></b></span></span><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;"><b>Call recorder</b></span><br><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;"><b>No satisfied candidate yet.</b></span><br><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;"><br></span><span style="background-color:white;color:#666666;font-family:'Droid Sans', Arial, sans-serif;font-size:13px;line-height:19.5px;"><br></span>
-
-<div>To update:</div></p>
-<p>Compass</p>
-<p>QR/Barcode reader<br>NeoReader, or Xing QR Barcode scanner</p>
-<p>Backup &amp; Restore</p>
-<p>Ebook reader<br>Google Play books? iReader</p>
-<p>Text Editor<br>Vim?</p>
-<p>Notes taker/ Todo List<br>Remeber The Milk?</p>
-<p>RSS reader<br>Currently Google Reader is OK. Chinese readers can choose Pris, the Netease reader<br>Flipboard?</p>
-<p>Terminal</p>
-<p>Others<br>Box, Dropbox,<br>BeFunky, Camera360, Pixlr-o-matic,<br>Moin<br>OfficeSuite<br>Doodle<br>Skyfire</p>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2012-02-13-external-follow-me-on-ericsson-dialog-4222/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2012-02-13-external-follow-me-on-ericsson-dialog-4222/" itemprop="url">External Follow-Me on Ericsson Dialog 4222</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-02-13T05:44:00+08:00">2012-02-13</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Ericsson Dialog 4222</p>
-<p>External Follow-me<br>If external Follow-me is allowed, you can have all calls to your extension diverted to an external number of your choice. During Follow-me, your phone can still be used for outgoing calls and you will hear a special dial tone when you lift the handset.</p>
-<p>Order <br>Dial and enter the digit or digits to get an external line and enter the external line. <br>*22#EXT-Follow-me-NUMBER#[Press C]</p>
-<p>Cancel <br>Dial #22#[Press C]</p>
-<p>Ref:<br>User_Guide_Dialog_4222</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2011-11-24-cp-mv-diff-behavior-in-coreutils/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2011-11-24-cp-mv-diff-behavior-in-coreutils/" itemprop="url">Cp-Mv-Diff-Behavior-in-Coreutils</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2011-11-24T07:49:00+08:00">2011-11-24</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div class="gmail_quote">
-<div>If you aliased mv and cp, and would use "-f" with them, the behavior for them are different.</div>
-<div></div>
-<div>
-<div>$ alias mv</div>
-<div>alias mv=&#039;mv -i&#039;</div>
-<div></div>
-<div>$ alias cp</div>
-<div>alias cp=&#039;cp -i -R -P --preserve=all&#039;</div>
-</div>
-<div></div>
-<p>GNU coreutils 8.5</p>
-<p></p>
-<p>$ man cp</p><p></p>
-<p>       -f, --force              if an existing destination file cannot be opened, remove it and try again (redundant if the -n option is used)</p><p></p>
-<p>        -i, --interactive              prompt before overwrite (overrides a previous -n option)</p><p></p>
-<p>        -n, --no-clobber              do not overwrite an existing file (overrides a previous -i option)</p><p></p>
-<p>$ man mv</p><p></p>
-<p>       -f, --force              do not prompt before overwriting</p><p></p>
-<p>       -i, --interactive              prompt before overwrite</p><p></p>
-<p>       -n, --no-clobber              do not overwrite an existing file</p><p></p>
-<p>       If you specify more than one of -i, -f, -n, only the final one takes effect.</p><p></p>
-<p>   
-<div> </div>
-</p></div>
-<div></div>
-
-          
-        
-      
-    </div>
     
     
     
@@ -1675,7 +2070,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/jot/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/jot/">1</a><span class="page-number current">2</span><a class="page-number" href="/jot/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/18/">18</a><a class="extend next" rel="next" href="/jot/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/jot/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/jot/">1</a><span class="page-number current">2</span><a class="page-number" href="/jot/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/10/">10</a><a class="extend next" rel="next" href="/jot/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1718,8 +2113,8 @@
                 
                   <a href="/jot/archives/">
                 
-                    <span class="site-state-item-count">179</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -1729,8 +2124,26 @@
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">categories</span>
                   
                 </div>
               
@@ -1740,8 +2153,76 @@
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">30</span>
-                    <span class="site-state-item-name">Tags</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -1758,6 +2239,9 @@
           
           
 
+          
+            
+          
           
 
         </div>
@@ -1778,7 +2262,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Aaron Shang</span>
@@ -1789,7 +2273,9 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -1797,12 +2283,13 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.1</div>
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.0</div>
 
 
 
 
         
+
 
 
 
@@ -1822,7 +2309,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -1877,37 +2367,25 @@
   
 
 
-  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.0.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.4.0"></script>
 
 
 
   
+  
 
-
-
-	
-
-
-
-
+  
 
   
 
 
+  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
 
 
 
@@ -1935,6 +2413,12 @@
   
 
   
+
+  
+  
+
+  
+
   
 
   

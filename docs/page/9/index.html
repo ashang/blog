@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,7 +18,7 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
@@ -49,19 +58,19 @@
 
 <link href="/jot/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/jot/css/main.css?v=6.0.1" rel="stylesheet" type="text/css" />
+<link href="/jot/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.0.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/jot/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/jot/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.0.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jot/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.0.1" color="#222">
+  <link rel="mask-icon" href="/jot/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -76,7 +85,7 @@
   var CONFIG = {
     root: '/jot/',
     scheme: 'Muse',
-    version: '6.0.1',
+    version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -94,16 +103,16 @@
 </script>
 
 
-
-
   
-  <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
+
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="All Things Bright And Beautiful">
-<meta property="og:url" content="http://ashang.org/jot/page/9/index.html">
+<meta property="og:url" content="http://ashang.github.io/jot/page/9/index.html">
 <meta property="og:site_name" content="All Things Bright And Beautiful">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All Things Bright And Beautiful">
 
@@ -112,8 +121,15 @@
 
 
 
-  <link rel="canonical" href="http://ashang.org/jot/page/9/"/>
+  <link rel="canonical" href="http://ashang.github.io/jot/page/9/"/>
 
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>All Things Bright And Beautiful</title>
   
@@ -155,7 +171,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -167,24 +183,22 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/jot/"  class="brand" rel="start">
+      <a href="/jot/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">All Things Bright And Beautiful</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -192,27 +206,37 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jot/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/jot/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/jot/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/jot/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -220,7 +244,11 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
 
     
@@ -229,6 +257,7 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -248,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-09-awk-printf-align/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/03/2009-03-02-udevadm-provides-udevinfo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -267,23 +296,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-09-awk-printf-align/" itemprop="url">Awk Printf Align</a></h1>
+                <a class="post-title-link" href="/jot/2009/03/2009-03-02-udevadm-provides-udevinfo/" itemprop="url">
+                  Udevadm Provides Udevinfo
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T22:29:00+08:00">2010-10-08</time>
+
+              
+                
+              
+
+              <time title="Created: 2009-03-01 23:49:00" itemprop="dateCreated datePublished" datetime="2009-03-01T23:49:00+08:00">2009-03-01</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -317,12 +375,42 @@
       
         
           
-            <p>arp -n | awk &#039;{printf(&quot;%-20s %-20s %-20s\n&quot;,$1, $3, $5)}&#039;</p>
+            
+$ sudo apt-get install --reinstall initramfs-tools  bootcd-mkinitramfs <br>E: dpkg was interrupted, you must manually run &#039;sudo dpkg --configure -a&#039; to correct the problem. 
+
+$ sudo dpkg --configure -a<br>Setting up initramfs-tools (XXX) ...<br> update-initramfs: deferring update (trigger activated)
+
+Processing triggers for initramfs-tools ...<br>update-initramfs: Generating /boot/initrd.img-XXX<br>cpio: ./bin/udevinfo: Cannot stat: No such file or directory<br> update-initramfs: failed for /boot/initrd.img-XXX<br>dpkg: subprocess post-installation script returned error exit status 1
+
+googled udevinfo man page:
+<div> udevinfo - query device information from the udev database <br> udevinfo [-q query-type] [-a ] [-p device-path] [-n node-name] [-r] [-e] [-V] [-h] 
+
+udevinfo queries the udev database for device information stored in the udev database. It can also query the properties of a device from its sysfs representation to help creating udev rules that match this device. </div>
+<div> </div>
+<div>$ apt-cache search udevinfo </div>
+<div>Oops, no results,
+
+$ dpkg -L udev | \grep bin<br>/sbin<br>/sbin/udevadm<br>/sbin/udevd<br> /sbin/vol_id
+
+$ man udevadm
+</div>
+<div>udevadm info [options]</div>
+<div>
+<div>&lt;it was in udevadm&gt;
+
+dirty for dirty&#039;s sake
+
+$ sudo cp /sbin/udevadm /bin/udevinfo</div>
+<div>done.  </div>
+</div>
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -368,7 +456,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-debian-setting-locale-failed-3/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/02/2009-02-26-camcache/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -387,23 +475,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-08-debian-setting-locale-failed-3/" itemprop="url">Debian Setting Locale Failed</a></h1>
+                <a class="post-title-link" href="/jot/2009/02/2009-02-26-camcache/" itemprop="url">
+                  Camcache
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T10:10:00+08:00">2010-10-08</time>
+
+              
+                
+              
+
+              <time title="Created: 2009-02-25 16:53:00" itemprop="dateCreated datePublished" datetime="2009-02-25T16:53:00+08:00">2009-02-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -437,13 +554,15 @@
       
         
           
-            <p> perl: warning: Setting locale failed.<br> perl: warning: Please check that your locale settings:<br>         LANGUAGE = (unset),<br>         LC_ALL = (unset),<br>         LANG = "zh_CN.UTF-8"<br>     are supported and installed on your system.<br> perl: warning: Falling back to the standard locale ("C").<br> locale: Cannot set LC_CTYPE to default locale: No such file or directory<br> locale: Cannot set LC_MESSAGES to default locale: No such file or directory<br> locale: Cannot set LC_ALL to default locale: No such file or directory</p>
-<p>to fix this:<br> # dpkg-reconfigure locales</p>
+            <pre>System almost crashed, <br><br>lots of messages output,<br><br>unplug and plug USB flash disks, USB cannot work:<br><br>[11812.865032] Write-error on swap-device (254:0:892408)<br>[11812.865099] compcache: Error allocating memory for compressed page: 111552, size=1867 <br> [11812.865104] Write-error on swap-device (254:0:892416)<br>[11812.865165] compcache: Error allocating memory for compressed page: 111553, size=1481 <br>[11812.865169] Write-error on swap-device (254:0:892424)<br>[11812.865247] compcache: Error allocating memory for compressed page: 109050, size=2197 <br> [11812.865251] Write-error on swap-device (254:0:872400)<br>[11862.152794] __ratelimit: 23645 callbacks suppressed<br><br><br>[ 5736.237948] Write-error on swap-device (254:0:721112)<br>[ 5757.736695] usb 1-8: USB disconnect, address 4<br> [ 5760.176356] usb 1-7: new high speed USB device using ehci_hcd and address 5<br>[ 5760.315092] usb 1-7: configuration #1 chosen from 1 choice<br>[ 5760.375058] __ratelimit: 23479 callbacks suppressed<br>[ 5760.375070] allocation failed: out of vmalloc space - use vmalloc=&lt;size&gt; to increase size.<br> <br>...<br>[ 3628.464618] Write-error on swap-device (254:0:384008)<br>[ 3628.464714] compcache: Error allocating memory for compressed page: 48002, size=2407 <br>[ 3628.464718] Write-error on swap-device (254:0:384016)<br> [ 3896.572024] usb 5-8: new high speed USB device using ehci_hcd and address 4<br>[ 3896.713287] usb 5-8: configuration #1 chosen from 1 choice<br>[ 3897.072735] __ratelimit: 9820 callbacks suppressed<br>[ 3897.072745] allocation failed: out of vmalloc space - use vmalloc=&lt;size&gt; to increase size.<br> <br><br>lots of messages:<br>-rw-r----- 1 syslog adm 123415460 2009-02-25 09:08 /var/log/kern.log.0<br><br><br>$ cat /proc/swaps <br>Filename				Type		Size	Used	Priority<br>/dev/ramzswap0                          partition	515456	356876	100<br> <br><br>workaround:<br>$ sudo swapoff /dev/ramzwap0<br><br>I put this line into /etc/init.d/rc.local<br><br><br>more compcache thread:<br><a href="http://code.google.com/p/compcache/issues/detail?id=12" target="_blank" rel="noopener">http://code.google.com/p/compcache/issues/detail?id=12</a><br> </pre>
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -489,7 +608,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-debian-setting-locale-failed/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/02/2009-02-25-vsftpd-conf-sample/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -508,23 +627,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-08-debian-setting-locale-failed/" itemprop="url">Debian Setting Locale Failed</a></h1>
+                <a class="post-title-link" href="/jot/2009/02/2009-02-25-vsftpd-conf-sample/" itemprop="url">
+                  vsftpd.conf Sample
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T10:10:00+08:00">2010-10-08</time>
+
+              
+                
+              
+
+              <time title="Created: 2009-02-25 08:34:00" itemprop="dateCreated datePublished" datetime="2009-02-25T08:34:00+08:00">2009-02-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -558,381 +706,16 @@
       
         
           
-            <p> perl: warning: Setting locale failed.<br> perl: warning: Please check that your locale settings:<br>         LANGUAGE = (unset),<br>         LC_ALL = (unset),<br>         LANG = &quot;zh_CN.UTF-8&quot;<br>     are supported and installed on your system.<br> perl: warning: Falling back to the standard locale (&quot;C&quot;).<br> locale: Cannot set LC_CTYPE to default locale: No such file or directory<br> locale: Cannot set LC_MESSAGES to default locale: No such file or directory<br> locale: Cannot set LC_ALL to default locale: No such file or directory</p>
-<p>to fix this:<br> # dpkg-reconfigure locales
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
-</p>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-debian-setting-locale-failed-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-10-08-debian-setting-locale-failed-2/" itemprop="url">Debian Setting Locale Failed</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T10:10:00+08:00">2010-10-08</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> perl: warning: Setting locale failed.<br> perl: warning: Please check that your locale settings:<br>         LANGUAGE = (unset),<br>         LC_ALL = (unset),<br>         LANG = "zh_CN.UTF-8"<br>     are supported and installed on your system.<br> perl: warning: Falling back to the standard locale ("C").<br> locale: Cannot set LC_CTYPE to default locale: No such file or directory<br> locale: Cannot set LC_MESSAGES to default locale: No such file or directory<br> locale: Cannot set LC_ALL to default locale: No such file or directory</p>
-<p>to fix this:<br> # dpkg-reconfigure locales
-<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
-</p>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-write-failed-is-ssh-timeout-3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-10-08-write-failed-is-ssh-timeout-3/" itemprop="url">Write Failed Is SSH Timeout</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T08:06:00+08:00">2010-10-08</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong></strong><span> </span><strong>SSH session Timeout and break with this:<br>Write failed: Broken pipe?</strong></p>
-<p>to make it better, try tune client side option ServerAliveInterval to a small value.</p>
-<p>~/.ssh/ssh_config:<br> ServerAliveInterval 30</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-write-failed-is-ssh-timeout-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-10-08-write-failed-is-ssh-timeout-2/" itemprop="url">Write Failed Is SSH Timeout</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T08:06:00+08:00">2010-10-08</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong></strong><span> </span><strong>SSH session Timeout and break with this:<br>Write failed: Broken pipe?</strong></p>
-<p>to make it better, try tune client side option ServerAliveInterval to a small value.</p>
-<p>~/.ssh/ssh_config:<br> ServerAliveInterval 30</p>
+            <pre># can NOT have SPACE before or after the &quot;=&quot; !!!!<br>#<br># The default compiled in settings are very paranoid. This file<br># loosens things up a bit, to make the ftp daemon more usable.<br># Octal numbers are supported for numeric options, use 0 as the first digit<br> # Standalone options --------------------------------------<br>listen=YES<br>#anonymous--------------------------------------------------------------<br>anonymous_enable=YES<br>#anon_root=/home/ftp/<br>#no_anon_password=YES<br> anon_other_write_enable=NO<br>#perform deletion and renaming.	<br>anon_upload_enable=YES<br>anon_mkdir_write_enable=YES<br>anon_world_readable_only=YES<br>#only allow to download files which are world readable. <br>#FTP user may own files, especially in the presence of uploads.<br> ####anon_max_rate=10000000<br>#<br>#Default is 000, so uploaded file cannot be anon readable!!<br>anon_umask=022<br>#chown_uploads=YES<br>#chown_username=ftp<br>#ftp_username=ftp<br>#max_clients=10<br>#listen_port=21<br>#max_per_ip=2<br> #listen_address<br>#tcp_wrappers=YES<br># Performance ---------------------------------------------<br>#one_process_model=YES<br># Activates a faster &quot;one process per connection&quot; model. Note! <br># To maintain security, only available on systems with capabilities<br> # less pure security, but gains performance for simultaneously connected users.<br># ls -R may cause excessive I/O resource consuming<br># However, some broken FTP clients such as &quot;ncftp&quot; and &quot;mirror&quot; need it <br> #ls_recurse_enable=YES<br>#local user-------------------------------------------------------------<br>##local_root=/home/ftp<br>local_enable=YES<br>local_umask=022<br># A value of 002 is nice if groups share directories<br> #guest_enable=NO<br>#guest_username=guest<br>#all non-anonymous logins are classed as guest logins, mapped to guest_username<br>#operation------------------------------------------------------------------<br>write_enable=YES<br> #FTP commands which change the filesystem: <br># STOR,  DELE,	 RNFR, RNTO, MKD, RMD, APPE  SITE.<br>#messages---------------------------------------------------------<br>dirmessage_enable=YES<br>#message_file=.messages<br> #ftpd_banner= <br>#banner_file=<br>#Logging------------------------------------------------------------<br>xferlog_enable=YES<br>xferlog_std_format=YES<br>xferlog_file=/var/log/xferlog<br>#written  in  standard xferlog  format,	as used by wu-ftpd. <br> #useful if can reuse existing transfer statistics generators.  <br>log_ftp_protocol=YES<br># all FTP requests and responses are logged, providing xferlog_std_format=YES <br>#transfer mode------------------------------------------------------------<br> #When  enabled,  ASCII  mode  data transfers will be honoured on  downloads.<br># By default the server will pretend to allow ASCII mode but ignore it.<br># I/O resources may be consumed by command &quot;SIZE /big/file&quot; in ASCII mode.<br> # without the DoS risk of SIZE and ASCII downloads. ASCII mangling should be<br># on the client anyway..<br>#ascii_download_enable=NO<br># ASCII downloads are CPU heavy<br>#ascii_upload_enable=YES<br># to prevent uploaded scripts from breaking or for Windows-users  to upload<br> #async_abor_enable=YES<br># Enables older FTP clients to cancel in-progress transfers.<br># FTP clients may hang when cancelling a transfer unless this feature is on.<br># this  feature is awkward to handle<br># Security ------------------------------------------------<br> connect_from_port_20=YES<br>#	      This  controls  whether  PORT style data connections use port 20<br>#	      (ftp-data) on the server machine.	 For  security	reasons,  some<br>#	      clients  may insist that this is the case. Conversely, disabling<br> #	      this option enables vsftpd to run with slightly less  privilege.<br>#ftp_data_port=20<br>#The port from which PORT style connections originate <br>#hide_ids=YES<br># The port  to allocate for PASV style data connections.<br> #idle_session_timeout=300<br>#data_connection_timeout=120<br>#accept_timeout=60<br>#The timeout, for connection with a PASV style data connection.<br>#connect_timeout=60<br># The  timeout, for a remote client to respond to PORT style data connection.<br> ###file_open_mode=0666<br># The permissions with which uploaded files are  created.<br># umasks are applied on top of this value. <br>#userlist_enable=YES<br>#userlist_deny=YES<br>#userlist_file = /etc/ftpusers<br># If set to NO, then users will be denied login	unless in userlist_file.<br> # If YES, never allow users in userlist file, and not even prompt for password.<br># Note that the default vsftpd pam config also checks /etc/vsftpd.ftpusers<br># Useful for combatting certain DoS attacks.<br>#deny_email_enable=YES<br> #banned_email_file=/etc/vsftpd.banned_emails<br>#check_shell=YES<br>#only has  an  effect  for  non-PAM  builds  of vsftpd. <br>#check /etc/shells for a    valid user shell for local logins.<br>#	      The  option  is  the  name  of a file containing a list of local<br> #	      users which will be placed in a  chroot()	 jail  in  their  home<br>#	      directory.   This	  option   is  only  relevant  if  the	option<br>#	      chroot_list_enable is enabled, and the option  chroot_local_user<br> #	      is disabled.<br># You may specify an explicit list of local users to chroot() to their home<br># directory. If chroot_local_user is YES, then this list becomes a list of<br># users to NOT chroot().<br>#chroot_list_enable=YES<br> #chroot_list_file = /etc/vsftpd.chroot_list<br>#	      If  activated,  you  may	provide	 a list of local users who are<br>#	      placed in a chroot() jail in their home  directory  upon	login.<br>#	      The meaning is slightly different if chroot_local_user is set to<br> #	      YES. In this case, the list becomes a list of  users  which  are<br>#	      NOT  to be placed in a chroot() jail.  By default, the file con-<br>#	      taining this list is /etc/vsftpd.chroot_list, but you may	 over-<br> #	      ride this with the chroot_list_file setting.<br>#chroot_local_user = YES<br>#	      If  set to YES, local users will be placed in a chroot() jail in<br>#	      their home directory after  login.   Warning:  This  option  has<br> #	      security	implications, especially if the users have upload per-<br>#	      mission, or shell access. Only enable if you know what  you  are<br>#	      doing.   Note  that  these  security implications are not vsftpd<br> #	      specific. They apply to all FTP daemons which offer to put local<br>#	      users in chroot() jails.<br>#<br>#       passwd_chroot_enable<br>#	      If enabled, along with chroot_local_user , then a chroot()  jail<br> #	      location	may be specified on a per-user basis. Each user's jail<br>#	      is derived from their home directory string in /etc/passwd.  The<br>#	      occurence	 of  /./ in the home directory string denotes that the<br> #	      jail is at that particular location in the path.<br>pasv_enable=YES<br># enable non-passive transfers, Some FTP clients demand this.<br>#port_enable=YES<br>#       pasv_promiscuous=NO<br>#	      Set  to  YES if you want to disable the PASV security check that<br> #	      ensures the data connection originates from the same IP  address<br>#	      as the control connection.  Only enable if you know what you are<br>#	      doing! The only legitimate use for  this	is  in	some  form  of<br> #	      secure tunnelling scheme.<br>#       port_promiscuous=NO<br>#	      Set to YES if you want to disable the PORT security  check  that<br>#	      ensures  that  outgoing data connections can only connect to the<br>#	      client. Only enable if you know what you are doing!<br> # Set to NO if you want to enhance privacy<br>#setproctitle_enable=YES<br>#	      If enabled, vsftpd will try and show session status  information<br>#	      in the system process listing. In other words, the reported name<br> #	      of the process will change to reflect what a vsftpd  session  is<br>#	      doing  (idle,  downloading etc). You probably want to leave this<br>#	      off for security purposes.<br>#<br>#       tcp_wrappers=NO<br> #	      If enabled, and vsftpd was compiled with	tcp_wrappers  support,<br>#	      incoming	connections  will  be  fed through tcp_wrappers access<br>#	      control. Furthermore, there is a mechanism for per-IP based con-<br> #	      figuration.  If  tcp_wrappers sets the VSFTPD_LOAD_CONF environ-<br>#	      ment variable, then the vsftpd session will  try	and  load  the<br>#	      vsftpd configuration file specified in this variable.<br>#<br> #<br>#       text_userdb_names=YES<br>#	      By  default,  numeric IDs are shown in the user and group fields<br>#	      of directory listings. You can get  textual  names  by  enabling<br>#	      this parameter. It is off by default for performance reasons.<br> #<br>#<br>#use_localtime=NO<br>#If  enabled, vsftpd will display directory listings with the the<br>#time in your local time zone. The default is to display GMT. The<br>#times returned by the MDTM FTP command are also affected by this<br> #use_sendfile<br>#An internal setting used for testing  the	 relative  benefit  of<br>#using the sendfile() system call on your platform.<br>#Default: YES<br># totally isolated and unprivileged user used for vsftpd<br>#nopriv_user=ftpsecure<br> # pasv_address<br>#Use this option to override the  IP  address  that  vsftpd  will<br>#advertise	 in response to the PASV command. Provide a numeric IP address.<br>#Default: (none - the address is taken  from  the	incoming  connected socket)<br> secure_chroot_dir=/var/run/vsftpd<br>pam_service_name=vsftpd<br>#This  option  should  be the name of a directory which is empty.<br>#Also, the directory should not be writable by the ftp user. This<br>#directory is used as a secure chroot() jail at times vsftpd does<br> #not require filesystem access.<br>#<br># user_config_dir<br># Allows the override of  any	config	option, on a per-user basis. <br># If  you  set user_config_dir  to  be /etc/vsftpd_user_conf and then log on as<br># the user &quot;chris&quot;, then vsftpd will apply	the  settings  in  the<br> # file  /etc/vsftpd_user_conf/chris	 for  the duration of the session. <br>rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem<br>rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key<br></pre>
 <div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
       
     </div>
+
+    
+
     
     
     
@@ -978,7 +761,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-write-failed-is-ssh-timeout/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/02/2009-02-25-jaunty-and-sid-sources-list/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -997,23 +780,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-10-08-write-failed-is-ssh-timeout/" itemprop="url">Write Failed Is SSH Timeout</a></h1>
+                <a class="post-title-link" href="/jot/2009/02/2009-02-25-jaunty-and-sid-sources-list/" itemprop="url">
+                  Jaunty and Sid sources.list
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-08T00:06:00+08:00">2010-10-08</time>
+
+              
+                
+              
+
+              <time title="Created: 2009-02-25 08:31:00" itemprop="dateCreated datePublished" datetime="2009-02-25T08:31:00+08:00">2009-02-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1047,134 +859,16 @@
       
         
           
-            <p><strong></strong><span> </span><strong>SSH session Timeout and break with this:<br>Write failed: Broken pipe?</strong></p>
-<p>to make it better, try tune client side option ServerAliveInterval to a small value.</p>
-<p>~/.ssh/ssh_config:<br> ServerAliveInterval 30</p>
+            <pre>#$ cat /etc/apt/sources.list<br># sudo apt-key add key.gpg<br># wget URL –quiet -O - | sudo apt-key add -<br><br># gpg –keyserver <a href="http://subkeys.pgp.net" target="_blank" rel="noopener">subkeys.pgp.net</a> –recv KEY<br># gpg –export –armor KEY | sudo apt-key add -<br> <br># Canonical's 'partner' repository<br>deb <a href="http://archive.canonical.com/" target="_blank" rel="noopener">http://archive.canonical.com/</a> jaunty partner <br><br>deb <a href="http://ftp.sjtu.edu.cn/ubuntu" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu</a> jaunty main universe multiverse restricted<br> deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty-security main multiverse restricted universe<br> deb <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty-updates main multiverse restricted universe<br><br>deb-src <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty main multiverse restricted universe<br> deb-src <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>deb-src <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty-security main multiverse restricted universe<br> deb-src <a href="http://ftp.sjtu.edu.cn/ubuntu/" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/ubuntu/</a> jaunty-updates main multiverse restricted universe<br><br>deb <a href="http://mirror.lupaworld.com/ubuntu/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/</a> jaunty main multiverse restricted universe<br> deb <a href="http://mirror.lupaworld.com/ubuntu/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>deb <a href="http://mirror.lupaworld.com/ubuntu/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/</a> jaunty-security main multiverse restricted universe<br> deb <a href="http://mirror.lupaworld.com/ubuntu/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/</a> jaunty-updates main multiverse restricted universe<br><br># deb <a href="http://mirror.lupaworld.com/ubuntu/ubuntu-cn/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/ubuntu-cn/</a> jaunty main multiverse restricted universe<br> # deb <a href="http://mirror.lupaworld.com/ubuntu/ubuntu-cn/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/ubuntu-cn/</a> jaunty-proposed main multiverse restricted universe<br># deb <a href="http://mirror.lupaworld.com/ubuntu/ubuntu-cn/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/ubuntu-cn/</a> jaunty-security main multiverse restricted universe<br> # deb <a href="http://mirror.lupaworld.com/ubuntu/ubuntu-cn/" target="_blank" rel="noopener">http://mirror.lupaworld.com/ubuntu/ubuntu-cn/</a> jaunty-updates main multiverse restricted universe<br><br># deb <a href="http://archive.ubuntu.org.cn/ubuntu-cn/" target="_blank" rel="noopener">http://archive.ubuntu.org.cn/ubuntu-cn/</a> jaunty main multiverse restricted universe<br> # deb <a href="http://archive.ubuntu.org.cn/ubuntu-cn/" target="_blank" rel="noopener">http://archive.ubuntu.org.cn/ubuntu-cn/</a> jaunty-proposed main multiverse restricted universe<br># deb <a href="http://archive.ubuntu.org.cn/ubuntu-cn/" target="_blank" rel="noopener">http://archive.ubuntu.org.cn/ubuntu-cn/</a> jaunty-security main multiverse restricted universe<br> # deb <a href="http://archive.ubuntu.org.cn/ubuntu-cn/" target="_blank" rel="noopener">http://archive.ubuntu.org.cn/ubuntu-cn/</a> jaunty-updates main multiverse restricted universe<br><br>deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank" rel="noopener">http://archive.ubuntu.com/ubuntu/</a> jaunty main multiverse restricted universe<br> deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank" rel="noopener">http://archive.ubuntu.com/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank" rel="noopener">http://archive.ubuntu.com/ubuntu/</a> jaunty-security main multiverse restricted universe<br> deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank" rel="noopener">http://archive.ubuntu.com/ubuntu/</a> jaunty-updates main multiverse restricted universe<br><br>#deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty main restricted multiverse<br> #deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty-updates main restricted universe multiverse<br>#deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty-security main restricted universe multiverse<br> #deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br><br>#deb <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty main restricted universe multiverse<br> #deb <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty-updates main restricted universe multiverse<br>#deb <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty-proposed main restricted universe multiverse<br> #deb <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty-security main restricted universe multiverse<br>#deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty main restricted universe multiverse<br> #deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty-updates main restricted universe multiverse<br>#deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty-proposed main restricted universe multiverse<br> #deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.163.com/ubuntu/</a> jaunty-security main restricted universe multiverse<br><br>deb <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty main restricted universe multiverse<br> deb <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty-security main restricted universe multiverse<br>deb <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty-updates main restricted universe multiverse<br> deb <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty-proposed main restricted universe multiverse<br>#deb-src <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty main restricted universe multiverse<br> #deb-src <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty-security main restricted universe multiverse<br>#deb-src <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty-updates main restricted universe multiverse<br> #deb-src <a href="http://mirrors.shlug.org/ubuntu/" target="_blank" rel="noopener">http://mirrors.shlug.org/ubuntu/</a>  jaunty-proposed main restricted universe multiverse<br><br># deb <a href="http://ubuntu.cn99.com/ubuntu/" target="_blank" rel="noopener">http://ubuntu.cn99.com/ubuntu/</a> jaunty main restricted universe multiverse<br> # deb <a href="http://ubuntu.cn99.com/ubuntu/" target="_blank" rel="noopener">http://ubuntu.cn99.com/ubuntu/</a> jaunty-security main restricted universe multiverse<br># deb <a href="http://ubuntu.cn99.com/ubuntu/" target="_blank" rel="noopener">http://ubuntu.cn99.com/ubuntu/</a> jaunty-updates main restricted universe multiverse<br> # deb <a href="http://ubuntu.cn99.com/ubuntu/" target="_blank" rel="noopener">http://ubuntu.cn99.com/ubuntu/</a> jaunty-proposed main restricted universe multiverse<br><br>#deb <a href="http://ubuntu.dormforce.net/ubuntu/" target="_blank" rel="noopener">http://ubuntu.dormforce.net/ubuntu/</a> jaunty main multiverse restricted universe<br> #deb <a href="http://ubuntu.dormforce.net/ubuntu/" target="_blank" rel="noopener">http://ubuntu.dormforce.net/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>#deb <a href="http://ubuntu.dormforce.net/ubuntu/" target="_blank" rel="noopener">http://ubuntu.dormforce.net/ubuntu/</a> jaunty-security main multiverse restricted universe<br> #deb <a href="http://ubuntu.dormforce.net/ubuntu/" target="_blank" rel="noopener">http://ubuntu.dormforce.net/ubuntu/</a> jaunty-updates main multiverse restricted universe<br><br>deb <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty main restricted universe multiverse<br> deb <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty-updates main restricted universe multiverse<br>deb <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty-security main restricted universe multiverse  <br> deb <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>#deb-src <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty main multiverse restricted universe<br> #deb-src <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br>#deb-src <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty-security main multiverse restricted universe<br> #deb-src <a href="http://debian.ustc.edu.cn/ubuntu/" target="_blank" rel="noopener">http://debian.ustc.edu.cn/ubuntu/</a> jaunty-updates main multiverse restricted universe<br><br>#deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty main restricted universe multiverse<br> #deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty-updates main restricted universe multiverse<br>#deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty-security main restricted universe multiverse<br> #deb <a href="http://mirror.rootguide.org/ubuntu/" target="_blank" rel="noopener">http://mirror.rootguide.org/ubuntu/</a> jaunty-proposed main multiverse restricted universe<br><br># Medibuntu<br># Please report any bug on <a href="https://bugs.launchpad.net/medibuntu/" target="_blank" rel="noopener">https://bugs.launchpad.net/medibuntu/</a><br> # wget <a href="http://packages.medibuntu.org/medibuntu-key.gpg" target="_blank" rel="noopener">http://packages.medibuntu.org/medibuntu-key.gpg</a> -O- | sudo apt-key add - <br>deb <a href="http://packages.medibuntu.org/" target="_blank" rel="noopener">http://packages.medibuntu.org/</a> jaunty non-free free<br> deb <a href="http://packages.medibuntu.org/" target="_blank" rel="noopener">http://packages.medibuntu.org/</a> jaunty-staging non-free free<br><br>#deb <a href="http://repository.debuntu.org/" target="_blank" rel="noopener">http://repository.debuntu.org/</a> jaunty multiverse<br># wget <a href="http://repository.debuntu.org/GPG-Key-chantra.txt" target="_blank" rel="noopener">http://repository.debuntu.org/GPG-Key-chantra.txt</a> -O- | sudo apt-key add - <br> <br>#deb <a href="http://ftp.sjtu.edu.cn/debian" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/debian</a> sid main contrib non-free<br>#deb <a href="http://ftp.sjtu.edu.cn/debian" target="_blank" rel="noopener">http://ftp.sjtu.edu.cn/debian</a> proposed-updates main contrib non-free<br> #<br>#deb <a href="http://anheng.com.cn/debian" target="_blank" rel="noopener">http://anheng.com.cn/debian</a> sid main contrib non-free<br>#deb <a href="http://anheng.com.cn/debian" target="_blank" rel="noopener">http://anheng.com.cn/debian</a> proposed-updates main contrib non-free<br> #deb-src <a href="http://anheng.com.cn/debian" target="_blank" rel="noopener">http://anheng.com.cn/debian</a> sid main contrib non-free<br>#<br>#deb <a href="http://ftp.debian.org/debian" target="_blank" rel="noopener">http://ftp.debian.org/debian</a> sid main contrib non-free<br>#deb <a href="http://ftp.debian.org/debian" target="_blank" rel="noopener">http://ftp.debian.org/debian</a> proposed-updates main contrib non-free<br> #deb <a href="http://security.debian.org/" target="_blank" rel="noopener">http://security.debian.org/</a> sid/updates main contrib non-free<br>#<br>#deb <a href="http://http.us.debian.org/debian" target="_blank" rel="noopener">http://http.us.debian.org/debian</a> sid main contrib non-free<br> #deb <a href="http://http.us.debian.org/debian" target="_blank" rel="noopener">http://http.us.debian.org/debian</a> proposed-updates main contrib non-free<br>#<br>#deb <a href="http://debian.ustc.edu.cn/debian" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian</a> sid main contrib non-free<br> #deb <a href="http://debian.ustc.edu.cn/debian-security" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian-security</a> sid/updates main contrib non-free<br>#deb <a href="http://debian.ustc.edu.cn/debian" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian</a> proposed-updates main contrib non-free<br> <br>#deb <a href="ftp://debian.ustc.edu.cn/debian-uo" target="_blank" rel="noopener">ftp://debian.ustc.edu.cn/debian-uo</a> sid marillat ustc misc <br>#deb <a href="http://debian.ustc.edu.cn/debian-uo" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian-uo</a> sid marillat ustc misc <br> #<br>#deb-src <a href="http://debian.ustc.edu.cn/debian" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian</a> sid main contrib non-free<br>#deb-src <a href="http://debian.ustc.edu.cn/debian-security" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian-security</a> sid/updates main contrib non-free<br> #deb-src <a href="http://debian.ustc.edu.cn/debian" target="_blank" rel="noopener">http://debian.ustc.edu.cn/debian</a> proposed-updates main contrib non-free<br>#<br>#deb <a href="http://mirrors.geekbone.org/debian/" target="_blank" rel="noopener">http://mirrors.geekbone.org/debian/</a> sid main contrib non-free<br> #deb <a href="http://mirrors.geekbone.org/debian-security" target="_blank" rel="noopener">http://mirrors.geekbone.org/debian-security</a> sid/updates main contrib non-free<br>#deb <a href="http://mirrors.geekbone.org/debian/" target="_blank" rel="noopener">http://mirrors.geekbone.org/debian/</a> proposed-updates main contrib non-free<br> </pre>
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/8843138513749523318-6947093192473237637?l=aaronshang.blogspot.com" alt=""></div>
 
           
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-10-08-hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-10-08-hello-world/" itemprop="url">Hello World!</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-10-07T17:20:56+08:00">2010-10-07</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="http://wordpress.com/" target="_blank" rel="noopener">WordPress.com</a>. This is your first post. Edit or delete it and start blogging!</p>
-
-          
-        
-      
-    </div>
     
     
     
@@ -1220,7 +914,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-28-usb-speed-1-1-vs-2-0-3/">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/02/2009-02-25-elf-file-data-encoding-not-little-endian/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Shang">
@@ -1239,23 +933,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/jot/2010-09-28-usb-speed-1-1-vs-2-0-3/" itemprop="url">Usb Speed 1.1 vs 2.0</a></h1>
+                <a class="post-title-link" href="/jot/2009/02/2009-02-25-elf-file-data-encoding-not-little-endian/" itemprop="url">
+                  ELF File Data Encoding Not Little-Endian
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-28T06:43:00+08:00">2010-09-28</time>
+
+              
+                
+              
+
+              <time title="Created: 2009-02-25 08:20:00" itemprop="dateCreated datePublished" datetime="2009-02-25T08:20:00+08:00">2009-02-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
             
           </span>
 
@@ -1289,135 +1012,873 @@
       
         
           
-            <p>$ sudo dd if=FreeBSD-8.1-RELEASE-i386-memstick.img of=/dev/sdc<br>1852040+0 records in<br>1852040+0 records out<br>948244480 bytes (948 MB) copied, 1142.68 s, 830 kB/s</p>
-<p>$ sudo dd if=FreeBSD-8.1-RELEASE-i386-memstick.img of=/dev/sde<br> 1852040+0 records in<br>1852040+0 records out<br>948244480 bytes (948 MB) copied, 410.677 s, 2.3 MB/s</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ashang.org/jot/jot/2010-09-28-usb-speed-1-1-vs-2-0-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Shang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/jot/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="All Things Bright And Beautiful">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/jot/2010-09-28-usb-speed-1-1-vs-2-0-2/" itemprop="url">Usb Speed 1.1 vs 2.0</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-09-28T06:43:00+08:00">2010-09-28</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>$ sudo dd if=FreeBSD-8.1-RELEASE-i386-memstick.img of=/dev/sdc<br>1852040+0 records in<br>1852040+0 records out<br>948244480 bytes (948 MB) copied, 1142.68 s, 830 kB/s</p>
-<p>$ sudo dd if=FreeBSD-8.1-RELEASE-i386-memstick.img of=/dev/sde<br> 1852040+0 records in<br>1852040+0 records out<br>948244480 bytes (948 MB) copied, 410.677 s, 2.3 MB/s</p>
+ELF file data encoding not little-endian<br style="font-family:arial narrow,sans-serif;"><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">$ man tar</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">/usr/bin/gtbl: error while loading shared libraries: /lib/libstdc++.so.6: ELF file data encoding not little-endian</span><br style="font-family:arial narrow,sans-serif;"> <br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">$ file /usr/bin/gtbl </span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">/usr/bin/gtbl: symbolic link to `tbl&#039;</span><br style="font-family:arial narrow,sans-serif;"> <br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">$ ldd /usr/bin/gtbl</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">    linux-gate.so.1 =&gt;  (0xb8095000)</span><br style="font-family:arial narrow,sans-serif;"> <span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">    libstdc++.so.6 =&gt; /usr/lib/libstdc++.so.6 (0xb7fa4000)</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">    libm.so.6 =&gt; /lib/tls/i686/cmov/libm.so.6 (0xb7f7e000)</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">    libgcc_s.so.1 =&gt; /lib/libgcc_s.so.1 (0xb7f6e000)</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">    libc.so.6 =&gt; /lib/tls/i686/cmov/libc.so.6 (0xb7e0b000)</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">    /lib/ld-linux.so.2 (0xb8096000)</span><br style="font-family:arial narrow,sans-serif;"><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">$ file /usr/bin/tbl </span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;"> /usr/bin/tbl: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, stripped</span><br style="font-family:arial narrow,sans-serif;"><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">$ ls -l /lib/libstdc++.so*</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">lrwxrwxrwx 1 root root     18 2009-02-25 10:37 /lib/libstdc++.so -&gt; libstdc++.so.6.0.4</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;"> lrwxrwxrwx 1 root root     18 2009-02-25 10:37 /lib/libstdc++.so.6 -&gt; libstdc++.so.6.0.4</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">-rwxr-xr-x 1 root root 935932 2009-02-25 10:37 /lib/libstdc++.so.6.0.4</span><br style="font-family:arial narrow,sans-serif;"> <br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">$ file /lib/libstdc++.so*</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">/lib/libstdc++.so:       symbolic link to `libstdc++.so.6.0.4&#039;</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;"> /lib/libstdc++.so.6:     symbolic link to `libstdc++.so.6.0.4&#039;</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">/lib/libstdc++.so.6.0.4: ELF 32-bit MSB shared object, </span><span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">PowerPC</span><span style="font-family:arial narrow,sans-serif;"> or cisco 4500, version 1 (SYSV), stripped</span><br style="font-family:arial narrow,sans-serif;">  <br style="font-family:arial narrow,sans-serif;"><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">$ readelf -h /lib/libstdc++.so.6.0.4 </span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">ELF Header:</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Magic:   7f 45 4c 46 01 02 01 00 00 00 00 00 00 00 00 00 </span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">  Class:                             ELF32</span><br style="font-family:arial narrow,sans-serif;"><span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">  Data:                              2&#039;s complement, big endian</span><br style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;"> <span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">  Version:                           1 (current)</span><br style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;"><span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">  OS/ABI:                            UNIX - System V</span><br style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;"> <span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">  ABI Version:                       0</span><br style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;"><span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">  Type:                              DYN (Shared object file)</span><br style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;"> <span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;">  Machine:                           PowerPC</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Version:                           0x1</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">  Entry point address:               0x3f0fc</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Start of program headers:          52 (bytes into file)</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">  Start of section headers:          934732 (bytes into file)</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Flags:                             0x0</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">  Size of this header:               52 (bytes)</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Size of program headers:           32 (bytes)</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">  Number of program headers:         5</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Size of section headers:           40 (bytes)</span><br style="font-family:arial narrow,sans-serif;"> <span style="font-family:arial narrow,sans-serif;">  Number of section headers:         30</span><br style="font-family:arial narrow,sans-serif;"><span style="font-family:arial narrow,sans-serif;">  Section header string table index: 29</span><br style="font-family:arial narrow,sans-serif;"> <span style="color:rgb(51,51,255);font-family:arial narrow,sans-serif;"><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">$ readelf -h /usr/lib/libstdc++.so.6.0.10 </span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">ELF Header:</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Magic:   7f 45 4c<span style="color:rgb(51,51,255);"> 46 01 01 01</span> 00 00 00 00 00 00 00 00 00 </span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Class:                             ELF32</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,51,255);">  Data:                              2&#039;s complement, little endian</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Version:                           1 (current)</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  OS/ABI:                            UNIX - System V</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  ABI Version:                       0</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Type:                              DYN (Shared object file)</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,51,255);">  Machine:                           Intel 80386</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Version:                           0x1</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Entry point address:               0x44230</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Start of program headers:          52 (bytes into file)</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Start of section headers:          949224 (bytes into file)</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Flags:                             0x0</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Size of this header:               52 (bytes)</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Size of program headers:           32 (bytes)</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Number of program headers:         7</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Size of section headers:           40 (bytes)</span><br style="color:rgb(51,0,51);"> <span style="color:rgb(51,0,51);">  Number of section headers:         30</span><br style="color:rgb(51,0,51);"><span style="color:rgb(51,0,51);">  Section header string table index: 29</span><br style="color:rgb(51,0,51);"> <br></span><br style="font-family:arial narrow,sans-serif;"><br style="font-family:arial narrow,sans-serif;">
 <div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
 
           
         
       
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/02/2009-02-19-outlet-for-logistics/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2009/02/2009-02-19-outlet-for-logistics/" itemprop="url">
+                  Outlet for Logistics
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2009-02-19 04:18:00" itemprop="dateCreated datePublished" datetime="2009-02-19T04:18:00+08:00">2009-02-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+物流的主干网络已经逐步建立成熟，但是，物流的终端还是主要依靠物流行业企业自身。
+
+有一种形式的商铺，也可以作为物流的终端，而且，效果会不错。比如好邻居、快客、联华等24小时便利店，连锁药店，置业中介机构的店面，华润万家、物美等连锁卖场，这些都可以作为金融或者需要支付服务的终端，这些商铺提供了顺带的服务，而这些服务给商铺带来了潜在的客流。如果这些服务给商铺带来了经营成本增加，那么可以从每笔交易中扣除少许比例的佣金。<br> 
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/02/2009-02-06-chronic-pharyngitis-pathology-and-treatment/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2009/02/2009-02-06-chronic-pharyngitis-pathology-and-treatment/" itemprop="url">
+                  Chronic Pharyngitis, Pathology and Treatment
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2009-02-06 04:28:00" itemprop="dateCreated datePublished" datetime="2009-02-06T04:28:00+08:00">2009-02-06</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/02/throat-anatomy-side-view-710319.jpg" target="_blank" rel="noopener"><img src="/assets/throat-anatomy-side-view-710319.jpg?w=300" border="0" alt=""></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/02/throat-anatomy-top-view-710736.jpg" target="_blank" rel="noopener"><img src="/assets/throat-anatomy-top-view-710736.jpg?w=194" border="0" alt=""></a>
+</p><p class="mobile-photo"><a href="http://aaronshang.files.wordpress.com/2009/02/tonsil-711079.png" target="_blank" rel="noopener"><img src="/assets/tonsil-711079.png?w=237" border="0" alt=""></a>
+
+慢性咽炎病理与施治
+
+前些时间饱受咽炎折磨，查了些资料.
+
+摘要：保持通风；饮食清淡；多食果蔬；慎用抗生素；禁忌辛辣，戒绝烟酒；锻炼身体，提高免疫力。
+
+--<br>咽部各种不适感是慢性咽炎的主要症状，症状因人而异。<br>患者咽部干燥、灼热、微痛、胀紧感、痰粘感、异物梗堵感或咽痒、干咳等。<br>有的表现为无痰或仅有颗粒状藕粉样分泌物咳出。<br>长期的刺激性干咳有时会引起粘膜出血，咳出或咯出带血的分泌物。<br>萎缩性咽炎患者,有时可咳出带臭味的痂皮。
+
+慢性咽炎是咽部黏膜、黏膜下及淋巴组织的慢性弥漫性炎症,是上呼吸道炎症的一部分。慢性咽炎大多是因急性咽炎反复发作的结果。<br>此外,各种鼻病及呼吸道慢性炎症,长期张口呼吸及炎性分泌物反复刺激咽部;<br>烟酒过度,辛辣刺激性食物、空气污染、有害气体刺激,过敏体质或全身性慢性疾病使身体抵抗力下降等,都可引起发作。
+
+慢性咽炎重在预防。经常参加体育锻炼，改善工作和生活环境，戒除烟酒等不良嗜好，积极治疗鼻、气管等呼吸道慢性炎症及其它全身性疾病，可以增强体质，预防上呼吸道感染及减少咽炎的发生.
+
+特别是冬天,室内干燥不通风,空气不新鲜。<br>人们饮食偏重厚味,少新鲜蔬菜和水果,容易引起慢性咽炎急性发作,<br>出现咽喉痛及吞咽痛,还会发热和颈淋巴结肿大。
+
+慢性咽炎如不是感染引起的，不需要用抗生素治疗，偶尔含咽喉片就行，一般一到两周都会自动好转；<br>如果是急性发作，就需要用抗生素治疗，因为急性发作的时候都是感染引起的。
+
+--<br>google 的参考:
+
+   季节交替，感冒再次来袭，这里尤其提醒白领们，留神慢性咽炎在感冒痊愈后缠身。
+
+   这两天，在办公室忙碌的陈小姐，总觉得咽喉肿痛、干痒，连吃东西都费劲了，可不停地喝水却没有改善。而且，不光是她，好几位同事也都被"传染"了……
+
+   ■"慢咽"是白领的首位职业病，糟糕室内空气为祸首
+
+   卫生部门有一项调查显示，白领人群中有70%都患有不同程度的"职业病"，而慢性咽炎就排在首位。慢性咽炎是咽部黏膜的慢性炎症，大部分情况下，是由于急性咽炎反复发作或是延误了治疗，才转为慢性的。另外，人们对咽炎的认识往往局限于咽喉，其实咽部包括鼻咽、喉咽和口咽，这三个部位是相互影响的。所以，还有一部分慢咽是因为鼻子生了病，鼻塞的时候鼻涕流向咽部，长期刺激造成的。
+
+   白领职业正对"慢咽"胃口。白领整天都闷在密不透风的办公室里，室内糟糕的空气质量就是引起慢性咽炎的罪魁祸首。
+
+   其一，办公室的中央空调四季连轴转，极少开窗通风，有的地方连窗户都是封闭的。室内空气干燥，极易滋生细菌，呼吸这样的空气必然会刺激鼻腔和咽部。其二，开会时很多人挤在狭小的会议室，再加上吸烟者吞云吐雾，二手烟很容易诱发"慢咽<br>"。其三，要是赶上办公室是新装修的，各种长年不散的油漆味真够咽部受的了。
+
+   除了污浊空气刺激外，白领长时间面对电脑，大部分都有颈椎问题。如果颈椎骨质增生，压迫神经也会间接引起咽部发炎。同时，白领的聚会、应酬非常频繁，这期间经常甚至过量饮酒也是主要病因。
+
+   ■对付"慢咽"可以自我急救，不要乱吃抗生素
+
+   慢性咽炎虽然多发，但却是可以感知的。如果最近觉得咽部不适，好像有咽不下又吐不出的东西，又经常咳嗽、嗓子干燥发痒、痰比较多的话，很可能是患上了"慢咽"。此外，早上起来刷牙或吐痰时如果觉得恶心，也有发病的可能，要赶紧去医院，不要自己判断，因为早期食道或下咽部的癌症也会有类似的症状。尽管慢性咽炎是个长期疾病，不容易治好，但却有以下一些"自救"的小招能帮你缓解甚至预防。
+
+   经常开窗通风，保持室内合适的温度和湿度。如果没有开窗的条件，趁中午休息时间要到户外走一走，呼吸新鲜空气；多多参加体育锻炼，提升自身抵抗力，避免呼吸道感染；尽量避免在污染的环境下长时间停留；自己要养成良好的生活习惯，保持良好的心情、充足的睡眠；最好不吸烟不喝酒，防止任何刺激物对咽部不利。
+
+   饮食上要注意清淡、避免辛辣刺激。多吃一些含维生素C的水果、蔬菜，以及富含胶原蛋白和弹性蛋白的东西，比如猪蹄、鱼、牛奶、豆类、动物肝脏、瘦肉等。早晚用淡盐水漱口，漱口后不妨再喝一杯淡盐水，为咽部杀菌、清洁和湿润，改善咽部的环境，预防细菌感染。坚持半年到一年，慢性咽炎就能得到非常有效的控制。
+
+   千万不要自己乱吃抗生素。因为慢性咽炎并非细菌感染，滥用抗生素可能导致咽喉部正常菌群失调，引起二重感染。另外，每一种抗生素都有全身副作用，会对人体造成危害。同时，滥用抗生素还能引起细菌耐药。感觉嗓子难受的时候，可以买点金银花、鱼腥草、菊花泡水喝。这些中药有清热解毒的功效，可以清咽利肺化痰。如果慢性咽炎急性发作，出现咽痛、咽痒、咳嗽、分泌物增多等症状，要及时看医生。
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2009/01/2009-01-15-mozilla-firefox-version-unmatch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2009/01/2009-01-15-mozilla-firefox-version-unmatch/" itemprop="url">
+                  Mozilla Firefox Version Unmatch
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2009-01-15 05:55:00" itemprop="dateCreated datePublished" datetime="2009-01-15T05:55:00+08:00">2009-01-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+errors when launching firefox:
+
+$ firefox<br>Error: Platform version &#039;1.9&#039; is not compatible with<br>minVersion &gt;= 1.9.0.1<br>maxVersion &lt;= 1.9.0.*
+
+$ sudo vi /usr/lib/firefox-3.0.4/application.ini 
+
+find these lines:<br>[Gecko]<br>MinVersion=1.9.0.1<br>MaxVersion=1.9.0.*
+
+modify the version range, then It works with this dirty trick.
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/12/2008-12-05-mechanism-for-allocation-of-rights/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2008/12/2008-12-05-mechanism-for-allocation-of-rights/" itemprop="url">
+                  Mechanism for Allocation of Rights
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2008-12-05 04:34:00" itemprop="dateCreated datePublished" datetime="2008-12-05T04:34:00+08:00">2008-12-05</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+纵观中国的历史，这是一个中央集权和地方集权交替的过程，从最初的周王朝，到秦汉，唐宋，明清，间隔封王与藩镇，军阀割据，中央一次次集权。虽然最终传递到底层的受奴役的民众头上都是剥削（剥削，而不全是掠夺），但总体上地方集权的强大不利于总体上的稳定发展。
+
+对付地方集权的策略，中国古代是加强中央集权，西方是扩大民权，都在一定程度上形成了治世。
+
+对于法制一词，反思古代虽然法律没有现代这么名目繁多，可是却在集权下发挥了其效力。宋代实施大部制，高俅作为太尉，类似掌管国防，军事，军工，情治等系统的老大，为了对付一个校官，费劲苦心，先设局治罪，再移交司法机构处理；而张督监作为城防司令，对一个没有公民权的罪犯武松，也是费劲苦心，设局治罪，有司法机关处理，最后还得求助于黑道兄弟。法制名目繁多了，反而一个小小的县的政法委，竟然可以到国都来截访，把有冤难伸的刁民请回去，令其没事别到处流窜。
+
+权利有多种，法律条文也汗牛充栋，但是缺乏监督和制衡的话，皆如杀爱特。<br> 
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/" alt=""></div>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ashang.github.io/jot/jot/2008/11/2008-11-12-automatically-started-program/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Shang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jot/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All Things Bright And Beautiful">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jot/2008/11/2008-11-12-automatically-started-program/" itemprop="url">
+                  Automatically Started Program
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2008-11-12 09:52:00" itemprop="dateCreated datePublished" datetime="2008-11-12T09:52:00+08:00">2008-11-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 00:28:23" itemprop="dateModified" datetime="2018-08-17T00:28:23+08:00">2018-08-17</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+Another program would be moved out from my automatically started list
+
+I put my often used programs into $HOME/.xinitrc, to make them<br>automatically started by DM at booting, here is the end of this<br>.xinitrc：
+
+export IME=scim<br>export GTK_IM_MODULE=$IME<br>export XMODIFIERS=@im=$IME<br>export QT_IM_MODULE=$IME<br>exec scim -d &amp;<br>exec stardict &amp;<br>exec VirtualBox &amp;<br>exec firefox &amp;
+
+export TERM=xfce4-terminal<br>exec $TERM &amp;
+
+# finally start the window manager<br>unset WINDOW_MANAGER STARTUP
+
+exec skype &amp;<br>export WINDOWMANAGER=xfce4-session
+
+exec $WINDOWMANAGER<br>exec qterm &amp;
+
+# call failsafe<br>exit 0
+
+One of my often used programs that had been moved out of this list is<br>thunderbird (mutt before this), because I had been used to Gmail as my<br>mail reader.
+
+For important or useful emails, I would tidy them up and archive them<br>in time, both stored in local and remote storage.
+
+Another program that had been moved out is stardict. One reason is<br>that I have to install it in different distros I work with, and copy<br>those dics to $HOME/.stardict/dic. Another reason is the alternates I<br>had found.
+
+One alternate is the web version of this dict, which have enough dics<br>can be self customized:<br><a href="http://www.stardict.org/" target="_blank" rel="noopener">http://www.stardict.org/</a>
+
+Another alternate is Google&#039;s dict, with powerful functions such as<br>translating, look-up, and searching for words:<br><a href="http://www.google.com/dictionary" target="_blank" rel="noopener">http://www.google.com/dictionary</a><br>This is my default page for native language:<br><a href="http://www.google.com/dictionary?aq=f&amp;langpair=en|zh-CN" target="_blank" rel="noopener">http://www.google.com/dictionary?aq=f&amp;langpair=en|zh-CN</a><br>in short, it is:<br><a href="http://www.google.cn/dictionary" target="_blank" rel="noopener">http://www.google.cn/dictionary</a>
+
+Which is the next? scim, i think.<br>But I have to choose one alternate, will try and decide one.
+
+Then what next? skype, but not until gmail chat can do voice and video.
+<div class="blogger-post-footer"><img width="1" height="1" src="/assets/4041220-6786020135553106793?l=ashang.blogspot.com" alt=""></div>
+
+          
+        
+      
+    </div>
+
+    
+
     
     
     
@@ -1452,7 +1913,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/jot/page/8/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/jot/">1</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/jot/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/18/">18</a><a class="extend next" rel="next" href="/jot/page/10/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/jot/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/jot/">1</a><span class="space">&hellip;</span><a class="page-number" href="/jot/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/jot/page/10/">10</a><a class="extend next" rel="next" href="/jot/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1495,8 +1956,8 @@
                 
                   <a href="/jot/archives/">
                 
-                    <span class="site-state-item-count">179</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -1506,8 +1967,26 @@
                 
                 <div class="site-state-item site-state-categories">
                   
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">categories</span>
                   
                 </div>
               
@@ -1517,8 +1996,76 @@
                 
                 <div class="site-state-item site-state-tags">
                   
-                    <span class="site-state-item-count">30</span>
-                    <span class="site-state-item-name">Tags</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -1535,6 +2082,9 @@
           
           
 
+          
+            
+          
           
 
         </div>
@@ -1555,7 +2105,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Aaron Shang</span>
@@ -1566,7 +2116,9 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -1574,12 +2126,13 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.1</div>
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.0</div>
 
 
 
 
         
+
 
 
 
@@ -1599,7 +2152,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -1654,37 +2210,25 @@
   
 
 
-  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.0.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.0.1"></script>
+  <script type="text/javascript" src="/jot/js/src/motion.js?v=6.4.0"></script>
 
 
 
   
+  
 
-
-
-	
-
-
-
-
+  
 
   
 
 
+  <script type="text/javascript" src="/jot/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
 
 
 
@@ -1712,6 +2256,12 @@
   
 
   
+
+  
+  
+
+  
+
   
 
   
