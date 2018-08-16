@@ -16,18 +16,17 @@ meta:
   _wp_old_slug: ''
   reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1404686775;}
 author:
-  login: aaronshang
-  email: aaronshang@gmail.com
-  display_name: Aaron
-  first_name: ''
-  last_name: ''
 ---
-<p>read process status</p>
-<p>read:<br />
-/proc/pid/stat</p>
-<p>See:<br />
-psmisc/prtstat.c</p>
-<p>210 static void print_stat(const int pid, const opt_type options)<br />
+
+read process status
+
+read:<br />
+/proc/pid/stat
+
+See:<br />
+psmisc/prtstat.c
+
+210 static void print_stat(const int pid, const opt_type options)<br />
 211 {<br />
 212   char *pathname;<br />
 213   char buf[BUFSIZ];<br />
@@ -40,4 +39,4 @@ psmisc/prtstat.c</p>
 220   if ( (asprintf(&amp;pathname, "/proc/%d/stat",(int)pid)) &lt; 0) {<br />
 221     perror(_(&quot;asprintf in print_stat failed.\n&quot;));<br />
 222     exit(1);<br />
-223   }</p>
+223   }
