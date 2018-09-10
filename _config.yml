@@ -77,7 +77,7 @@ theme: next
 deploy:
   - type: git
     repo: git@github.com:ashang/jot
-    branch: master
+    branch: gh-pages
   #- type: git
     #repo: git@github.com:ashang/jot
     #branch: src
