@@ -78,11 +78,11 @@ deploy:
   - type: git
     repo: git@github.com:ashang/jot
     branch: master
-  - type: git
-    repo: git@github.com:ashang/jot
-    branch: src
-    extend_dirs: /
-    ignore_hidden: false
-    public: false
-    ignore_pattern:
-      public: .
+  #- type: git
+    #repo: git@github.com:ashang/jot
+    #branch: src
+    #extend_dirs: /
+    #ignore_hidden: false
+    #public: false
+    #ignore_pattern:
+      #public: .
