@@ -7,12 +7,15 @@ subtitle:
 description:
 author: Aaron Shang
 language:
+- en
+- zh-Hans
+
 timezone:
 
 # URL
 url: 'http://ashang.github.io/jot'
 root: /jot/
-permalink: :year/:month/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory

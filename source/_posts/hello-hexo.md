@@ -4,7 +4,9 @@ title: Hello Hexo
 
 
 ## Quick Start
-
+``` bash
+$ npm install
+```
 ### Create a new post
 
 ``` bash
@@ -14,7 +16,7 @@ $ hexo new "My New Post"
 ### Run server
 
 ``` bash
-$ npm install
+$ npm install hexo-server --save
 $ hexo server
 ```
 
