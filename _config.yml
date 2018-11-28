@@ -81,6 +81,15 @@ deploy:
   - type: git
     repo: git@github.com:ashang/jot
     branch: gh-pages
+  - type: rsync
+    host: thepro.xyz
+    user: root
+    root: /var/www/html/
+    port: 22
+    delete: true
+    verbose: true
+    ignore_errors: false
+
   #- type: git
     #repo: git@github.com:ashang/jot
     #branch: src
