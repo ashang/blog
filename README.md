@@ -11,6 +11,9 @@ https://forum.xda-developers.com/general/general/onyx-boox-afterglow-2-c67ml-cus
 
 https://onyxboox.com/firmware
 
+- http://www.bit.ly/2wYEyCB
+- https://i.stack.imgur.com/zgNP2.jpg
+
 https://www.mobileread.com/forums/showpost.php?p=3035388&postcount=120
 
 http://www.joshblogs.com/2015/10/onyx-boox-c67ml-first-days.html
