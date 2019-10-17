@@ -34,3 +34,12 @@ https://www.mobileread.com/forums/showthread.php?t=284619
 
 https://www.mobileread.com/forums/showthread.php?t=285397
 
+
+install1002.wikimedia.org
+
+https://wikitech.wikimedia.org/wiki/Mailman
+
+https://wikitech.wikimedia.org/wiki/Icinga
+
+https://wikitech.wikimedia.org/wiki/Ganeti
+
