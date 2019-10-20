@@ -1,5 +1,6 @@
 # jot
-之乎者也https://hiddentao.com/archives/2011/06/27/setting-up-a-simple-ubuntu-apt-repository
+
+https://hiddentao.com/archives/2011/06/27/setting-up-a-simple-ubuntu-apt-repository
 
 https://www.mobileread.com/forums/showthread.php?t=245888
 
@@ -34,8 +35,9 @@ https://www.mobileread.com/forums/showthread.php?t=284619
 
 https://www.mobileread.com/forums/showthread.php?t=285397
 
+https://keyring.debian.org/
 
-install1002.wikimedia.org
+https://eklitzke.org/using-gpg-agent-effectively
 
 https://wikitech.wikimedia.org/wiki/Mailman
 
