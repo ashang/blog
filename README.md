@@ -1,3 +1,48 @@
+# Run X in WSL
+
+Just in case it is needed.
+
+## X server
+A local X Server is needed, here is example using [VcXsrv](https://sourceforge.net/projects/vcxsrv/).
+
+The executables are `VcXsrv`/`XLaunch`.
+
+## Enable WSL
+
+In PowerShell,
+
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+## Desktop
+Go to the WSL, here is one Debian stable release.
+
+The desktop environment example here is xfce4,
+
+    $ sudo apt-get install -y xfce4
+    
+    $ export DISPLAY=localhost:0
+
+Launch `VcXsrv` using display `-1`.
+
+Then start X
+
+    $ xfce4-session
+
+It will start in `VcXsrv` now.
+
+## Compiz
+
+If you wanna try compiz.
+
+    $ sudo apt-get install -y compiz compizconfig-settings-manager
+    $ sudo ccsm
+
+Then config options in `VcXsrv`.
+
+Star compiz
+
+    $ compiz
+
 # jot
 
 https://hiddentao.com/archives/2011/06/27/setting-up-a-simple-ubuntu-apt-repository
@@ -44,4 +89,5 @@ https://wikitech.wikimedia.org/wiki/Mailman
 https://wikitech.wikimedia.org/wiki/Icinga
 
 https://wikitech.wikimedia.org/wiki/Ganeti
+
 
