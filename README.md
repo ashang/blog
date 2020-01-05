@@ -18,7 +18,7 @@ Go to the WSL, here is one Debian stable release.
 
 The desktop environment example here is xfce4,
 
-    $ sudo apt-get install -y xfce4
+    $ sudo apt-get install xfce4
     
     $ export DISPLAY=localhost:0
 
@@ -30,6 +30,19 @@ Then start X
 
 It will start in `VcXsrv` now.
 
+Or you may use `mate`, just
+
+    $ sudo apt-get install mate    
+
+and start with
+
+    $ mate-session
+    
+ Or you would like to use just single window manager, here is some cases.
+ - i3: install `i3`, start with `i3`
+ - awesome: install `awesome`, start with `awesome`
+ - xmonad: install `xmonad`, start with `xmonad`/`xmonad-session`
+    
 ## Compiz
 
 If you wanna try compiz.
