@@ -104,3 +104,11 @@ https://wikitech.wikimedia.org/wiki/Icinga
 https://wikitech.wikimedia.org/wiki/Ganeti
 
 https://github.com/kovidgoyal/kitty
+
+中日好友来聚会
+
+绵羊鱼鹿把家回
+
+People,
+
+fish deer sheep  
